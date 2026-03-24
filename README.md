@@ -12,7 +12,6 @@
   - **Green Screen Mode**: Easily overlay your stats on OBS or other streaming software.
   - **Always on Top**: Keep the tracker visible while you play in windowed or borderless mode.
 - **Easy Setup**: Login once via the official Buckler's Booty site, and the app will automatically detect your CFN ID.
-- **Auto-Updates**: Built-in updater ensures you always have the latest features and bug fixes.
 
 ## 📸 Preview
 
@@ -41,6 +40,10 @@ Join us for bug reports, feature requests, or just to chat!
 | Discord | QQ Group |
 | :---: | :---: |
 | ![Discord](./images/discord.png) | ![QQ](./images/qq.jpg) |
+
+## 🛡️ Software Safety
+
+To ensure your security, every release of **SF6 Scouter** is verified through [VirusTotal](https://www.virustotal.com/). We prioritize software safety and transparency for all our users.
 
 ## ⚖️ License & Terms
 
