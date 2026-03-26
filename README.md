@@ -20,8 +20,8 @@
 | Score Tracking (LP) | Score Tracking (MR) |
 | :---: | :---: |
 | ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) |
-| **Real-time Updates** | |
-| ![Real-time Updates](./images/change.gif) | |
+| **Real-time Updates** | **Transparent Mode** |
+| ![Real-time Updates](./images/change.gif) | ![Transparent Mode](./images/Transparent.jpg) |
 
 ## 🛠️ How to Use
 

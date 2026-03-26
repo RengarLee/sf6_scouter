@@ -20,8 +20,8 @@
 | 积分追踪 (LP) | 积分追踪 (MR) |
 | :---: | :---: |
 | ![LP 图标](./images/lp.png) | ![MR 图标](./images/mr.png) |
-| **实时更新演示** | |
-| ![实时更新](./images/change.gif) | |
+| **实时更新演示** | **透明模式** |
+| ![实时更新](./images/change.gif) | ![透明模式](./images/Transparent.jpg) |
 
 ## 🛠️ 使用方法
 

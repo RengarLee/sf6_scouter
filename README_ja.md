@@ -20,8 +20,8 @@
 | ランクポイント (LP) | マスターレート (MR) |
 | :---: | :---: |
 | ![LP アイコン](./images/lp.png) | ![MR アイコン](./images/mr.png) |
-| **リアルタイム更新デモ** | |
-| ![リアルタイム更新](./images/change.gif) | |
+| **リアルタイム更新デモ** | **透過モード** |
+| ![リアルタイム更新](./images/change.gif) | ![透過モード](./images/Transparent.jpg) |
 
 ## 🛠️ 使い方
 
