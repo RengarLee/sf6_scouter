@@ -2,6 +2,8 @@
 
 **SF6 Scouter** is a lightweight, real-time statistics tracker for Street Fighter 6. Designed for players and streamers, it provides live updates on your performance, including wins, losses, and rank point changes.
 
+> **Hover to track, win while you're hot, quit while you're cold.**
+
 [English] | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
 
 ## 🚀 Key Features
