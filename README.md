@@ -11,7 +11,7 @@
 - **Real-Time Tracking**: Automatically updates your Wins, Losses, and Win Rate during your session.
 - **Rank Points (LP/MR)**: Track both League Points (LP) and Master Rate (MR). See exactly how much you've gained or lost since you started the app.
 - **Streamer Friendly**:
-  - **Green Screen Mode**: Easily overlay your stats on OBS or other streaming software.
+  - **Transparent Mode**: Background becomes transparent for easy overlay on streams.
   - **Always on Top**: Keep the tracker visible while you play in windowed or borderless mode.
 - **Easy Setup**: Login once via the official Buckler's Booty site, and the app will automatically detect your CFN ID.
 
@@ -31,7 +31,7 @@
 4. **Play**: Just keep the app running. It polls for data every 15 seconds.
 5. **Settings**: Click the ⚙️ icon to:
    - Switch between LP and MR display.
-   - Toggle Green Screen Mode.
+   - Toggle Transparent Mode.
    - Reset the current session.
 
 ## 📺 OBS Configuration
@@ -46,7 +46,6 @@ If you want to use **SF6 Scouter** in your stream, follow these steps:
 2. **App Settings**:
    - Click the ⚙️ icon in the app to open settings.
    - Toggle **Always on Top** to **Off**.
-   - Optional: Enable **Green Screen Mode**, then add a "Chroma Key" filter to the source in OBS to remove the background.
 
 ## 🤝 Community & Support
 
