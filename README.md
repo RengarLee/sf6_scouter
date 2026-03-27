@@ -34,6 +34,20 @@
    - Toggle Green Screen Mode.
    - Reset the current session.
 
+## 📺 OBS Configuration
+
+If you want to use **SF6 Scouter** in your stream, follow these steps:
+
+1. **Add Source**:
+   - In the OBS "Sources" panel, click the `+` icon.
+   - Select **Window Capture**.
+   - In the popup, set "Window" to `SF6 Scouter`.
+   - Set "Capture Method" to **Windows 10 (1903 and up)**.
+2. **App Settings**:
+   - Click the ⚙️ icon in the app to open settings.
+   - Toggle **Always on Top** to **Off**.
+   - Optional: Enable **Green Screen Mode**, then add a "Chroma Key" filter to the source in OBS to remove the background.
+
 ## 🤝 Community & Support
 
 Join us for bug reports, feature requests, or just to chat!
