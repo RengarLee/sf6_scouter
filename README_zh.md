@@ -22,6 +22,8 @@
 | ![LP 图标](./images/lp.png) | ![MR 图标](./images/mr.png) |
 | **实时更新演示** | |
 | ![实时更新](./images/change.gif) | |
+| **透明模式** | |
+| ![透明模式](./images/Transparent.jpg) | |
 
 ## 🛠️ 使用方法
 
