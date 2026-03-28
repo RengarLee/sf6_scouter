@@ -22,6 +22,8 @@
 | ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) |
 | **Real-time Updates** | |
 | ![Real-time Updates](./images/change.gif) | |
+| **Transparent Mode** | |
+| ![Transparent Mode](./images/Transparent.jpg) | |
 
 ## 🛠️ How to Use
 
