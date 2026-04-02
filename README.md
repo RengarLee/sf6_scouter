@@ -21,11 +21,15 @@
 
 ## 📸 Preview
 
-| Score Tracking (LP) | Score Tracking (MR) | Pro Data Panel |
+### Mini Mode (Mini View)
+
+| Score Tracking (LP) | Score Tracking (MR) | Real-time Updates |
 | :---: | :---: | :---: |
-| ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) | ![Pro Panel](./images/Pro.png) |
-| **Real-time Updates** | | |
-| ![Real-time Updates](./images/change.gif) | | |
+| ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) | ![Real-time Updates](./images/change.gif) |
+
+### Pro Mode (Pro View)
+
+![Pro Panel](./images/Pro.png)
 
 ## 🛠️ How to Use
 

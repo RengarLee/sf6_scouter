@@ -21,11 +21,15 @@
 
 ## 📸 プレビュー
 
-| ランクポイント (LP) | マスターレート (MR) | Pro データパネル |
+### Mini モード (Mini View)
+
+| ランクポイント (LP) | マスターレート (MR) | リアルタイム更新デモ |
 | :---: | :---: | :---: |
-| ![LP アイコン](./images/lp.png) | ![MR アイコン](./images/mr.png) | ![Pro パネル](./images/Pro.png) |
-| **リアルタイム更新デモ** | | |
-| ![リアルタイム更新](./images/change.gif) | | |
+| ![LP アイコン](./images/lp.png) | ![MR アイコン](./images/mr.png) | ![リアルタイム更新](./images/change.gif) |
+
+### Pro モード (Pro View)
+
+![Pro パネル](./images/Pro.png)
 
 ## 🛠️ 使い方
 

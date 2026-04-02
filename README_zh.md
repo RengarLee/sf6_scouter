@@ -21,11 +21,15 @@
 
 ## 📸 预览
 
-| 积分追踪 (LP) | 积分追踪 (MR) | Pro 数据面板 |
+### Mini 模式 (Mini View)
+
+| 积分追踪 (LP) | 积分追踪 (MR) | 实时更新演示 |
 | :---: | :---: | :---: |
-| ![LP 图标](./images/lp.png) | ![MR 图标](./images/mr.png) | ![Pro 面板](./images/Pro.png) |
-| **实时更新演示** | | |
-| ![实时更新](./images/change.gif) | | |
+| ![LP 图标](./images/lp.png) | ![MR 图标](./images/mr.png) | ![实时更新](./images/change.gif) |
+
+### Pro 模式 (Pro View)
+
+![Pro 面板](./images/Pro.png)
 
 ## 🛠️ 使用方法
 
