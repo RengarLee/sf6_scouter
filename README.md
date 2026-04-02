@@ -8,31 +8,32 @@
 
 ## 🚀 Key Features
 
-- **Real-Time Tracking**: Automatically updates your Wins, Losses, and Win Rate during your session.
-- **Rank Points (LP/MR)**: Track both League Points (LP) and Master Rate (MR). See exactly how much you've gained or lost since you started the app.
+- **Real-Time Tracking**: Automatically records wins, losses, and win rate for the current session.
+- **Rank Points (LP/MR)**: Supports both LP and MR. Clearly shows point gains/losses since starting the app.
+- **Multi-Account Tracking**: Track not only yourself but also other players by entering their **CFN ID**.
+- **Pro Data Panel**: A brand-new professional dashboard that visualizes historical battle records and score trends with **line charts**.
+- **Personalized Memory**: Automatically remembers your panel configuration (position, size, transparency) and restores it on the next launch.
+- **UI Effects**: Dynamic value scrolling and UI interaction effects for a more vibrant data display.
 - **Streamer Friendly**:
-  - **Green Screen Mode**: Easily overlay your stats on OBS or other streaming software.
-  - **Always on Top**: Keep the tracker visible while you play in windowed or borderless mode.
-- **Easy Setup**: Login once via the official Buckler's Booty site, and the app will automatically detect your CFN ID.
+  - **Transparency Mode**: Easily overlay stats onto your stream using filters in OBS or similar software.
+  - **Always on Top**: Keep tracking your performance even when playing in windowed or borderless mode.
+- **Auto Update**: Built-in update module ensures you get the latest features immediately.
 
 ## 📸 Preview
 
-| Score Tracking (LP) | Score Tracking (MR) |
-| :---: | :---: |
-| ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) |
-| **Real-time Updates** | |
-| ![Real-time Updates](./images/change.gif) | |
+| Score Tracking (LP) | Score Tracking (MR) | Pro Data Panel |
+| :---: | :---: | :---: |
+| ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) | ![Pro Panel](./images/Pro.png) |
+| **Real-time Updates** | | |
+| ![Real-time Updates](./images/change.gif) | | |
 
 ## 🛠️ How to Use
 
-1. **Launch**: Open `SF6 Scouter`.
-2. **Login**: Click the "Login to CFN" button. A window will open the official Street Fighter 6 Buckler's Booty site.
-3. **Capture**: Once you login, the app will automatically capture your User Code and start tracking.
-4. **Play**: Just keep the app running. It polls for data every 15 seconds.
-5. **Settings**: Click the ⚙️ icon to:
-   - Switch between LP and MR display.
-   - Toggle Green Screen Mode.
-   - Reset the current session.
+1. **Launch & Login**: Open `SF6 Scouter`, click "Login to CFN", and log in through the popup window.
+2. **Account Selection**: After login, it defaults to tracking your account. You can also enter any **CFN ID** to track other players.
+3. **Switch Panels**: Toggle between "**Mini Mode**" and "**Pro Mode**" with a single click. The Pro panel supports zooming into charts, filtering records, and other custom settings.
+4. **Customize Appearance**: Resize by dragging edges or adjust transparency in settings. The Pro panel's layout and display options can also be fine-tuned to your preference. All changes are saved automatically.
+5. **Real-time Monitoring**: The app polls for data every 15 seconds. Start your journey!
 
 ## 🤝 Community & Support
 
