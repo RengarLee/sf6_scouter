@@ -31,7 +31,7 @@
 
 | Pro 面板 | 与 OBS 配合使用 |
 | :---: | :---: |
-| ![Pro 面板](./images/Pro.gif) | ![与 OBS 配合使用](./images/ProWithOBS.gif) |
+| ![Pro 面板](./images/Pro.gif)<br>*(透明模式，背景图来自官方)* | ![与 OBS 配合使用](./images/ProWithOBS.gif) |
 
 ## 🛠️ 使用方法
 
