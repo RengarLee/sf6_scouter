@@ -29,7 +29,9 @@
 
 ### Pro Mode (Pro View)
 
-![Pro Panel](./images/Pro.png)
+| Pro Panel | Pro with OBS |
+| :---: | :---: |
+| ![Pro Panel](./images/Pro.gif) | ![Pro with OBS](./images/ProWithOBS.gif) |
 
 ## 🛠️ How to Use
 

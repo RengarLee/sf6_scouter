@@ -29,7 +29,9 @@
 
 ### Pro 模式 (Pro View)
 
-![Pro 面板](./images/Pro.png)
+| Pro 面板 | 与 OBS 配合使用 |
+| :---: | :---: |
+| ![Pro 面板](./images/Pro.gif) | ![与 OBS 配合使用](./images/ProWithOBS.gif) |
 
 ## 🛠️ 使用方法
 
