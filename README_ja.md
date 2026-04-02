@@ -29,7 +29,9 @@
 
 ### Pro モード (Pro View)
 
-![Pro パネル](./images/Pro.png)
+| Pro パネル | OBS との連携 (Pro with OBS) |
+| :---: | :---: |
+| ![Pro パネル](./images/Pro.gif)<br>*(透過モード、背景画像は公式サイトより)* | ![Pro with OBS](./images/ProWithOBS.gif) |
 
 ## 🛠️ 使い方
 
