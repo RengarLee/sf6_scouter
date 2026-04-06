@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SF6 Scouter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Outfit', system-ui, sans-serif;
+  background: #0d0f1a;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 40px 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #5c62d6, #00d287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+/* Page Nav */
+.page-nav {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+}
+.page-nav button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  padding: 10px 18px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7394;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.page-nav button:hover { color: #c8cce0; }
+.page-nav button.active {
+  color: #fff;
+  border-bottom-color: #5c62d6;
+}
+
+/* Subtle background glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -40%;
+  left: -20%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(92,98,214,0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -30%;
+  right: -15%;
+  width: 50%;
+  height: 70%;
+  background: radial-gradient(ellipse, rgba(0,210,135,0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Language switcher */
+.lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  gap: 4px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 4px;
+  backdrop-filter: blur(12px);
+}
+.lang-switch button {
+  background: none;
+  border: none;
+  color: #8b92b0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.lang-switch button:hover { color: #fff; }
+.lang-switch button.active {
+  background: #5c62d6;
+  color: #fff;
+}
+
+/* Hero - two column layout */
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 80px 80px;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero-left { flex: 1; }
+.hero-right {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+  padding: 32px 28px;
+  backdrop-filter: blur(8px);
+}
+.hero h1 {
+  font-size: clamp(36px, 5.5vw, 52px);
+  font-weight: 700;
+  background: linear-gradient(135deg, #5c62d6, #7b81f5, #00d287);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+.hero .subtitle {
+  font-size: clamp(15px, 2vw, 17px);
+  color: #c8cce0;
+  margin-bottom: 6px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.hero .tagline {
+  font-size: clamp(13px, 1.8vw, 15px);
+  color: #6b7394;
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Divider line */
+.hero-divider {
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #5c62d6, #00d287);
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+
+/* Inline features (left side) */
+.hero-features { display: flex; flex-direction: column; gap: 16px; }
+.hero-feat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+  color: #9da3be;
+  transition: color 0.2s;
+}
+.hero-feat:hover { color: #c8cce0; }
+.hero-feat-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(92, 98, 214, 0.1);
+  border: 1px solid rgba(92, 98, 214, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.hero-feat:hover .hero-feat-icon {
+  background: rgba(92, 98, 214, 0.18);
+  border-color: rgba(92, 98, 214, 0.3);
+}
+
+/* Right side card */
+.right-label {
+  font-size: 12px;
+  color: #6b7394;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 28px;
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #5c62d6;
+  border-radius: 12px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.btn-download::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #5c62d6, #7b81f5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+.btn-download:hover::before { opacity: 1; }
+.btn-download:hover {
+  border-color: #7b81f5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(92, 98, 214, 0.4);
+}
+.btn-download span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.right-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 4px 0;
+}
+
+.right-community { display: flex; gap: 10px; }
+.right-community a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  color: #8b92b0;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.right-community a:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.07);
+}
+.right-community a img,
+.right-community a svg {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Screenshots */
+.screenshots {
+  position: relative;
+  z-index: 1;
+  padding: 60px 24px 100px;
+  text-align: center;
+}
+.screenshots h2 {
+  font-size: 28px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+.view-category {
+  font-size: 14px;
+  color: #6b7394;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 40px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.view-category::before, .view-category::after {
+  content: '';
+  height: 1px;
+  width: 30px;
+  background: rgba(255,255,255,0.06);
+}
+.screenshot-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.screenshot-grid img {
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  max-width: 230px;
+  width: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.screenshot-grid img:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(92, 98, 214, 0.4);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.pro-preview { margin-top: 20px; }
+.pro-preview .pro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 600px;
+  width: 100%;
+}
+.pro-preview img { max-width: 100% !important; }
+.pro-caption {
+  font-size: 13px;
+  color: #6b7394;
+  font-weight: 300;
+}
+
+/* Changelog */
+.changelog-wrap {
+  position: relative;
+  z-index: 1;
+  padding: 40px 80px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.changelog-wrap h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.changelog-intro {
+  text-align: center;
+  margin-bottom: 48px;
+  color: #6b7394;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.changelog-intro a {
+  color: #5c62d6;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(92,98,214,0.2);
+}
+.changelog-item {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+}
+.changelog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding-bottom: 12px;
+}
+.version { font-size: 20px; font-weight: 700; color: #00d287; }
+.date { font-size: 14px; color: #6b7394; }
+.changelog-list { list-style: none; padding-left: 0; }
+.changelog-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: #c8cce0;
+  font-size: 15px;
+}
+.changelog-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #5c62d6;
+  font-size: 20px;
+  line-height: 1;
+}
+.thanks {
+  display: block;
+  font-size: 13px;
+  color: #8b92b0;
+  margin-top: 4px;
+  padding-left: 4px;
+  font-weight: 300;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 28px 24px;
+  text-align: center;
+}
+.disclaimer {
+  color: #4a5070;
+  font-size: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* i18n */
+[data-lang] { display: none; }
+[data-lang].show { display: revert; }
+
+@media (max-width: 768px) {
+  .header { padding: 40px 24px 0; }
+  .page-nav { padding: 0 24px; }
+  .hero {
+    flex-direction: column;
+    padding: 100px 24px 40px;
+    gap: 32px;
+    text-align: center;
+  }
+  .hero-left { flex: none; width: 100%; }
+  .hero-right { flex: none; width: 100%; max-width: 360px; margin: 0 auto; }
+  .hero-divider { margin: 0 auto 28px; }
+  .hero-features { align-items: center; }
+  .hero-feat { justify-content: center; }
+  .changelog-wrap { padding: 40px 24px 80px; }
+}
+</style>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "w37dxuymua");
+</script>
+</head>
+<body>
+
+<!-- Language Switcher -->
+<div class="lang-switch">
+  <button class="active" onclick="setLang('en')">EN</button>
+  <button onclick="setLang('zh')">中文</button>
+  <button onclick="setLang('ja')">日本語</button>
+</div>
+
+<header class="header">
+  <div class="logo">SF6 Scouter</div>
+</header>
+
+<nav class="page-nav">
+  <button id="nav-home" class="active" onclick="showPage('home')">
+    <span data-lang="en">Home</span>
+    <span data-lang="zh">主页</span>
+    <span data-lang="ja">ホーム</span>
+  </button>
+  <button id="nav-changelog" onclick="showPage('changelog')">
+    <span data-lang="en">Changelog</span>
+    <span data-lang="zh">更新日志</span>
+    <span data-lang="ja">更新履歴</span>
+  </button>
+</nav>
+
+<!-- Page: Home -->
+<div id="page-home">
+
+  <!-- Hero: Left info + Right actions -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>SF6 Scouter</h1>
+
+      <p class="subtitle" data-lang="en">Real-time tracking of Street Fighter 6 scores and win rates.</p>
+      <p class="subtitle" data-lang="zh">实时跟踪街头霸王6分数和胜率。</p>
+      <p class="subtitle" data-lang="ja">ストリートファイター6のスコアと勝率をリアルタイムで追跡。</p>
+
+      <p class="tagline" data-lang="en">"Hover to track, win while you're hot, quit while you're cold."</p>
+      <p class="tagline" data-lang="zh">"悬浮追踪，趁热打铁，见好就收。"</p>
+      <p class="tagline" data-lang="ja">"ホバーで追跡、調子が良い時に勝ち、悪い時にやめる。"</p>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-features">
+        <div class="hero-feat">
+          <span class="hero-feat-icon">⚡</span>
+          <span data-lang="en">One-time CFN login, auto-updates scores</span>
+          <span data-lang="zh">一次登录 CFN，自动更新分数</span>
+          <span data-lang="ja">一度CFNにログインすれば、スコアを自动更新</span>
+        </div>
+        <div class="hero-feat">
+          <span class="hero-feat-icon">🏆</span>
+          <span data-lang="en">LP &amp; MR dual mode with exact deltas</span>
+          <span data-lang="zh">LP &amp; MR 双模式，精确显示变化</span>
+          <span data-lang="ja">LP・MR両対応、変動を正確に表示</span>
+        </div>
+        <div class="hero-feat" style="flex-wrap: wrap;">
+          <span class="hero-feat-icon">💠</span>
+          <div style="flex: 1; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span data-lang="en">Transparent mode for OBS streaming</span>
+            <span data-lang="zh">透明模式，一键 OBS 直播叠加</span>
+            <span data-lang="ja">OBS配信用透明モード</span>
+            <a href="https://github.com/RengarLee/sf6_scouter?tab=readme-ov-file#-obs-configuration" target="_blank" style="font-size: 11px; color: #fff; background: rgba(92,98,214,0.3); border: 1px solid rgba(92,98,214,0.6); padding: 2px 10px; border-radius: 6px; text-decoration: none; transition: all 0.2s; white-space: nowrap;">
+              <span data-lang="en">Detailed Documentation</span>
+              <span data-lang="zh">参考具体文档</span>
+              <span data-lang="ja">詳細ドキュメント</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <span class="right-label" data-lang="en">Get Started</span>
+      <span class="right-label" data-lang="zh">立即开始</span>
+      <span class="right-label" data-lang="ja">今すぐ始める</span>
+
+      <a class="btn-download" id="dl-en" href="#" data-lang="en"><span>Download</span></a>
+      <a class="btn-download" id="dl-zh" href="#" data-lang="zh"><span>下载</span></a>
+      <a class="btn-download" id="dl-ja" href="#" data-lang="ja"><span>ダウンロード</span></a>
+
+      <div class="right-divider"></div>
+
+      <span class="right-label" style="margin-top: 8px;">
+        <span data-lang="en">Contact Me</span>
+        <span data-lang="zh">联系我</span>
+        <span data-lang="ja">お問い合わせ</span>
+      </span>
+
+      <div class="right-community" id="community">
+        <a href="https://github.com/RengarLee/sf6_scouter" class="community-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://discord.gg/xg93c5mmx2" class="community-link">
+          <img src="../images/discord.png" alt="Discord">
+          Discord
+        </a>
+        <a href="javascript:void(0)" class="community-link" onclick="document.getElementById('qq-modal').style.display='flex'">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.395 15.035a39.548 39.548 0 0 0-1.51-3.588c.277-1.829.237-3.883-.259-5.67C18.803 2.602 15.949.453 12.078.453c-3.86 0-6.742 2.139-7.556 5.323-.497 1.788-.537 3.842-.26 5.67a39.37 39.37 0 0 0-1.51 3.59c-.754 2.088-.455 3.32.165 3.726.407.267 1.028.202 1.74-.326a16.46 16.46 0 0 0 1.75-1.635 7.783 7.783 0 0 0 4.214 1.497h.002c.006-.04.015-.078.023-.117a2.92 2.92 0 0 1-.04-.183 2.746 2.746 0 0 1 1.49-2.87c-.495-.07-.998-.17-1.496-.31-1.753-.494-2.47-1.206-2.535-1.274a.476.476 0 0 1 .646-.698c.013.012 1.273 1.143 3.713 1.143 2.44 0 3.7-1.131 3.713-1.143a.476.476 0 0 1 .646.698c-.066.068-.782.78-2.535 1.274-.498.14-1.001.24-1.497.31a2.746 2.746 0 0 1 1.49 2.87c-.01.06-.024.122-.04.183l.024.117a7.783 7.783 0 0 0 4.214-1.497 16.46 16.46 0 0 0 1.75 1.635c.711.528 1.332.593 1.74.326.619-.406.918-1.638.164-3.726z"/></svg>
+          QQ
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="screenshots">
+    <h2 data-lang="en">Interface Preview</h2>
+    <h2 data-lang="zh">界面预览</h2>
+    <h2 data-lang="ja">インターフェース プレビュー</h2>
+
+    <div class="view-category">
+      <span data-lang="en">Mini View</span>
+      <span data-lang="zh">迷你模式</span>
+      <span data-lang="ja">ミニビュー</span>
+    </div>
+    <div class="screenshot-grid">
+      <img src="../images/lp.png" alt="LP Tracking">
+      <img src="../images/mr.png" alt="MR Tracking">
+      <img src="../images/change.gif" alt="Real-time updates">
+      <img src="../images/Transparent.jpg" alt="Transparent Mode">
+    </div>
+
+    <div class="screenshot-grid" style="margin-top: 40px;">
+      <div class="pro-item">
+        <img src="../images/mini.gif" alt="Mini View Demo" style="max-width: 100% !important;">
+        <div class="pro-caption">
+          <span data-lang="en">Compact mode with dynamic updates</span>
+          <span data-lang="zh">紧凑模式，实时动态更新</span>
+          <span data-lang="ja">コンパクトモード、リアルタイム更新</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-category" style="margin-top: 60px;">
+      <span data-lang="en">Pro View</span>
+      <span data-lang="zh">专业面板</span>
+      <span data-lang="ja">Pro ビュー</span>
+    </div>
+    <div class="screenshot-grid pro-preview">
+      <div class="pro-item">
+        <img src="../images/Pro.gif" alt="Pro Panel">
+        <div class="pro-caption">
+          <span data-lang="en">Transparent mode, image from official</span>
+          <span data-lang="zh">透明模式，图片来自官方</span>
+          <span data-lang="ja">透明モード、画像は公式より</span>
+        </div>
+      </div>
+      <div class="pro-item">
+        <img src="../images/ProWithOBS.gif" alt="Pro Panel with OBS">
+        <div class="pro-caption">
+          <span data-lang="en">Using with OBS</span>
+          <span data-lang="zh">配合 OBS 使用</span>
+          <span data-lang="ja">OBSとの併用</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- Page: Changelog -->
+<div id="page-changelog" style="display:none">
+
+  <main class="changelog-wrap">
+    <h1 data-lang="en">Changelog</h1>
+    <h1 data-lang="zh">更新日志</h1>
+    <h1 data-lang="ja">更新履歴</h1>
+
+    <p class="changelog-intro">
+      <span data-lang="en">Have a great idea? <a href="#" onclick="showPage('home');return false;">Tell me</a> via GitHub, Discord or QQ, your request might be the next implementation!</span>
+      <span data-lang="zh">对 SF6 Scouter 有任何好点子？欢迎通过 GitHub、Discord 或 QQ <a href="#" onclick="showPage('home');return false;">告诉告诉我</a>，下一个实装的可能就是你的需求！</span>
+      <span data-lang="ja">アイデアをお持ちですか？GitHub、Discord、QQ を通じて<a href="#" onclick="showPage('home');return false;">ぜひ教えてください</a>。次の実装はあなたのリクエストかもしれません！</span>
+    </p>
+
+    <!-- v0.2.2 -->
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.2.2</span>
+        <span class="date">2026.04.06</span>
+      </div>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Fix</strong>: Resolved the issue where LP and MR data tracking failed for characters Akuma, Bison, and Honda.
+          <span class="thanks">🙌 Special thanks to QQ users @balance and @宇宙最酷 for their feedback and testing</span>
+        </li>
+      </ul>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>修复</strong>：修复无法跟踪豪鬼、拜森、本田的 LP 和 MR 数据的问题。
+          <span class="thanks">🙌 特别感谢 QQ 用户 @balance，@宇宙最酷 提供的反馈和测试</span>
+        </li>
+      </ul>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>修正</strong>：豪鬼、バイソン、エドモンド本田の LP と MR データが追跡できない問題を修正しました。
+          <span class="thanks">🙌 QQ ユーザーの @balance さん、@宇宙最酷 さん、フィードバックとテストへのご協力に感謝いたします</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- v0.2.1 -->
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.2.1</span>
+        <span class="date">2026.04.03</span>
+      </div>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Cross-Tracking</strong>: You can now track other players' IDs after logging in.
+          <span class="thanks">🙌 Special thanks to NGA user 丧心病狂的追忆 for the suggestions</span>
+        </li>
+        <li><strong>Pro Panel</strong>: New statistics dashboard featuring line charts to visualize your score trends (LP/MR).
+          <span class="thanks">🙌 Special thanks to NGA users gjf779, 丧心病狂的追忆, AinJianke for the suggestions</span>
+        </li>
+        <li><strong>Smart Config</strong>: The app now remembers your window configuration, automatically restoring to its exact last closed position and size upon reopening.
+          <span class="thanks">🙌 Special thanks to NGA user 就会玩治疗 for the suggestions</span>
+        </li>
+        <li><strong>Visual Polish</strong>: Added smooth number scrolling animation effects for data updates.</li>
+      </ul>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>跨 ID 追踪</strong>：登录后支持追踪并切换其他玩家的 ID 战绩。
+          <span class="thanks">🙌 特别感谢 NGA @丧心病狂的追忆 提供的建议</span>
+        </li>
+        <li><strong>Pro 面板</strong>：新增专业战绩面板，以动态折线图形式直观展示分数走势。
+          <span class="thanks">🙌 特别感谢 NGA @gjf779, @丧心病狂的追忆, @AinJianke 提供的建议</span>
+        </li>
+        <li><strong>窗口记忆</strong>：支持自动记忆窗口配置，重新打开时将自动还原至上次关闭时的精确位置和大小。
+          <span class="thanks">🙌 特别感谢 NGA @就会玩治疗 提供的建议</span>
+        </li>
+        <li><strong>视觉增强</strong>：为数字更新添加滚动特效。</li>
+      </ul>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>他者ID追跡</strong>：ログイン後、他のプレイヤー的IDを追跡・切り替えられるようになりました。
+          <span class="thanks">🙌 NGAの 丧心病狂的追忆 さんによる提案に感謝いたします</span>
+        </li>
+        <li><strong>Pro パネル</strong>：ランクポイント（LP/MR）の推移を折れ線グラフで視覚化する新しい統計ダッシュボードを追加しました。
+          <span class="thanks">🙌 NGAの gjf779, 丧心病狂的追忆, AinJianke さんによる提案に感謝いたします</span>
+        </li>
+        <li><strong>設定記憶</strong>：ウィンドウ設定を記憶し、再起動時に前回終了時の位置とサイズを正確に復元するようになりました。
+          <span class="thanks">🙌 NGAの 就会玩治疗 さんによる提案に感謝いたします</span>
+        </li>
+        <li><strong>ビジュアル強化</strong>：数値更新時にスムーズな数字スクロールアニメーションを追加しました。</li>
+      </ul>
+    </div>
+
+    <!-- v0.1.35 -->
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.1.35</span>
+        <span class="date">2026.03.29</span>
+      </div>
+      <ul class="changelog-list" data-lang="en">
+        <li>Refactor code structure for improved readability and maintainability.</li>
+        <li>Minor UI adjustments and bug fixes.</li>
+      </ul>
+      <ul class="changelog-list" data-lang="zh">
+        <li>重构代码结构，提高可读性和可维护性。</li>
+        <li>微调 UI 并修复了一些小 Bug。</li>
+      </ul>
+      <ul class="changelog-list" data-lang="ja">
+        <li>コード構造のリファクタリングにより、可読性とメンテナンス性が向上しました。</li>
+        <li>UIの微調整とバグ修正を行いました。</li>
+      </ul>
+    </div>
+
+  </main>
+
+</div><!-- /page-changelog -->
+
+<!-- QQ Modal -->
+<div id="qq-modal" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.6); backdrop-filter:blur(6px); align-items:center; justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#181b2a; border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:28px; text-align:center; position:relative; max-width:300px;">
+    <button onclick="document.getElementById('qq-modal').style.display='none'" style="position:absolute; top:12px; right:16px; background:none; border:none; color:#8b92b0; font-size:20px; cursor:pointer; line-height:1;">&times;</button>
+    <p style="color:#c8cce0; font-size:15px; margin-bottom:16px; font-family:'Outfit',sans-serif;">QQ Group</p>
+    <img src="../images/qq.jpg" alt="QQ Group QR Code" style="width:200px; border-radius:10px;">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p class="disclaimer">GPL-3.0 · SF6 Scouter</p>
+</footer>
+
+<script>
+function showPage(page) {
+  document.getElementById('page-home').style.display = page === 'home' ? '' : 'none';
+  document.getElementById('page-changelog').style.display = page === 'changelog' ? '' : 'none';
+  document.getElementById('nav-home').classList.toggle('active', page === 'home');
+  document.getElementById('nav-changelog').classList.toggle('active', page === 'changelog');
+  window.scrollTo(0, 0);
+}
+
+function setLang(lang) {
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.classList.toggle('show', el.dataset.lang === lang);
+  });
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.trim() === {en:'EN',zh:'中文',ja:'日本語'}[lang]);
+  });
+  document.documentElement.lang = lang;
+  localStorage.setItem('lang', lang);
+}
+
+// Fetch latest release download URL
+fetch('https://api.github.com/repos/RengarLee/sf6_scouter/releases/latest')
+  .then(r => r.json())
+  .then(data => {
+    const msi = data.assets.find(a => a.name.endsWith('.msi') && !a.name.endsWith('.sig'));
+    if (msi) {
+      document.querySelectorAll('.btn-download').forEach(btn => btn.href = msi.browser_download_url);
+    }
+  })
+  .catch(() => {
+    document.querySelectorAll('.btn-download').forEach(btn => btn.href = 'https://github.com/RengarLee/sf6_scouter/releases/latest');
+  });
+
+const saved = localStorage.getItem('lang');
+const browserLang = navigator.language.startsWith('zh') ? 'zh' : navigator.language.startsWith('ja') ? 'ja' : 'en';
+setLang(saved || browserLang);
+</script>
+</body>
+</html>
