@@ -8,7 +8,7 @@ const path = require('path');
 
 // Configure paths relative to the project root (assumed to be public-docs)
 const CHANGELOG_PATH = path.join(__dirname, '../CHANGELOG.md');
-const INDEX_HTML_PATH = path.join(__dirname, '../web/index.html');
+const INDEX_HTML_PATH = path.join(__dirname, '../index.html');
 const START_MARKER = '<!-- AUTOMATED_CHANGELOG_HERE -->';
 
 try {
