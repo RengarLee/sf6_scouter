@@ -10,17 +10,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **设置独立窗口**：设置功能现在在独立窗口中打开，提供更专注的配置体验。<br>
   <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
 
+- **提供设置数据间隔**：用户现在可以自定义数据刷新间隔，以优化性能和体验。<br>
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+
 - **新版本提醒**：当有新版本发布时，应用进行提醒，点击后可查看更新详情并选择立即更新或稍后提醒。<br>
 
 [en]
 - **Standalone Settings Window**: Settings now open in a separate window for a more focused configuration experience.<br>
   <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
 
+- **Configurable Data Refresh Interval**: Users can now customize the data refresh interval to optimize performance and experience.<br>
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+
 - **New Version Notification**: The app now notifies you when a new version is available. Click to view update details and choose to update now or be reminded later.<br>
 
 [ja]
 - **設定の独立ウィンドウ化**: 設定機能が独立したウィンドウで開くようになり、より集中して設定できるようになりました。<br>
   <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
+
+- **データ更新間隔の設定**: データの更新間隔をカスタマイズできるようになり、パフォーマンスと操作感を最適化できます。<br>
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
 
 - **新バージョン通知**: 新しいバージョンが公開されるとアプリが通知し、クリックすると更新内容を確認して「今すぐ更新」または「後で通知」を選択できます。<br>
 
