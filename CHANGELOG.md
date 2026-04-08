@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.4] - 2026-04-08
+## [0.3.0] - 2026-04-08
 [zh]
 ### 新增
 - **设置功能独立窗口**：设置功能现在在独立窗口中打开，提供更专注的配置体验。<br>
