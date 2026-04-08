@@ -3,8 +3,12 @@
  * Converts CHANGELOG.md (Markdown) to public-docs/web/index.html (HTML)
  * Supports: Multi-lang ([zh], [en], [ja]), Images, Thanks (🙌), Bold (**)
  */
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Configure paths relative to the project root (assumed to be public-docs)
 const CHANGELOG_PATH = path.join(__dirname, '../CHANGELOG.md');
