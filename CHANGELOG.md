@@ -7,13 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.4] - 2026-04-08
 [zh]
-- **设置独立窗口**：设置功能现在在独立窗口中打开，提供更专注的配置体验。<br>
+### 新增
+- **设置功能独立窗口**：设置功能现在在独立窗口中打开，提供更专注的配置体验。<br>
   <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
 
-- **提供设置数据间隔**：用户现在可以自定义数据刷新间隔，以优化性能和体验。<br>
+- **提供查看各个角色数据功能**：用户现在可以在设置-数据页面查看当前角色跟踪角色和各个角色的数据<br>
+  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
+
+- **添加Mini和Pro快速切换按钮**：在视图右上角添加了一个切换按钮，允许用户在 Mini 模式和 Pro 模式之间快速切换，无需进入设置。<br>
+  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
+
+- **提供设置数据间隔配置**：用户现在可以设置-用户页面自定义数据刷新间隔，以优化性能和体验。<br>
   <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
 
-- **新版本提醒**：当有新版本发布时，应用进行提醒，点击后可查看更新详情并选择立即更新或稍后提醒。<br>
+- **新增新版本提醒功能**：当有新版本发布时，应用进行提醒，点击后可查看更新详情并选择立即更新或稍后提醒。<br>
+
+### 优化
+- **优化角色切换**：优化角色切换逻辑，用户游戏中切换角色后，应用能更快地识别并切换到正确的 LP/MR 数据显示。<br>
+  <sub>🙌 特别感谢 NGA @AinJianke 提供的的建议</sub>
 
 [en]
 - **Standalone Settings Window**: Settings now open in a separate window for a more focused configuration experience.<br>
