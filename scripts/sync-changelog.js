@@ -46,9 +46,19 @@ try {
     generatedHtml += '        <span class="date">' + formattedDate + '</span>\n';
     generatedHtml += '      </div>\n';
 
-    // Multi-language parsing
+    // Multi-language parsing with section support (e.g. ### Added)
     const langMap = { 'zh': [], 'en': [], 'ja': [] };
+    const currentSectionByLang = { 'zh': '', 'en': '', 'ja': '' };
     let currentLang = 'zh'; // Default to zh
+
+    const ensureSection = (lang, title) => {
+      let section = langMap[lang].find(s => s.title === title);
+      if (!section) {
+        section = { title, items: [] };
+        langMap[lang].push(section);
+      }
+      return section;
+    };
 
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i].trim();
@@ -57,6 +67,11 @@ try {
       if (line === '[zh]') { currentLang = 'zh'; continue; }
       if (line === '[en]') { currentLang = 'en'; continue; }
       if (line === '[ja]') { currentLang = 'ja'; continue; }
+      if (line.startsWith('### ')) {
+        currentSectionByLang[currentLang] = line.slice(4).trim();
+        ensureSection(currentLang, currentSectionByLang[currentLang]);
+        continue;
+      }
 
       // Handle Markdown Image Syntax: ![alt](url)
       const imageStyle = 'display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);';
@@ -65,27 +80,36 @@ try {
         let itemText = line.substring(2)
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
           .replace(/!\[(.*?)\]\((.*?)\)/g, `<img src="$2" alt="$1" style="${imageStyle}">`);
-        langMap[currentLang].push('        <li>' + itemText + '</li>');
+        const section = ensureSection(currentLang, currentSectionByLang[currentLang]);
+        section.items.push('        <li>' + itemText + '</li>');
       } 
       else if (line.includes('🙌')) {
-        const list = langMap[currentLang];
-        if (list.length > 0) {
-          list[list.length - 1] = list[list.length - 1].replace('</li>', ' <span class="thanks">' + line + '</span></li>');
+        const section = ensureSection(currentLang, currentSectionByLang[currentLang]);
+        for (let j = section.items.length - 1; j >= 0; j--) {
+          if (section.items[j].includes('</li>')) {
+            section.items[j] = section.items[j].replace('</li>', ' <span class="thanks">' + line + '</span></li>');
+            break;
+          }
         }
       } 
       else if (line.startsWith('![')) {
         // Standalone image outside list
         const imgHtml = line.replace(/!\[(.*?)\]\((.*?)\)/g, `<img src="$2" alt="$1" style="${imageStyle}">`);
-        langMap[currentLang].push('        <div style="text-align:center; width:100%;">' + imgHtml + '</div>');
+        const section = ensureSection(currentLang, currentSectionByLang[currentLang]);
+        section.items.push('        <div style="text-align:center; width:100%;">' + imgHtml + '</div>');
       }
     }
 
     Object.keys(langMap).forEach(lang => {
-      if (langMap[lang].length > 0) {
+      langMap[lang].forEach(section => {
+        if (section.items.length === 0) return;
+        if (section.title) {
+          generatedHtml += '      <h4 class="changelog-subtitle" data-lang="' + lang + '">' + section.title + '</h4>\n';
+        }
         generatedHtml += '      <ul class="changelog-list" data-lang="' + lang + '">\n';
-        generatedHtml += langMap[lang].join('\n') + '\n';
+        generatedHtml += section.items.join('\n') + '\n';
         generatedHtml += '      </ul>\n';
-      }
+      });
     });
 
     generatedHtml += '    </div>\n\n';
