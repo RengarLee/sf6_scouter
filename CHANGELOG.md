@@ -20,65 +20,115 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **提供设置数据间隔配置**：用户现在可以设置-用户页面自定义数据刷新间隔，以优化性能和体验。<br>
   <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
 
+- **对战记录持久化**：用户现在可以在设置-数据页面启用对战记录持久化，应用现在支持将战绩数据持久化存储，重启应用后数据不会丢失。(预览功能：新版本可能会造成持久化数据丢失)<br>
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+
+- **对战记录截取**：用户现在可以在设置-数据页面启用对战记录截取，自主选择从哪一场对战开始跟踪。<br>
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+
 - **新增新版本提醒功能**：当有新版本发布时，应用进行提醒，点击后可查看更新详情并选择立即更新或稍后提醒。<br>
 
 ### 优化
 - **优化角色切换**：优化角色切换逻辑，用户游戏中切换角色后，应用能更快地识别并切换到正确的 LP/MR 数据显示。<br>
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的的建议</sub>
+  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
 
 [en]
+### Added
 - **Standalone Settings Window**: Settings now open in a separate window for a more focused configuration experience.<br>
+  <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
+
+- **Character Data Viewer**: Users can now view tracked character data and per-character stats from Settings > Data.<br>
+  <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
+
+- **Mini/Pro Quick Toggle Button**: Added a quick toggle button in the top-right corner to switch between Mini and Pro modes without opening Settings.<br>
   <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
 
 - **Configurable Data Refresh Interval**: Users can now customize the data refresh interval to optimize performance and experience.<br>
   <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
 
+- **Battle Record Persistence**: Added an option in Settings > Data to persist battle records, so data is retained after app restart. (Preview feature: data may be reset in newer versions.)<br>
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+
+- **Battle Record Start Point**: Added an option in Settings > Data to trim old records and start tracking from a selected match.<br>
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+
 - **New Version Notification**: The app now notifies you when a new version is available. Click to view update details and choose to update now or be reminded later.<br>
 
+### Improved
+- **Improved Character Switching**: Optimized character-switch detection so LP/MR display updates faster and more accurately when switching characters in-game.<br>
+  <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
+
 [ja]
+### 追加
 - **設定の独立ウィンドウ化**: 設定機能が独立したウィンドウで開くようになり、より集中して設定できるようになりました。<br>
+  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
+
+- **キャラクターデータ閲覧機能**: 設定 > データ画面で、現在追跡中のキャラクターおよび各キャラクターのデータを確認できるようになりました。<br>
+  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
+
+- **Mini/Pro クイック切替ボタン**: 画面右上にクイック切替ボタンを追加し、設定を開かずに Mini モードと Pro モードを切り替えられるようになりました。<br>
   <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
 
 - **データ更新間隔の設定**: データの更新間隔をカスタマイズできるようになり、パフォーマンスと操作感を最適化できます。<br>
   <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
 
+- **対戦記録の永続化**: 設定 > データ画面で対戦記録の永続化を有効にできるようになり、アプリ再起動後もデータを保持できます。（プレビュー機能: 新バージョンでデータが失われる可能性があります）<br>
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
+
+- **対戦記録の開始位置設定**: 設定 > データ画面で古い記録を整理し、任意の試合から追跡を開始できるようになりました。<br>
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
+
 - **新バージョン通知**: 新しいバージョンが公開されるとアプリが通知し、クリックすると更新内容を確認して「今すぐ更新」または「後で通知」を選択できます。<br>
+
+### 改善
+- **キャラクター切替の最適化**: ゲーム中のキャラクター切替後、LP/MR の表示切替をより速く正確に行えるよう最適化しました。<br>
+  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
 
 
 ## [0.2.3] - 2026-04-07
 
+
 [zh]
+### 新增
 - **自动切换LP/MR**：根据玩家的当前角色是否是大师,自动切换 LP 和 MR 数据显示。<br>
   <sub>🙌 特别感谢 NGA @AinJianke 和 QQ @宇宙最酷 提供的建议</sub><br>
   <sub>🙌 特别感谢 QQ 用户 @宇宙最酷 提供的测试</sub>
 
 [en]
+### Added
 - **Auto Switch LP/MR**: Automatically switch between LP and MR display based on whether the current character is a Master。<br>
   <sub>🙌 Special thanks to NGA @AinJianke and QQ @宇宙最酷 for suggestions</sub><br>
   <sub>🙌 Special thanks to QQ user @宇宙最酷 for testing</sub>
 
 [ja]
+### 追加
 - **LP/MR自動切替**: 現在のキャラクターがマスターかどうかに応じて、LPとMRの表示を自動的に切り替えます。<br>
   <sub>🙌 NGAの @AinJianke さん、QQの @宇宙最酷 さん、ご提案に感謝いたします</sub><br>
   <sub>🙌 QQユーザーの @宇宙最酷 さん、テストへのご協力に感謝いたします</sub>
 
 ## [0.2.2] - 2026-04-06
 
+
 [zh]
+### 修复
 - **修复**：修复无法跟踪豪鬼、拜森、本田的 LP 和 MR 数据的问题。<br>
   <sub>🙌 特别感谢 QQ 用户 @balance，@宇宙最酷 提供的反馈和测试</sub>
 
 [en]
+### Fixed
 - **Fix**: Resolved the issue where LP and MR data tracking failed for characters Akuma, Bison, and Honda.<br>
   <sub>🙌 Special thanks to QQ users @balance and @宇宙最酷 for their feedback and testing</sub>
 
 [ja]
+### 修正
 - **修正**: 豪鬼、バイソン、エドモンド本田の LP と MR データが追跡できない問題を修正しました。<br>
   <sub>🙌 QQ ユーザーの @balance さん、@宇宙最酷 さん、フィードバックとテストへのご協力に感謝いたします</sub>
 
 ## [0.2.1] - 2026-04-03
 
 [zh]
+
+### 新增
 - **跨 ID 追踪**：登录后支持追踪并切换其他玩家的 ID 战绩。<br>
   <sub>🙌 特别感谢 NGA @丧心病狂的追忆 提供的建议</sub>
 
@@ -91,6 +141,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **视觉增强**：为数字更新添加滚动特效。
 
 [en]
+### Added
 - **Cross-Tracking**: You can now track other players' IDs after logging in.<br>
   <sub>🙌 Special thanks to NGA user 丧心病狂 of Recall for the suggestions</sub>
 
@@ -103,6 +154,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Visual Polish**: Added smooth number scrolling animation effects for data updates.
 
 [ja]
+### 追加
 - **他者ID追跡**: ログイン後、他のプレイヤーのIDを追跡・切り替えられるようになりました。<br>
   <sub>🙌 NGAの 丧心病狂的追忆 さんによる提案に感謝いたします</sub>
 
@@ -117,14 +169,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.35] - 2026-03-29
 
 [zh]
+### 优化
 - **重构追踪代码**：重构代码结构，提高可读性和可维护性。
 
 - **UI 调整**：微调 UI 并修复了一些小 Bug。
 
 [en]
+### Improved
 - Refactor code structure for improved readability and maintainability.
 - Minor UI adjustments and bug fixes.
 
 [ja]
+### 改善
 - コード構造のリファクタリングにより、可読性とメンテナンス性が向上しました。
 - UIの微調整とバグ修正を行いました。
