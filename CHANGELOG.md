@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Pro支持自定义布局**：用户现在可以在设置-外观页面自定义Pro视图的布局，以更好地满足个人需求。
   <sub>🙌 特别感谢 NGA @就会玩治疗 提供的建议</sub>
 
+### 优化
+- **新版本提醒页面排版优化**：优化新版本提醒页面的排版和样式，使其更清晰易读。
+
 ## [0.3.0] - 2026-04-08
 [zh]
 ### 新增
