@@ -17,6 +17,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 优化
 - **新版本提醒页面排版优化**：优化新版本提醒页面的排版和样式，使其更清晰易读。
 
+### 修复
+- **启动后界面显示异常**：修复了在某些系统配置下，应用启动后界面无法正常显示的问题。
+  <sub>🙌 特别感谢 QQ @墨昀uuuun 提供的反馈</sub>
+
 ## [0.3.0] - 2026-04-08
 [zh]
 ### 新增
