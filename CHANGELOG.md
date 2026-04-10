@@ -10,12 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 新增
 - **Mini/Pro视图支持分享**：用户可以当前视图（Mini或Pro）右键选择分享，生成可分享的图片到剪切板，方便在社交媒体上展示战绩。
   <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_Share.gif)
 
 - **Pro支持自定义布局**：用户现在可以在设置-外观页面自定义Pro视图的布局，以更好地满足个人需求。
   <sub>🙌 特别感谢 NGA @就会玩治疗 提供的建议</sub>
+  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_ProLayout.gif)
 
 - **视图支持大/中/小快速设置**：用户现在可以在设置-外观页面快速选择视图大小（大/中/小），实现开箱即用。
   <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
+  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_WindowSize.gif)
+
 
 ### 优化
 - **新版本提醒页面排版优化**：优化新版本提醒页面的排版和样式，使其更清晰易读。
@@ -23,6 +27,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 修复
 - **启动后界面显示异常**：修复了在某些系统配置下，应用启动后界面无法正常显示的问题。
   <sub>🙌 特别感谢 QQ @墨昀uuuun 提供的反馈</sub>
+
+[en]
+### Added
+- **Share from Mini/Pro View**: Right-click in either Mini or Pro view to share your match results as an image copied to the clipboard — perfect for posting on social media.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+  ![v0.3.1 Share](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_Share.gif)
+
+- **Custom Layout for Pro View**: You can now customize the layout of the Pro view from Settings > Appearance to better suit your personal preferences.
+  <sub>🙌 Special thanks to NGA @就会玩治疗 for the suggestion</sub>
+  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_ProLayout.gif)
+
+- **Quick Size Presets (Large / Medium / Small)**: Choose a view size preset instantly from Settings > Appearance for an out-of-the-box experience.
+  <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
+  ![v0.3.1 Window Size](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_WindowSize.gif)
+
+### Improved
+- **Update Notification Page**: Improved the layout and styling of the new-version notification page for better clarity and readability.
+
+### Fixed
+- **UI Not Showing After Launch**: Fixed an issue where the app window failed to display correctly on certain system configurations.
+  <sub>🙌 Special thanks to QQ @墨昀uuuun for the feedback</sub>
+
+[ja]
+### 追加
+- **Mini/Proビューからシェア**: MiniまたはProビューで右クリックすることで、対戦成績を画像としてクリップボードにコピーし、SNSに共有できるようになりました。
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.1 Share](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_Share.gif)
+
+- **Proビューのカスタムレイアウト**: 設定 > 外観画面でProビューのレイアウトをカスタマイズできるようになり、個人の好みに合わせた表示が可能になりました。
+  <sub>🙌 ご提案いただいたNGAの @就会玩治疗 さんに感謝いたします</sub>
+  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_ProLayout.gif)
+
+- **ウィンドウサイズのクイック設定（大／中／小）**: 設定 > 外観画面でビューサイズをワンクリックで選択できるプリセットを追加し、すぐに使い始められるようになりました。
+  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
+  ![v0.3.1 Window Size](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_WindowSize.gif)
+
+### 改善
+- **バージョン通知ページの改善**: 新バージョン通知ページのレイアウトとスタイルを改善し、より見やすくなりました。
+
+### 修正
+- **起動後に画面が表示されない問題**: 一部のシステム環境でアプリ起動後に画面が正常に表示されない問題を修正しました。
+  <sub>🙌 フィードバックいただいたQQの @墨昀uuuun さんに感謝いたします</sub>
 
 ## [0.3.0] - 2026-04-08
 [zh]
