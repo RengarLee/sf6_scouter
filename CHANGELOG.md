@@ -5,6 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.2] - 2026-04-11
+[zh]
+### 修复
+- **网络不稳定时图表绘制异常**：修复了弱网场景下数据跟踪计算错误，导致图表显示异常的问题。
+  <sub>🙌 特别感谢 QQ @宇宙最酷, QQ @Jesusleo 提供的反馈</sub>
+
+### 优化
+- **官网请求增加多次重试机制**：提升网络不稳定时的数据获取成功率。
+
+[en]
+### Fixed
+- **Chart Rendering Issues on Unstable Networks**: Fixed an issue where incorrect tracking calculations under poor network conditions caused chart rendering anomalies.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 and QQ @Jesusleo for the feedback</sub>
+
+### Improved
+- **Added Multiple Retries for Official API Requests**: Increased data fetch success rate when network connectivity is unstable.
+
+[ja]
+### 修正
+- **不安定なネットワーク環境でのグラフ描画不具合**: 通信状態が不安定な場合に追跡計算が誤り、グラフ表示が異常になる問題を修正しました。
+  <sub>🙌 フィードバックをいただいたQQの @宇宙最酷 さん、QQの @Jesusleo さんに感謝いたします</sub>
+
+### 改善
+- **公式APIリクエストの再試行回数を強化**: ネットワークが不安定な環境でのデータ取得成功率を向上させました。
+
+
 ## [0.3.1] - 2026-04-10
 [zh]
 ### 新增
