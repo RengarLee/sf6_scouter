@@ -5,6 +5,69 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.3] - 2026-04-16
+[zh]
+### 新增
+- **Pro面板显示对手头像**：用户可以在设置-外观-图表开启展示对手头像功能，在Pro视图中显示对手的头像，提升用户体验。
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+  ![v0.3.3 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_ProHeadImage.gif)
+
+- **数据分析面板**: 用户可以在设置-数据-数据分析打开数据分析面板，查看简易的分数趋势，胜率，K线图等
+  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
+  ![v0.3.3 Data Analysis](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_K_Line.gif)
+
+- **正式支持持久化**：目前自动爬取用户最近100场对战数据并持久化存储，重启应用后数据不会丢失，并且在设置-系统配置备份文件夹位置，通过借助U盘，云盘等方式可实现数据备份。官网因版本更新导致的对战数据不展示，用户可以通过该持久化功能将数据保留在本地。并且使用加密措施，保证用户数据安全。
+  <sub>🙌 特别感谢 QQ @宇宙最酷, QQ @墨昀uuuun, QQ @Jesusleo 提供的建议</sub>
+
+### 优化
+- **优化登录逻辑**：优化登录流程，提升登录体验和稳定性。
+
+- **优化恢复会话**：将预览版数据持久化功能的恢复会话功能优化并支持当前正式持久化功能。
+
+### 删除
+- **删除预览版本数据持久化功能**：由于正式持久化功能的引入，原有的预览版本数据功能已不再必要，因此被移除。
+
+[en]
+### Added
+- **Opponent Avatar in Pro Panel**: Enable opponent avatar display from Settings > Appearance > Chart. Shows the opponent's avatar in Pro view for an enhanced experience.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+  ![v0.3.3 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_ProHeadImage.gif)
+
+- **Data Analysis Panel**: Open from Settings > Data > Data Analysis to view score trends, win rates, candlestick charts, and more.
+  <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
+  ![v0.3.3 Data Analysis](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_K_Line.gif)
+
+- **Official Persistence Support**: Automatically fetches and persists your last 100 battle records locally. Data is retained after restart. Configure a backup folder in Settings > System for USB/cloud backup. Data is also encrypted to ensure security.
+  <sub>🙌 Special thanks to QQ @宇宙最酷, QQ @墨昀uuuun, QQ @Jesusleo for the suggestion</sub>
+
+### Improved
+- **Improved Login Flow**: Optimized the login process for a smoother and more stable experience.
+- **Improved Session Restore**: Enhanced the session restore feature to support the new official persistence system.
+
+### Removed
+- **Removed Preview Persistence Feature**: With the introduction of official persistence, the previous preview-version data feature is no longer necessary and has been removed.
+
+[ja]
+### 追加
+- **Proパネルに対戦相手のアバターを表示**: 設定 > 外観 > グラフから有効化できます。Proビューで対戦相手のアバターが表示され、ユーザー体験が向上します。
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.3 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_ProHeadImage.gif)
+
+- **データ分析パネル**: 設定 > データ > データ分析から開き、スコア傾向・勝率・ローソク足チャートなどを確認できます。
+  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
+  ![v0.3.3 Data Analysis](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_K_Line.gif)
+
+- **永続化の正式サポート**: 直近100件の対戦データを自動取得してローカルに永続保存します。再起動後もデータは失われません。設定 > システムでバックアップフォルダを設定することで、USBやクラウドを使ったバックアップも可能です。データは暗号化されており、安全に保護されます。
+  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さん、QQの @墨昀uuuun さん、QQの @Jesusleo さんに感謝いたします</sub>
+
+### 改善
+- **ログインフローの最適化**: ログインプロセスを最適化し、よりスムーズで安定したログイン体験を実現しました。
+- **セッション復元の改善**: プレビュー版の復元機能を改善し、正式な永続化機能に対応しました。
+
+### 削除
+- **プレビュー版永続化機能の削除**: 正式な永続化機能の導入に伴い、従来のプレビュー版データ機能は不要となったため削除されました。
+
+
 ## [0.3.2] - 2026-04-11
 [zh]
 ### 修复
