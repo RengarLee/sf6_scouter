@@ -7,9 +7,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.4] - 2026-04-18
 [zh]
+### 新增
+- **Pro面板添加展示连胜连败视图**：用户可以在设置-外观-布局中选择战绩视图，即可在Pro视图中显示连胜/连败，最大连胜，最大连败，提升用户体验。
+  <sub>🙌 特别感谢 QQ Jesusleo, QQ 宇宙最酷 提供的建议</sub>
+  ![v0.3.4 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_BattleStats.jpg)
+
+- **Pro面板折线图Y轴展示段位**：用户可以在设置-外观-布局中选择战绩视图，即可在Pro视图中显示连胜/连败，最大连胜，最大连败，提升用户体验。
+  <sub>🙌 特别感谢 QQ Jesusleo, QQ 墨昀uuuun 提供的建议</sub>
+  ![v0.3.4 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_Pro_Y_Rank.jpg)
+
+### 优化
+- **提供额外下载路线**：用户使用官网或软件更新时，自动选择下载路线，提升下载体验。
+
 ### 修复
 - **部分场景下计算胜负异常**：修复了在某些特定场景下，胜负计算异常的问题。更新后历史数据将自动修正。
   <sub>🙌 特别感谢 NGA 狗仔至 提供的反馈</sub>
+
+[en]
+### Added
+- **Win/Loss Streak View in Pro Panel**: Select "Battle Stats" view in Settings > Appearance > Layout to display win streaks, loss streaks, max win streak, and max loss streak in the Pro view.
+  <sub>🙌 Special thanks to QQ Jesusleo, QQ 宇宙最酷 for the suggestion</sub>
+  ![v0.3.4 BattleStats](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_BattleStats.jpg)
+
+- **Rank Labels on Pro Panel Line Chart Y-Axis**: Select "Battle Stats" view in Settings > Appearance > Layout to display rank labels on the Y-axis of the Pro panel's line chart.
+  <sub>🙌 Special thanks to QQ Jesusleo, QQ 墨昀uuuun for the suggestion</sub>
+  ![v0.3.4 Pro Y Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_Pro_Y_Rank.jpg)
+
+### Improved
+- **Additional Download Routes**: Download routes are automatically selected when updating via the official site or in-app updater, improving the download experience.
+
+### Fixed
+- **Incorrect Win/Loss Calculation in Certain Scenarios**: Fixed win/loss calculation errors in specific scenarios. Historical data will be automatically corrected after updating.
+  <sub>🙌 Special thanks to NGA 狗仔至 for the feedback</sub>
+
+[ja]
+### 追加
+- **ProパネルにW/L連勝・連敗ビューを追加**: 設定 > 外観 > レイアウトで「戦績ビュー」を選択すると、Proビューに連勝・連敗・最大連勝・最大連敗が表示されます。
+  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.4 BattleStats](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_BattleStats.jpg)
+
+- **Proパネル折れ線グラフのY軸にランクを表示**: 設定 > 外観 > レイアウトで「戦績ビュー」を選択すると、Proパネルの折れ線グラフのY軸にランクが表示されます。
+  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 墨昀uuuun さんに感謝いたします</sub>
+  ![v0.3.4 Pro Y Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_Pro_Y_Rank.jpg)
+
+### 改善
+- **追加ダウンロードルートの提供**: 公式サイトまたはアプリ内アップデート時に、ダウンロードルートが自動選択され、ダウンロード体験が向上します。
+
+### 修正
+- **特定シナリオでの勝敗計算の異常**: 特定の状況下で勝敗の計算が正しく行われない問題を修正しました。アップデート後、過去のデータは自動的に修正されます。
+  <sub>🙌 フィードバックをいただいたNGA 狗仔至 さんに感謝いたします</sub>
 
 ## [0.3.3] - 2026-04-16
 [zh]
