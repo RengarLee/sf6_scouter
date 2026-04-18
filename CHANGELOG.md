@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.4] - 2026-04-18
+[zh]
+### 修复
+- **部分场景下计算胜负异常**：修复了在某些特定场景下，胜负计算异常的问题。更新后历史数据将自动修正。
+  <sub>🙌 特别感谢 NGA 狗仔至 提供的反馈</sub>
+
 ## [0.3.3] - 2026-04-16
 [zh]
 ### 新增
