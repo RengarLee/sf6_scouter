@@ -951,18 +951,93 @@ function setLang(lang) {
   localStorage.setItem('lang', lang);
 }
 
-// Fetch latest release download URL
-fetch('https://api.github.com/repos/RengarLee/sf6_scouter/releases/latest')
-  .then(r => r.json())
-  .then(data => {
-    const msi = data.assets.find(a => a.name.endsWith('.msi') && !a.name.endsWith('.sig'));
-    if (msi) {
-      document.querySelectorAll('.btn-download').forEach(btn => btn.href = msi.browser_download_url);
+(function () {
+  const REPO = 'RengarLee/sf6_scouter';
+  const TIMEOUT = 2000;
+
+  const L = {
+    loading: { en: 'Finding best node…', zh: '正在分配节点…', ja: 'ノードを検索中…' },
+    success: { en: 'Re-download',        zh: '重新下载',       ja: '再ダウンロード' },
+    error:   { en: '⚠ Timed out, click to retry', zh: '⚠ 节点超时，点击重试', ja: '⚠ タイムアウト、再試行' }
+  };
+
+  const btns = {
+    en: document.getElementById('dl-en'),
+    zh: document.getElementById('dl-zh'),
+    ja: document.getElementById('dl-ja')
+  };
+
+  let bestUrl = null;
+
+  function setState(state) {
+    Object.entries(btns).forEach(([lang, btn]) => {
+      btn.querySelector('span').textContent = L[state][lang];
+      if (state === 'loading') {
+        btn.style.pointerEvents = 'none';
+        btn.style.opacity = '0.55';
+        btn.onclick = null;
+      } else if (state === 'success') {
+        btn.style.pointerEvents = '';
+        btn.style.opacity = '';
+        btn.href = bestUrl;
+        btn.onclick = e => { e.preventDefault(); triggerDownload(bestUrl); };
+      } else {
+        btn.style.pointerEvents = '';
+        btn.style.opacity = '';
+        btn.href = '#';
+        btn.onclick = e => { e.preventDefault(); startRace(); };
+      }
+    });
+  }
+
+  function triggerDownload(url) {
+    const a = document.createElement('a');
+    a.href = url;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  function withTimeout(p) {
+    return Promise.race([p, new Promise((_, r) => setTimeout(() => r(new Error('timeout')), TIMEOUT))]);
+  }
+
+  async function fetchAssetUrl() {
+    const api = `https://api.github.com/repos/${REPO}/releases/latest`;
+    const parse = r => r.json().then(d => {
+      const msi = d.assets?.find(a => a.name.endsWith('.msi') && !a.name.endsWith('.sig'));
+      if (!msi) throw new Error('no asset');
+      return msi.browser_download_url;
+    });
+    return Promise.any([
+      withTimeout(fetch(api).then(parse)),
+      withTimeout(fetch(`https://gh-proxy.com/${api}`).then(parse))
+    ]);
+  }
+
+  async function raceMirrors(url) {
+    const mirrors = [url, `https://gh-proxy.com/${url}`, `https://mirror.ghproxy.com/${url}`];
+    return Promise.any(mirrors.map(m =>
+      withTimeout(fetch(m, { method: 'HEAD', mode: 'no-cors' }).then(() => m))
+    ));
+  }
+
+  async function startRace() {
+    setState('loading');
+    try {
+      const assetUrl = await fetchAssetUrl();
+      try { bestUrl = await raceMirrors(assetUrl); } catch { bestUrl = assetUrl; }
+      setState('success');
+      triggerDownload(bestUrl);
+    } catch {
+      setState('error');
     }
-  })
-  .catch(() => {
-    document.querySelectorAll('.btn-download').forEach(btn => btn.href = 'https://github.com/RengarLee/sf6_scouter/releases/latest');
+  }
+
+  Object.values(btns).forEach(btn => {
+    btn.onclick = e => { e.preventDefault(); startRace(); };
   });
+})();
 
 const saved = localStorage.getItem('lang');
 const browserLang = navigator.language.startsWith('zh') ? 'zh' : navigator.language.startsWith('ja') ? 'ja' : 'en';
