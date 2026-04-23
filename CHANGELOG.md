@@ -21,7 +21,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   ![v0.3.5 PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_PlayData.gif)
 
 - **Pro面板的数据点支持查看对手数据**：用户可以点击Pro视图中的数据点，快速查看对手数据，并且可以直接跳转到游玩数据页面。
+  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
   ![v0.3.5 Pro_PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro_PlayData.gif)
+
+- **预览功能-对战结束后提供对手行为画像**：在首次和对手对战结束后，将提示对手的行为画像，帮助用户更好地了解对手习惯，用户可以在设置-数据-对手画像选项关闭该功能。
+  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
+  ![v0.3.5 User Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_user_image.jpg)
 
 ### 优化
 - **Pro视图Y轴段位显示优化**：放大Y轴段位图片，停止负数展示，提升可读性。
@@ -33,7 +38,73 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 修复
 - **部分场景下抢夺窗口焦点**：修复了在某些特定场景下，强制抢夺窗口焦点的问题。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
-  
+
+[en]
+### Added
+- **New Logo**: Added a new logo to the app and official website to improve user recognition.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for providing the logo free of charge</sub>
+  ![v0.3.5 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_sf6scouter_logo.png)
+
+- **Rank View in Pro Panel**: Select "Rank View" in Settings > Appearance > Layout to display rank and ranking in the Pro view.
+  <sub>🙌 Special thanks to QQ Jesusleo, QQ 宇宙最酷 for the suggestion</sub>
+  ![v0.3.5 Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Rank.jpg)
+
+- **Play Data Page in Data Analysis Panel**: View play data including character ranks, play time, combat achievements, and more from Settings > Data > Data Analysis > Play Data.
+  <sub>🙌 Special thanks to NGA AinJianke, QQ 宇宙最酷, 小黑盒 ghetto for the suggestion</sub>
+  ![v0.3.5 PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_PlayData.gif)
+
+- **View Opponent Data from Pro Panel Data Points**: Click on a data point in the Pro view to quickly view opponent data and jump directly to the Play Data page.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
+  ![v0.3.5 Pro_PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro_PlayData.gif)
+
+- **Preview Feature — Opponent Behavior Profile After Battle**: After your first battle with an opponent ends, a behavior profile of the opponent will be shown to help you understand their habits. This feature can be disabled from Settings > Data > Opponent Profile.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
+  ![v0.3.5 User Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_user_image.jpg)
+
+### Improved
+- **Pro View Y-Axis Rank Display**: Enlarged rank icons on the Y-axis and removed negative value display for better readability.
+  <sub>🙌 Special thanks to WeChat HENRY, QQ 宇宙最酷 for the suggestion</sub>
+
+- **Rank View Added as Default Pro View Layout**: Added Rank View as the default layout for the Pro view to improve the out-of-the-box experience.
+  ![v0.3.5 Pro](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro.jpg)
+
+### Fixed
+- **Window Focus Stealing in Certain Scenarios**: Fixed an issue where the app forcibly grabbed window focus in specific scenarios.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub>
+
+[ja]
+### 追加
+- **新しいロゴの追加**: アプリと公式サイトに新しいロゴを追加し、ユーザー認知度を向上させました。
+  <sub>🙌 ロゴを無償提供いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.5 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_sf6scouter_logo.png)
+
+- **ProパネルにランクビューViewを追加**: 設定 > 外観 > レイアウトで「ランクビュー」を選択すると、Proビューにランクと順位が表示されます。
+  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.5 Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Rank.jpg)
+
+- **データ分析パネルにプレイデータページを追加**: 設定 > データ > データ分析 > プレイデータから、キャラクターランク・プレイ時間・格闘実績などのプレイデータを確認できます。
+  <sub>🙌 ご提案いただいたNGA AinJianke さん、QQ 宇宙最酷 さん、小黑盒 ghetto さんに感謝いたします</sub>
+  ![v0.3.5 PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_PlayData.gif)
+
+- **Proパネルのデータポイントから対戦相手データを確認**: Proビューのデータポイントをクリックすることで、対戦相手のデータをすばやく確認し、プレイデータページに直接移動できます。
+  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.5 Pro_PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro_PlayData.gif)
+
+- **プレビュー機能 — 対戦終了後に対戦相手の行動プロファイルを表示**: 初めて対戦した相手との試合終了後、その相手の行動プロファイルが表示され、相手の傾向をより深く把握できます。この機能は設定 > データ > 対戦相手プロファイルから無効にできます。
+  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
+  ![v0.3.5 User Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_user_image.jpg)
+
+### 改善
+- **ProビューY軸のランク表示の最適化**: Y軸のランクアイコンを拡大し、マイナス値の表示を廃止することで可読性を向上しました。
+  <sub>🙌 ご提案いただいたWeChat HENRY さん、QQ 宇宙最酷 さんに感謝いたします</sub>
+
+- **ランクビューをProビューのデフォルトレイアウトに追加**: ランクビューをProビューのデフォルトレイアウトとして追加し、初期使用体験を向上させました。
+  ![v0.3.5 Pro](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro.jpg)
+
+### 修正
+- **特定シナリオでのウィンドウフォーカス奪取**: 特定の状況下でアプリが強制的にウィンドウフォーカスを奪う問題を修正しました。
+  <sub>🙌 フィードバックをいただいたQQ 宇宙最酷 さんに感謝いたします</sub>
+
 ## [0.3.4] - 2026-04-18
 [zh]
 ### 新增
