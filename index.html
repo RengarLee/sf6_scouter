@@ -354,6 +354,51 @@ body::after {
   border-color: rgba(92, 98, 214, 0.4);
   box-shadow: 0 12px 40px rgba(0,0,0,0.6);
 }
+
+.screenshots img,
+#page-changelog .changelog-wrap img {
+  cursor: zoom-in;
+}
+
+/* Image lightbox */
+body.lightbox-open { overflow: hidden; }
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 260;
+  display: none;
+  place-items: center;
+  padding: 16px;
+  background: rgba(8, 10, 20, 0.88);
+  backdrop-filter: blur(6px);
+}
+.image-lightbox.open { display: grid; }
+.image-lightbox img {
+  max-width: min(1200px, 95vw);
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 16px 56px rgba(0,0,0,0.7);
+}
+.image-lightbox-close {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  background: rgba(13, 15, 26, 0.86);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+.image-lightbox-close:hover {
+  background: rgba(92, 98, 214, 0.8);
+  border-color: rgba(123, 129, 245, 0.9);
+}
 .pro-preview { margin-top: 20px; }
 .pro-preview .pro-item {
   display: flex;
@@ -502,6 +547,7 @@ footer {
     padding: 5px 10px;
     font-size: 12px;
   }
+  .image-lightbox-close { top: 10px; right: 10px; }
 }
 </style>
 <script type="text/javascript">
@@ -1144,8 +1190,17 @@ footer {
       </ul>
     </div>
 
-    </div>
+</div>
     <!-- CHANGELOG_END -->
+  </main>
+</div><!-- /page-changelog -->
+
+<!-- Image Lightbox -->
+<div id="image-lightbox" class="image-lightbox" aria-hidden="true">
+  <button id="image-lightbox-close" class="image-lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+  <img id="image-lightbox-img" src="" alt="">
+</div>
+
 <!-- QQ Modal -->
 <div id="qq-modal" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,0.6); backdrop-filter:blur(6px); align-items:center; justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
   <div style="background:#181b2a; border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:28px; text-align:center; position:relative; max-width:300px;">
@@ -1271,6 +1326,50 @@ function setLang(lang) {
 const saved = localStorage.getItem('lang');
 const browserLang = navigator.language.startsWith('zh') ? 'zh' : navigator.language.startsWith('ja') ? 'ja' : 'en';
 setLang(saved || browserLang);
+
+(function initImageLightbox() {
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImg = document.getElementById('image-lightbox-img');
+  const closeBtn = document.getElementById('image-lightbox-close');
+  const imageSelector = '.screenshots img, #page-changelog .changelog-wrap img';
+
+  if (!lightbox || !lightboxImg || !closeBtn) return;
+
+  function openLightbox(img) {
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt || 'Screenshot preview';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.src = '';
+    lightboxImg.alt = '';
+    document.body.classList.remove('lightbox-open');
+  }
+
+  document.addEventListener('click', e => {
+    if (!(e.target instanceof Element)) return;
+
+    const targetImage = e.target.closest(imageSelector);
+    if (targetImage) {
+      openLightbox(targetImage);
+      return;
+    }
+    if (e.target === lightbox || e.target.closest('#image-lightbox-close')) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+      closeLightbox();
+    }
+  });
+})();
 </script>
 </body>
 </html>
