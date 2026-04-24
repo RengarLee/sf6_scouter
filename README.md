@@ -1,79 +1,92 @@
-# SF6 Scouter
+# <img src="./images/logo.png" alt="SF6 Scouter Logo" width="40" valign="middle"> SF6 Scouter
 
-**SF6 Scouter** is a lightweight, real-time statistics tracker for Street Fighter 6. Designed for players and streamers, it provides live updates on your performance, including wins, losses, and rank point changes.
+**SF6 Scouter** is a runnable app for Street Fighter 6 players and streamers, focused on **live match tracking**, **score changes**, **Pro overlay display**, and **data analysis**.
 
 > **Hover to track, win while you're hot, quit while you're cold.**
 
 [English] | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
 
-## 🚀 Key Features
+## Repository Scope
 
-- **Real-Time Tracking**: Automatically records wins, losses, and win rate for the current session.
-- **Rank Points (LP/MR)**: Supports both LP and MR. Clearly shows point gains/losses since starting the app.
-- **Multi-Account Tracking**: Track not only yourself but also other players by entering their **CFN ID**.
-- **Pro Data Panel**: A brand-new professional dashboard that visualizes historical battle records and score trends with **line charts**.
-- **Personalized Memory**: Automatically remembers your panel configuration (position, size, transparency) and restores it on the next launch.
-- **UI Effects**: Dynamic value scrolling and UI interaction effects for a more vibrant data display.
-- **Streamer Friendly**:
-  - **Transparency Mode**: Easily overlay stats onto your stream using filters in OBS or similar software.
-  - **Always on Top**: Keep tracking your performance even when playing in windowed or borderless mode.
-- **Auto Update**: Built-in update module ensures you get the latest features immediately.
+This repository is the **distribution repository for the runnable SF6 Scouter application**, including its website, previews, release notes, and download entry points.
 
-## 📸 Preview
+- It provides the app package and related public assets.
+- It does **not** contain the application source code.
+- If you are here to use SF6 Scouter, check the release and download content rather than looking for a buildable source project.
 
-### Mini Mode (Mini View)
+## Core Features
 
-| Score Tracking (LP) | Score Tracking (MR) | Real-time Updates |
-| :---: | :---: | :---: |
-| ![LP Icon](./images/lp.png) | ![MR Icon](./images/mr.png) | ![Real-time Updates](./images/change.gif) |
+- **Real-time match tracking**: Track wins, losses, win rate, and score changes during the current session.
+- **LP / MR dual support**: Follow both League Points and Master Rate with clear delta display.
+- **CFN account tracking**: After logging in once, track your own account or switch to other CFN IDs.
+- **Mini overlay**: Keep a compact panel visible while playing.
+- **Pro panel**: Get a denser layout with charts and a richer information view.
+- **Data analysis pages**: Review score trends, match data, character data, and other deeper insights.
+- **Opponent habit hints**: Surface useful opponent tendencies directly in the app.
+- **OBS-friendly transparency**: Make it easy to use as a stream overlay.
+- **Layout memory**: Restore window position, size, transparency, and related display settings automatically.
+- **Built-in updater**: Receive new versions directly inside the app.
 
-### Pro Mode (Pro View)
+## Feature Preview
 
-| Pro Panel | Pro with OBS |
+### Mini View
+
+| LP Tracking | MR Tracking | Real-time Changes | Transparent Mode |
+| :---: | :---: | :---: | :---: |
+| ![LP Tracking](./images/lp.png) | ![MR Tracking](./images/mr.png) | ![Real-time Changes](./images/change.gif) | ![Transparent Mode](./images/Transparent.jpg) |
+
+| Compact real-time tracking |
+| :---: |
+| ![Mini View Demo](./images/mini.gif) |
+
+### Pro View
+
+| Transparent Pro Overlay with Official Background | OBS-ready Stream Layout |
 | :---: | :---: |
-| ![Pro Panel](./images/Pro.gif)<br>*(Transparency Mode, background image from official)* | ![Pro with OBS](./images/ProWithOBS.gif) |
+| ![Pro Panel](./images/Pro.gif) | ![Pro with OBS](./images/ProWithOBS.gif) |
 
-## 🛠️ How to Use
+| Play Data Inside Pro View | Opponent Habit Hints |
+| :---: | :---: |
+| ![Pro Play Data](./images/v0_3_5_Pro_PlayData.gif) | ![Opponent Habit Hints](./images/v0_3_5_user_image.jpg) |
 
-1. **Launch & Login**: Open `SF6 Scouter`, click "Login to CFN", and log in through the popup window.
-2. **Account Selection**: After login, it defaults to tracking your account. You can also enter any **CFN ID** to track other players.
-3. **Switch Panels**: Toggle between "**Mini Mode**" and "**Pro Mode**" with a single click. The Pro panel supports zooming into charts, filtering records, and other custom settings.
-4. **Customize Appearance**: Resize by dragging edges or adjust transparency in settings. The Pro panel's layout and display options can also be fine-tuned to your preference. All changes are saved automatically.
-5. **Real-time Monitoring**: The app polls for data every 15 seconds. Start your journey!
+### Data Analysis
 
-## 📺 OBS Configuration
+| Score Trend Breakdown | Match and Character Insights |
+| :---: | :---: |
+| ![Data Analysis K Line](./images/v0_3_3_K_Line.gif) | ![Play Data Analysis](./images/v0_3_5_PlayData.gif) |
 
-If you want to use **SF6 Scouter** in your stream, follow these steps:
+## How to Use
 
-1. **Add Source**:
-   - In the OBS "Sources" panel, click the `+` icon.
-   - Select **Window Capture**.
-   - In the popup, set "Window" to `SF6 Scouter`.
-   - Set "Capture Method" to **Windows 10 (1903 and up)**.
-2. **App Settings**:
-   - Click the ⚙️ icon in the app to open settings.
-   - Toggle **Always on Top** to **Off**.
+1. Download and launch `SF6 Scouter`.
+2. Log in to **CFN** in the popup window.
+3. Track your own account by default, or enter another **CFN ID** to inspect a different player.
+4. Switch between **Mini** and **Pro** depending on your use case.
+5. Open the **data analysis pages** when you need trends and deeper breakdowns.
+6. Adjust transparency, layout, and display behavior as needed; the app remembers your settings.
 
-## 🤝 Community & Support
+## OBS Setup
 
-Join us for bug reports, feature requests, or just to chat!
+1. Add a **Window Capture** source in OBS.
+2. Select the `SF6 Scouter` window.
+3. Use the **Windows 10 (1903 and up)** capture method.
+4. Adjust transparency and related display settings inside the app as needed.
+
+## Community
 
 - **Discord**: [Join our Discord](https://discord.gg/xg93c5mmx2)
-- **QQ Group**: Scan the code below to join (China)
+- **QQ Group**: Scan the QR code in `./images/qq.jpg`
 
 | Discord | QQ Group |
 | :---: | :---: |
 | ![Discord](./images/discord.png) | ![QQ](./images/qq.jpg) |
 
-## 🛡️ Software Safety
+## Safety
 
-To ensure your security, every release of **SF6 Scouter** is verified through [VirusTotal](https://www.virustotal.com/). We prioritize software safety and transparency for all our users.
+Released builds are checked with [VirusTotal](https://www.virustotal.com/) before distribution.
 
-## ⚖️ License & Terms
+## License
 
-This project is licensed under the **GPL-3.0 License**.
+This repository is licensed under **GPL-3.0**.
 
-### 🚫 Non-Commercial Use Only
-- **Strictly No Profit**: This tool is for personal use and streaming only. It is **strictly prohibited** to sell, bundle, or redistribute this software (or any derivative works) for profit.
-- **Open Source Requirement**: If you modify and redistribute this software, you **must** release your source code under the same GPL-3.0 license and attribute the original author (RengarLee).
-- **No Warranty**: This project is not affiliated with Capcom. Use at your own risk.
+- **Disclaimer**: This project is not affiliated with Capcom. Use it at your own risk.
+- **Distribution note**: This repository distributes the runnable application and related assets, not the application source code.
