@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 新增
 - **新增Pro布局功能**：用户现在可以在设置-Pro布局高度自定义Pro视图中不同模块的显示，并保存，后续可以一键还原。
   <sub>🙌 特别感谢 QQ memory, QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.6 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.png)
+  ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
 
 
@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - **New Pro Layout Feature**: Users can now fully customize the display of each module in the Pro view from Settings > Pro Layout, save their layout, and restore it with one click.
   <sub>🙌 Special thanks to QQ memory, QQ 宇宙最酷 for the suggestion</sub>
-  ![v0.3.6 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.png)
+  ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
 ### Improved
 - **Pro View Popup Positioning**: Improved the popup positioning in the Pro view for more reasonable display and to avoid covering main content.
@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 追加
 - **Proレイアウト機能の追加**: 設定 > ProレイアウトからProビューの各モジュール表示を自由にカスタマイズし、保存・ワンクリックで復元できるようになりました。
   <sub>🙌 ご提案いただいたQQ memory さん、QQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.6 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.png)
+  ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
 ### 改善
 - **Proビューのポップアップ位置最適化**: Proビュー内のポップアップ表示位置を最適化し、主要コンテンツの邪魔にならないよう改善しました。
