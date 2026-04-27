@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   <sub>🙌 特别感谢 QQ memory, QQ 宇宙最酷 提供的建议</sub>
   ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
-- **新增设置用户画像提示时长功能**：用户现在可以在设置-Pro布局高度自定义Pro视图中不同模块的显示，并保存，后续可以一键还原。
+- **新增设置用户画像提示时长功能**：用户现在可以在设置-数据设置中调整对手画像提示的显示时长。
  <sub>🙌 特别感谢 QQ Hinako 提供的建议</sub>
 
 ### 优化
@@ -25,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   <sub>🙌 Special thanks to QQ memory, QQ 宇宙最酷 for the suggestion</sub>
   ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
-- **Configurable Opponent Profile Hint Duration**: Users can now adjust how long opponent profile hints stay visible from Settings, making the hint display easier to match personal preference.
+- **Configurable Opponent Profile Hint Duration**: Users can now adjust how long opponent profile hints stay visible from Settings > Data Settings.
  <sub>🙌 Special thanks to QQ Hinako for the suggestion</sub>
 
 ### Improved
@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   <sub>🙌 ご提案いただいたQQ memory さん、QQ 宇宙最酷 さんに感謝いたします</sub>
   ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
-- **対戦相手プロファイル表示時間の設定を追加**: 設定から対戦相手プロファイルのヒント表示時間を調整できるようになり、好みに合わせて見やすさを調整できます。
+- **対戦相手プロファイルの表示時間設定を追加**: 設定 > データ設定 から、対戦相手プロファイルのヒント表示時間を調整できるようになりました。
  <sub>🙌 ご提案いただいたQQ Hinako さんに感謝いたします</sub>
 
 ### 改善
