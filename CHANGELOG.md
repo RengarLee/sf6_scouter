@@ -5,6 +5,83 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.3.7] - 2026-05-06
+[zh]
+### 新增
+- **新增周期报告功能**：用户现在可以在设置 > 数据分析 > 周期报告中查看每周的战绩总结与分析，更直观地了解自己的表现和趋势。周期报告基于本工具采集的数据生成，因此如果长时间未使用工具抓取数据，报告内容可能不完整。
+  <sub>🙌 特别感谢 QQ 第一百零五天 提供的建议</sub>
+  ![v0_3_7_Report](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_7_Report.png)
+
+- **新增数据分析窗口快捷入口**：在 Mini 面板和 Pro 面板右上角新增了数据分析窗口快捷入口，方便快速进入数据分析页面。
+
+- **新增段位模块自定义功能**：用户现在可以在设置 > Pro布局中自定义段位模块的展示样式，以满足个性化需求。
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
+
+### 优化
+- **追踪功能仅记录排位数据**：优化了数据追踪逻辑，现在面板仅处理排位数据，提供更专注的上分追踪体验。
+  <sub>🙌 特别感谢 小黑盒 李某某 提供的建议</sub>
+
+- **优化分数模块展示效果**：优化了分数模块的展示效果，确保在不同分辨率下都能正常显示，避免数字被遮挡。
+  <sub>🙌 特别感谢 QQ @星离雨散 提供的建议</sub>
+
+### 修复
+- **修复游玩数据页面排名问题**：修复了游玩数据页面中非大师用户排名显示不正确的问题，确保用户能够准确查看排名信息。
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的反馈</sub>
+
+- **修复面板窗口变动后坐标数据异常**：修复了面板窗口位置或宽高变动后坐标数据异常的问题，确保用户拖动窗口时位置记录正确。
+  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的反馈</sub>
+
+[en]
+### Added
+- **Weekly Report Feature**: Users can now view a weekly match summary and analysis from Settings > Data Analysis > Weekly Report to better understand their performance and trends. The report is generated from data collected by this tool, so it may be incomplete if the tool has not been used to capture data for a long time.
+  <sub>🙌 Special thanks to QQ 第一百零五天 for the suggestion</sub>
+  ![v0_3_7_Report](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_7_Report.png)
+
+- **Data Analysis Shortcut Entry**: Added a shortcut to the Data Analysis window in the top-right corner of both the Mini and Pro panels for quicker access.
+
+- **Rank Module Customization**: Users can now customize the display style of the rank module from Settings > Pro Layout for a more personalized layout.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
+
+### Improved
+- **Tracking Now Records Ranked Matches Only**: Refined the tracking logic so that only ranked-match data is recorded, providing a more focused ranked-climb tracking experience.
+  <sub>🙌 Special thanks to 小黑盒 李某某 for the suggestion</sub>
+
+- **Improved Score Module Display**: Improved the score module display to ensure it renders properly across different resolutions and avoids clipped numbers.
+  <sub>🙌 Special thanks to QQ @星离雨散 for the suggestion</sub>
+
+### Fixed
+- **Play Data Ranking Issue**: Fixed an issue where rankings for non-Master users were displayed incorrectly on the Play Data page, ensuring ranking information is shown accurately.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the feedback</sub>
+
+- **Panel Window Coordinate Errors After Layout Changes**: Fixed an issue where coordinate data could become incorrect after changing a panel window's position or size, ensuring dragged window positions are recorded correctly.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the feedback</sub>
+
+[ja]
+### 追加
+- **周期レポート機能の追加**: 設定 > データ分析 > 周期レポート から、毎週の戦績サマリーと分析を確認できるようになりました。自分の成績や傾向をより直感的に把握できます。なお、このレポートは本ツールが収集したデータをもとに生成されるため、長期間データ取得を行っていない場合は内容が不完全になることがあります。
+  <sub>🙌 ご提案いただいたQQ 第一百零五天 さんに感謝いたします</sub>
+  ![v0_3_7_Report](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_7_Report.png)
+
+- **データ分析ウィンドウへのショートカットを追加**: MiniパネルとProパネルの右上に、データ分析ウィンドウへ素早く移動できるショートカットを追加しました。
+
+- **段位モジュールのカスタマイズ機能を追加**: 設定 > Proレイアウト から、段位モジュールの表示スタイルをカスタマイズできるようになりました。
+  <sub>🙌 ご提案いただいたQQ @宇宙最酷 さんに感謝いたします</sub>
+
+### 改善
+- **追跡機能をランクマッチデータのみに最適化**: データ追跡ロジックを改善し、ランクマッチのデータのみを記録するようにしました。より集中したランク上げの追跡体験を提供します。
+  <sub>🙌 ご提案いただいた小黑盒 李某某 さんに感謝いたします</sub>
+
+- **スコアモジュールの表示を改善**: スコアモジュールの表示を改善し、異なる解像度でも数値が隠れず正しく表示されるようにしました。
+  <sub>🙌 ご提案いただいたQQ @星离雨散 さんに感謝いたします</sub>
+
+### 修正
+- **プレイデータページの順位表示問題を修正**: プレイデータページで、マスター未満のユーザーの順位が正しく表示されない問題を修正し、順位情報を正確に確認できるようにしました。
+  <sub>🙌 フィードバックをいただいたQQ @宇宙最酷 さんに感謝いたします</sub>
+
+- **パネルウィンドウ変更後の座標データ異常を修正**: パネルウィンドウの位置やサイズを変更した後に座標データが不正になる問題を修正し、ウィンドウをドラッグした位置が正しく記録されるようにしました。
+  <sub>🙌 フィードバックをいただいたQQ @宇宙最酷 さんに感謝いたします</sub>
+
 ## [0.3.6] - 2026-04-26
 [zh]
 ### 新增
