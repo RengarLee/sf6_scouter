@@ -51,9 +51,9 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 
 ### Data Analysis
 
-| Score Trend Breakdown | Match and Character Insights |
-| :---: | :---: |
-| ![Data Analysis K Line](./images/v0_3_3_K_Line.gif) | ![Play Data Analysis](./images/v0_3_5_PlayData.gif) |
+| Score Trend Breakdown | Match and Character Insights | Weekly Report Review |
+| :---: | :---: | :---: |
+| ![Data Analysis K Line](./images/v0_3_3_K_Line.gif) | ![Play Data Analysis](./images/v0_3_5_PlayData.gif) | ![Weekly Report](./images/v0_3_7_Report.png) |
 
 ## How to Use
 
