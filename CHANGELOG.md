@@ -11,6 +11,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **优化未定分角色的段位展示**：将未定分的角色段位展示为挑战者，提升用户体验。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
 
+[en]
+### Improved
+- **Unranked Character Rank Display**: Characters without a placement rank are now shown as Challenger, improving the user experience.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
+
+[ja]
+### 改善
+- **未確定段位キャラクターのランク表示の改善**: 段位が未確定のキャラクターを「チャレンジャー」として表示するようにしました。ユーザー体験の向上を図っています。
+  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
+
 ## [0.3.7] - 2026-05-06
 [zh]
 ### 新增
