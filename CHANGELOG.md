@@ -5,6 +5,42 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.9] - 2026-05-17
+
+[zh]
+### 新增
+- **新增VS画面时获得对手画像**：引入OCR技术，在VS加载画面时就自动识别对手并尝试展示对手画像，帮助用户更快速地了解对手习惯和特点。该功能默认开启，开关位置在设置-数据-对手画像-OCR识别中开启。对手画像展示的快慢取决于官网请求速率，网络较慢时可能会有较长的等待时间。
+  <sub>🙌 特别感谢 QQ @宇宙最酷 的灵感启发</sub>
+    ![v0_3_9_OCR_Vs_Name](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_9_OCR_Vs_Name.gif)
+
+- **新增数据反馈功能**：新增数据反馈功能。开关位置在 设置-系统-让SF6 Scouter变得更聪明，用户可以选择将使用数据匿名反馈给开发者，用于优化产品体验。该功能默认开启，用户可以根据自己的意愿选择开启。目前数据为VS画面识别的相关数据，用于训练模型，提供更高的准确性，后续会根据用户反馈和需求增加更多的数据。
+
+
+### 优化
+- **优化对手画像逻辑**：优化对手画像的逻辑，提高识别准确性。
+
+[en]
+### Added
+- **Opponent profile display on VS screen**: Introduced OCR technology to automatically identify the opponent during the VS loading screen and attempt to display their profile, helping users quickly understand their opponent's habits and tendencies. This feature is enabled by default; the toggle is located at Settings → Data → Opponent Profile → OCR Recognition. The speed of profile display depends on the official website's request rate — slower networks may result in longer wait times.
+  <sub>🙌 Special thanks to QQ @宇宙最酷 for the inspiration</sub>
+  ![v0_3_9_OCR_Vs_Name](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_9_OCR_Vs_Name.gif)
+
+- **Data feedback feature**: Added a data feedback feature. The toggle is located at Settings → System → Make SF6 Scouter Smarter. Users can choose to anonymously send usage data to the developer for product optimization. This feature is enabled by default; users may toggle it according to their preference. Currently the data consists of VS screen recognition results, used to train models for improved accuracy. More data types will be added based on user feedback and needs.
+
+### Improved
+- **Optimized opponent profile logic**: Refined the logic for opponent profile retrieval to improve recognition accuracy.
+
+[ja]
+### 追加
+- **VS画面での対戦相手プロフィール表示**: OCR技術を導入し、VSローディング画面で対戦相手を自動認識してプロフィールを表示できるようになりました。対戦相手の傾向や特徴をより素早く把握するのに役立ちます。この機能はデフォルトで有効です。設定→データ→対戦相手プロフィール→OCR認識からオン／オフを切り替えられます。プロフィールの表示速度は公式サイトへのリクエスト速度に依存するため、回線が遅い場合は待機時間が長くなることがあります。
+  <sub>🙌 インスピレーションをくださった QQ @宇宙最酷 さんに特別な感謝を</sub>
+  ![v0_3_9_OCR_Vs_Name](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_9_OCR_Vs_Name.gif)
+
+- **データフィードバック機能**: データフィードバック機能を追加しました。設定→システム→SF6 Scouter をもっと賢くする からオン／オフを切り替えられます。ユーザーは使用データを匿名で開発者に送信し、製品改善に役立てることを選択できます。この機能はデフォルトで有効ですが、ユーザーの意向に応じて変更可能です。現在のデータはVS画面認識に関するもので、モデルの学習・精度向上に使用されます。今後はユーザーのフィードバックや要望に応じてデータの種類を拡充していく予定です。
+
+### 改善
+- **対戦相手プロフィールロジックの最適化**: 対戦相手プロフィール取得のロジックを改善し、認識精度を向上させました。
+
 ## [0.3.8] - 2026-05-07
 [zh]
 ### 优化
