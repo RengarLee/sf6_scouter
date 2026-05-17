@@ -23,6 +23,7 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 - **Pro panel**: Get a denser layout with charts and a richer information view.
 - **Data analysis pages**: Review score trends, match data, character data, and other deeper insights.
 - **Opponent habit hints**: Surface useful opponent tendencies directly in the app.
+- **VS screen OCR recognition**: Automatically identify the opponent during the VS loading screen and display their profile.
 - **OBS-friendly transparency**: Make it easy to use as a stream overlay.
 - **Layout memory**: Restore window position, size, transparency, and related display settings automatically.
 - **Built-in updater**: Receive new versions directly inside the app.
