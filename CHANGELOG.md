@@ -8,11 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.3.11] - 2026-05-20
 [zh]
 ### 新增
-- **K线图添加颜色切换开关**：用户可以在K线图页面切换K线图上升和下降颜色，可以选择绿涨红跌，或红色上升和红涨绿跌两种方案。
+- **添加K线图颜色切换开关**：用户可以在K线图页面切换K线图上升和下降颜色，可以选择绿涨红跌，或红涨绿跌两种方案。
   <sub>🙌 特别感谢 QQ 觿子 的建议</sub>
 
-## [0.3.10] - 2026-05-17
+### 新增
+- **添加无边框透明模式**：用户可以在设置-外观中开启无边框透明模式，开启后面板将变为无边框和透明，提供更无感的使用体验。
+  <sub>🙌 特别感谢 微信 Zn4n, 微信 Naoto 的建议</sub>
+    ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
 
+    
+## [0.3.10] - 2026-05-17
 [zh]
 ### 优化
 
