@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **对战详情界面添加分段胜率**：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。
   ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
-  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 宇宙最强, QQ绯木 的建议</sub>
+  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 宇宙最强, QQ 绯木 的建议</sub>
 
 - **游玩数据界面添加胜率信息**：在游玩数据界面添加了胜率和场次信息，用户可以更直观地了解对方的游戏表现。
   ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 删除
 - **删除周期报表中的对战矩阵分数变动信息**：根据用户反馈，对战矩阵中的分数变动信息并没有实际意义，已将其删除。
-  <sub>🙌 特别感谢 QQ绯木, QQ @宇宙最酷 提供的反馈</sub>
+  <sub>🙌 特别感谢 QQ 绯木, QQ 宇宙最酷 提供的反馈</sub>
 
 [en]
 ### Added
