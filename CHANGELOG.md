@@ -5,18 +5,76 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.11] - 2026-05-20
+## [0.3.11] - 2026-05-22
 [zh]
 ### 新增
+
+- **对战详情界面添加分段胜率**：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。
+  ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
+  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 宇宙最强, QQ绯木 的建议</sub>
+
+- **游玩数据界面添加胜率信息**：在游玩数据界面添加了胜率和场次信息，用户可以更直观地了解对方的游戏表现。
+  ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
+
 - **添加K线图颜色切换开关**：用户可以在K线图页面切换K线图上升和下降颜色，可以选择绿涨红跌，或红涨绿跌两种方案。
   <sub>🙌 特别感谢 QQ 觿子 的建议</sub>
 
-### 新增
 - **添加无边框透明模式**：用户可以在设置-外观中开启无边框透明模式，开启后面板将变为无边框和透明，提供更无感的使用体验。
   <sub>🙌 特别感谢 微信 Zn4n, 微信 Naoto 的建议</sub>
     ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
 
-    
+- **"让SF6Scouter更聪明"功能增加内容** "让SF6Scouter更聪明"开关开启后，会上传本次对战记录，用于OCR模型的训练，提升模型的准确性和适应性, 和后续功能开发做准备。
+
+### 删除
+- **删除周期报表中的对战矩阵分数变动信息**：根据用户反馈，对战矩阵中的分数变动信息并没有实际意义，已将其删除。
+  <sub>🙌 特别感谢 QQ绯木, QQ @宇宙最酷 提供的反馈</sub>
+
+[en]
+### Added
+
+- **Win rate by rank segment in battle details**: Added win rates against opponents of different LP gaps and different rank segments in the Weekly Report → Battle Details screen. Users can now intuitively understand their performance against opponents of varying LP differences and rank tiers. A week-over-week win rate comparison is also shown to help users track their trend. A summary with actionable insights is provided to help users better understand the data.
+  ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
+  <sub>🙌 Special thanks to QQ 看不腻的唐, QQ 宇宙最强, and QQ绯木 for their suggestions</sub>
+
+- **Win rate info in Play Data screen**: Added win rate and match count information to the Play Data screen, giving users a clearer picture of their opponents' game performance.
+  ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
+
+- **K-line chart color toggle**: Users can now switch between two color schemes on the K-line chart page — green for gains / red for losses, or red for gains / green for losses.
+  <sub>🙌 Special thanks to QQ 觿子 for the suggestion</sub>
+
+- **Borderless transparent mode**: Users can enable borderless transparent mode in Settings → Appearance. When enabled, the panel becomes borderless and transparent, providing a more seamless overlay experience.
+  <sub>🙌 Special thanks to WeChat Zn4n and WeChat Naoto for their suggestions</sub>
+  ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
+
+- **Enhanced "Make SF6 Scouter Smarter" feature**: When the "Make SF6 Scouter Smarter" toggle is enabled, the current battle record will now also be uploaded for OCR model training, improving model accuracy and adaptability in preparation for future features.
+
+### Removed
+- **Removed score change info from the battle matrix in periodic reports**: Based on user feedback, the score change information in the battle matrix was not meaningful and has been removed.
+  <sub>🙌 Special thanks to QQ绯木 and QQ @宇宙最酷 for their feedback</sub>
+
+[ja]
+### 追加
+
+- **対戦詳細画面にランク別勝率を追加**: 週次レポート→対戦詳細画面に、LP差別・ランク帯別の対戦相手に対する勝率を追加しました。ユーザーは異なるLP差・ランク帯の相手に対する自分のパフォーマンスをより直感的に把握できます。また前週同期比の勝率も表示し、勝率の変化トレンドを確認できます。データをより深く理解するための総合的なアドバイスも提供します。
+  ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
+  <sub>🙌 ご提案くださった QQ 看不腻的唐、QQ 宇宙最强、QQ绯木 に特別な感謝を</sub>
+
+- **プレイデータ画面に勝率情報を追加**: プレイデータ画面に勝率と対戦数の情報を追加しました。相手のゲームパフォーマンスをより直感的に把握できます。
+  ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
+
+- **K線図のカラー切替スイッチを追加**: K線図ページで上昇・下降のカラーを切り替えられるようになりました。緑上昇・赤下降、または赤上昇・緑下降の2パターンから選択できます。
+  <sub>🙌 ご提案くださった QQ 觿子 に特別な感謝を</sub>
+
+- **ボーダーレス透過モードを追加**: 設定→外観からボーダーレス透過モードを有効にできます。有効にするとパネルがボーダーレス・透過になり、より没入感のある使用体験を提供します。
+  <sub>🙌 ご提案くださった WeChat Zn4n、WeChat Naoto に特別な感謝を</sub>
+  ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
+
+- **「SF6 Scouter をもっと賢くする」機能を強化**: 「SF6 Scouter をもっと賢くする」スイッチをオンにすると、今回の対戦記録がOCRモデルのトレーニングにも使用されるようになりました。モデルの精度と適応性を向上させ、今後の機能開発に備えます。
+
+### 削除
+- **周次レポートの対戦マトリクスからスコア変動情報を削除**: ユーザーのフィードバックにより、対戦マトリクス内のスコア変動情報は実際には意味がないと判断され、削除しました。
+  <sub>🙌 フィードバックをくださった QQ绯木、QQ @宇宙最酷 に特別な感謝を</sub>
+
 ## [0.3.10] - 2026-05-17
 [zh]
 ### 优化
