@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.4.0] - 2026-06-01
+[zh]
+
+### 添加
+- **添加托盘功能**：应用启动后将最小化到系统托盘，用户可以通过托盘图标右键菜单快速打开主界面、Mini面板、Pro面板，或退出应用程序。
+
+### 优化
+- **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的导航和功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
+  <sub>🙌 特别感谢 QQ aaa 乐 提供的反馈</sub>
+
+### 修复
+- **关闭窗口后应用程序未完全退出的问题**：修复了在某关闭窗口后应用程序仍在后台运行的问题，确保用户关闭窗口后应用程序能够完全退出，释放系统资源。
+  <sub>🙌 特别感谢 QQ 宇宙最酷， Github Yuck1125 提供的反馈</sub>
+
+### 删除
+- **删除Mini窗口和Pro窗口中的设置入口**：为了简化界面设计，已将Mini窗口和Pro窗口中的设置入口删除, 目前设置入口为主页窗口左下角。
+
 ## [0.3.11] - 2026-05-22
 [zh]
 ### 新增

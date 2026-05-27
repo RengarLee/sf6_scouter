@@ -16,6 +16,7 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 
 ## Core Features
 
+- **Unlimited match history**: The official site only keeps your last 100 matches. SF6 Scouter accumulates every match you play — your history is never lost.
 - **Real-time match tracking**: Track wins, losses, win rate, and score changes during the current session.
 - **LP / MR dual support**: Follow both League Points and Master Rate with clear delta display.
 - **CFN account tracking**: After logging in once, track your own account or switch to other CFN IDs.
