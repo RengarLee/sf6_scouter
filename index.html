@@ -265,6 +265,11 @@ body::after {
   width: 100%;
   text-align: center;
 }
+.download-btns-col { display: flex; gap: 10px; }
+.hero-right .download-btns-col.show { display: flex; flex-direction: row; }
+.download-btns-col .btn-download { flex: 1; width: auto; padding: 14px 10px; font-size: 15px; background: rgba(92,98,214,0.15); }
+.btn-with-icon { gap: 6px; }
+.btn-with-icon span { width: auto; }
 
 .right-divider {
   height: 1px;
@@ -642,9 +647,18 @@ footer {
       <span class="right-label" data-lang="zh">立即开始</span>
       <span class="right-label" data-lang="ja">今すぐ始める</span>
 
-      <a class="btn-download" id="dl-en" href="#" data-lang="en"><span>Download</span></a>
-      <a class="btn-download" id="dl-zh" href="#" data-lang="zh"><span>下载</span></a>
-      <a class="btn-download" id="dl-ja" href="#" data-lang="ja"><span>ダウンロード</span></a>
+      <div class="download-btns-col" data-lang="en">
+        <a class="btn-download btn-with-icon" id="dl-gh-en" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg><span>GitHub Download</span></a>
+        <a class="btn-download btn-mirror" id="dl-mirror-en" href="#"><span>Mirror Download</span></a>
+      </div>
+      <div class="download-btns-col" data-lang="zh">
+        <a class="btn-download btn-with-icon" id="dl-gh-zh" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg><span>GitHub 下载</span></a>
+        <a class="btn-download btn-mirror" id="dl-mirror-zh" href="#"><span>镜像下载</span></a>
+      </div>
+      <div class="download-btns-col" data-lang="ja">
+        <a class="btn-download btn-with-icon" id="dl-gh-ja" href="#"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" style="flex-shrink:0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg><span>GitHubダウンロード</span></a>
+        <a class="btn-download btn-mirror" id="dl-mirror-ja" href="#"><span>ミラーダウンロード</span></a>
+      </div>
 
       <div class="right-divider"></div>
 
@@ -1464,26 +1478,30 @@ function setLang(lang) {
 }
 
 (function () {
-  const REPO = 'RengarLee/sf6_scouter';
-  const TIMEOUT = 2000;
+  const GH_REPO = 'RengarLee/sf6_scouter';
+  const TIMEOUT = 5000;
+  const LANGS = ['en', 'zh', 'ja'];
 
   const L = {
-    loading: { en: 'Finding best node…', zh: '正在分配节点…', ja: 'ノードを検索中…' },
-    success: { en: 'Re-download',        zh: '重新下载',       ja: '再ダウンロード' },
-    error:   { en: '⚠ Timed out, click to retry', zh: '⚠ 节点超时，点击重试', ja: '⚠ タイムアウト、再試行' }
+    gh: {
+      loading: { en: 'Fetching…',      zh: '获取中…',    ja: '取得中…' },
+      success: { en: 'GitHub Download', zh: 'GitHub 下载', ja: 'GitHubダウンロード' },
+      error:   { en: '⚠ Retry',       zh: '⚠ 重试',     ja: '⚠ 再試行' }
+    },
+    mirror: {
+      loading: { en: 'Fetching…',        zh: '获取中…',    ja: '取得中…' },
+      success: { en: 'Mirror Download',  zh: '镜像下载',    ja: 'ミラーダウンロード' },
+      error:   { en: '⚠ Retry',         zh: '⚠ 重试',     ja: '⚠ 再試行' }
+    }
   };
 
-  const btns = {
-    en: document.getElementById('dl-en'),
-    zh: document.getElementById('dl-zh'),
-    ja: document.getElementById('dl-ja')
-  };
+  const ghBtns     = Object.fromEntries(LANGS.map(l => [l, document.getElementById(`dl-gh-${l}`)]));
+  const mirrorBtns = Object.fromEntries(LANGS.map(l => [l, document.getElementById(`dl-mirror-${l}`)]));
 
-  let bestUrl = null;
-
-  function setState(state) {
-    Object.entries(btns).forEach(([lang, btn]) => {
-      btn.querySelector('span').textContent = L[state][lang];
+  function setBtn(btns, type, state, url) {
+    LANGS.forEach(lang => {
+      const btn = btns[lang];
+      btn.querySelector('span').textContent = L[type][state][lang];
       if (state === 'loading') {
         btn.style.pointerEvents = 'none';
         btn.style.opacity = '0.55';
@@ -1491,13 +1509,13 @@ function setLang(lang) {
       } else if (state === 'success') {
         btn.style.pointerEvents = '';
         btn.style.opacity = '';
-        btn.href = bestUrl;
-        btn.onclick = e => { e.preventDefault(); triggerDownload(bestUrl); };
+        btn.href = url;
+        btn.onclick = e => { e.preventDefault(); triggerDownload(url); };
       } else {
         btn.style.pointerEvents = '';
         btn.style.opacity = '';
         btn.href = '#';
-        btn.onclick = e => { e.preventDefault(); startRace(); };
+        btn.onclick = e => { e.preventDefault(); type === 'gh' ? startGh() : startMirror(); };
       }
     });
   }
@@ -1514,40 +1532,43 @@ function setLang(lang) {
     return Promise.race([p, new Promise((_, r) => setTimeout(() => r(new Error('timeout')), TIMEOUT))]);
   }
 
-  async function fetchAssetUrl() {
-    const api = `https://api.github.com/repos/${REPO}/releases/latest`;
-    const parse = r => r.json().then(d => {
+  async function fetchLatestRelease() {
+    const r = await withTimeout(fetch(`https://api.github.com/repos/${GH_REPO}/releases/latest`));
+    const d = await r.json();
+    if (!d.tag_name) throw new Error('no release');
+    return d;
+  }
+
+  async function startGh() {
+    setBtn(ghBtns, 'gh', 'loading', null);
+    try {
+      const d = await fetchLatestRelease();
       const msi = d.assets?.find(a => a.name.endsWith('.msi') && !a.name.endsWith('.sig'));
       if (!msi) throw new Error('no asset');
-      return msi.browser_download_url;
-    });
-    return Promise.any([
-      withTimeout(fetch(api).then(parse)),
-      withTimeout(fetch(`https://gh-proxy.com/${api}`).then(parse))
-    ]);
-  }
-
-  async function raceMirrors(url) {
-    const mirrors = [url, `https://gh-proxy.com/${url}`, `https://mirror.ghproxy.com/${url}`];
-    return Promise.any(mirrors.map(m =>
-      withTimeout(fetch(m, { method: 'HEAD', mode: 'no-cors' }).then(() => m))
-    ));
-  }
-
-  async function startRace() {
-    setState('loading');
-    try {
-      const assetUrl = await fetchAssetUrl();
-      try { bestUrl = await raceMirrors(assetUrl); } catch { bestUrl = assetUrl; }
-      setState('success');
-      triggerDownload(bestUrl);
+      setBtn(ghBtns, 'gh', 'success', msi.browser_download_url);
+      triggerDownload(msi.browser_download_url);
     } catch {
-      setState('error');
+      setBtn(ghBtns, 'gh', 'error', null);
     }
   }
 
-  Object.values(btns).forEach(btn => {
-    btn.onclick = e => { e.preventDefault(); startRace(); };
+  async function startMirror() {
+    setBtn(mirrorBtns, 'mirror', 'loading', null);
+    try {
+      const d = await fetchLatestRelease();
+      const tag = d.tag_name;
+      const ver = tag.replace(/^v/, '');
+      const url = `https://cnb.cool/sf6scouter/sf6scouter/-/releases/download/${tag}/SF6.Scouter_${ver}_x64_en-US.msi`;
+      setBtn(mirrorBtns, 'mirror', 'success', url);
+      triggerDownload(url);
+    } catch {
+      setBtn(mirrorBtns, 'mirror', 'error', null);
+    }
+  }
+
+  LANGS.forEach(lang => {
+    ghBtns[lang].onclick     = e => { e.preventDefault(); startGh(); };
+    mirrorBtns[lang].onclick = e => { e.preventDefault(); startMirror(); };
   });
 })();
 
