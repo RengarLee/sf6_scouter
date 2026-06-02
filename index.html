@@ -808,12 +808,94 @@ footer {
     <div id="changelog-entries">
     <div class="changelog-item">
       <div class="changelog-header">
+        <span class="version">v0.4.0</span>
+        <span class="date">2026.06.03</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">添加</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>添加防上头助手</strong>：当用户在短时间内连续输掉多场比赛时，系统会弹出一个提示窗口，建议用户休息一下，避免因为上头连续掉分。 <span class="thanks"><sub>🙌 特别感谢 QQ 看不腻的唐, QQ 第一百零五天, QQ 踢, QQ 绯木 提供的建议</sub></span></li>
+        <li><strong>添加自动唤起视图功能</strong>：当检测到游戏启动后，启动唤起Mini或Pro视图功能，减少用户操作步骤。用户可以在设置-系统-应用行为中关闭自动唤起功能。 <span class="thanks"><sub>🙌 特别感谢 QQ Kano 提供的灵感启发</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif" alt="v0_4_0_Auto_Start" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif" alt="v0_4_0_Auto_End" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>添加托盘功能</strong>：应用启动后将最小化到系统托盘，用户可以通过托盘图标右键菜单快速打开主界面、Mini面板、Pro面板，或退出应用程序。</li>
+        <li><strong>添加开机自启功能</strong>：用户可以在设置-系统中开启开机自启功能，开启后应用程序将在系统启动时自动运行，无需手动启动。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">优化</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>优化窗口交互逻辑</strong>：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。 <span class="thanks"><sub>🙌 特别感谢 QQ aaa 乐提供的反馈</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif" alt="v0_4_0_Home" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>优化代理下载</strong>: 优化了官网和应用代理下载功能，提升下载速度和稳定性，确保用户能够更快速地下载应用。 <span class="thanks"><sub>🙌 特别感谢 QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, 微信 kumoito, 微信 HENRY 提供的反馈</sub></span></li>
+        <li><strong>周期报表支持最新分数</strong>: 周期报表中的分数信息支持当前用户最新的分数，用户可以更准确地了解自己的当前分数和趋势。 <span class="thanks"><sub>🙌 特别感谢 QQ 宇宙最酷，NGA 智障的最高境界，小黑盒 Art0r1as 提供的反馈</sub></span></li>
+        <li><strong>"让SF6Scouter更聪明"功能增加内容</strong>："让SF6Scouter更聪明"开关开启后，会上传玩家游玩数据，用于后续功能开发。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">修复</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>关闭窗口后应用程序未完全退出的问题</strong>：修复了关闭窗口后应用程序仍在后台运行的问题，确保用户关闭窗口后应用程序能够完全退出，释放系统资源。 <span class="thanks"><sub>🙌 特别感谢 QQ 宇宙最酷，GitHub Yuck1125 提供的反馈</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">删除</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>删除Mini窗口和Pro窗口中的设置入口</strong>：为了简化界面设计，已将Mini窗口和Pro窗口中的设置入口删除, 目前设置入口为主页窗口左下角。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Added</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Anti-tilt assistant</strong>: When users lose several matches in a short period, the app shows a reminder window suggesting a short break to avoid tilt-driven rank loss. <span class="thanks"><sub>🙌 Special thanks to QQ 看不腻的唐, QQ 第一百零五天, QQ 踢, and QQ 绯木 for their suggestions</sub></span></li>
+        <li><strong>Auto-show view on game launch</strong>: When the game is detected as running, the app can automatically open the Mini or Pro view, reducing manual steps. Users can disable this behavior from Settings > System > App Behavior. <span class="thanks"><sub>🙌 Special thanks to QQ Kano for the inspiration</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif" alt="v0_4_0_Auto_Start" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif" alt="v0_4_0_Auto_End" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>System tray support</strong>: After launch, the app can minimize to the system tray. Users can right-click the tray icon to quickly open the main window, Mini panel, Pro panel, or exit the app.</li>
+        <li><strong>Launch on startup</strong>: Users can enable launch-on-startup from Settings > System. Once enabled, the app will run automatically when the system starts, with no manual launch required.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Improved</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Improved window interaction flow</strong>: Introduced a home window that consolidates and optimizes the previous window behavior, improving the overall user experience. The home window is now the main entry point after users open the app, providing clearer access to features. Window switching logic has also been refined so moving between modules feels smoother and more natural. <span class="thanks"><sub>🙌 Special thanks to QQ aaa 乐 for the feedback</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif" alt="v0_4_0_Home" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>Optimized proxy downloads</strong>: Improved proxy download behavior on the official website and in the app, increasing download speed and stability so users can download the app faster and more reliably. <span class="thanks"><sub>🙌 Special thanks to QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, WeChat kumoito, and WeChat HENRY for their feedback</sub></span></li>
+        <li><strong>Periodic reports now support latest scores</strong>: Score information in periodic reports now supports the user's latest current score, making it easier to understand current score status and trends accurately. <span class="thanks"><sub>🙌 Special thanks to QQ 宇宙最酷, NGA 智障的最高境界, and 小黑盒 Art0r1as for their feedback</sub></span></li>
+        <li><strong>Expanded "Make SF6 Scouter Smarter" content</strong>: When the "Make SF6 Scouter Smarter" toggle is enabled, player play data will be uploaded for future feature development.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Fixed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>App not fully exiting after closing the window</strong>: Fixed an issue where the app could continue running in the background after the window was closed, ensuring resources are released when users close the app. <span class="thanks"><sub>🙌 Special thanks to QQ 宇宙最酷 and GitHub Yuck1125 for their feedback</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Removed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Removed settings entry points from Mini and Pro windows</strong>: To simplify the interface, the settings entry points in the Mini and Pro windows have been removed. The settings entry is now located in the lower-left corner of the home window.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">追加</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>上振れ・連敗防止アシスタントを追加</strong>: 短時間で連続して複数試合に敗北した場合、休憩を促す通知ウィンドウを表示し、熱くなって連続でポイントを失うことを防ぎます。 <span class="thanks"><sub>🙌 ご提案くださった QQ 看不腻的唐、QQ 第一百零五天、QQ 踢、QQ 绯木 に特別な感謝を</sub></span></li>
+        <li><strong>ゲーム起動時のビュー自動表示を追加</strong>: ゲームの起動を検出すると、Mini または Pro ビューを自動で表示できるようになり、ユーザーの操作手順を減らします。この機能は、設定 > システム > アプリ動作 から無効化できます。 <span class="thanks"><sub>🙌 インスピレーションをくださった QQ Kano に特別な感謝を</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif" alt="v0_4_0_Auto_Start" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif" alt="v0_4_0_Auto_End" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>システムトレイ機能を追加</strong>: アプリ起動後、システムトレイに最小化できるようになりました。トレイアイコンの右クリックメニューから、メイン画面、Mini パネル、Pro パネルを素早く開いたり、アプリを終了したりできます。</li>
+        <li><strong>スタートアップ起動機能を追加</strong>: 設定 > システム からスタートアップ起動を有効化できます。有効にすると、システム起動時にアプリが自動的に実行され、手動で起動する必要がなくなります。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">改善</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>ウィンドウ操作ロジックを改善</strong>: ホームウィンドウを導入し、従来のウィンドウ機能を統合・最適化することで、ユーザー体験を向上しました。ホームウィンドウはアプリ起動後の主要な操作入口となり、各機能へより分かりやすくアクセスできます。また、ウィンドウ間の切り替えロジックも改善し、各機能モジュール間をより自然かつスムーズに移動できるようになりました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ aaa 乐 に特別な感謝を</sub></span></li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif" alt="v0_4_0_Home" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>プロキシダウンロードを最適化</strong>: 公式サイトおよびアプリ内のプロキシダウンロード機能を最適化し、ダウンロード速度と安定性を向上しました。ユーザーがより速く安定してアプリをダウンロードできるようになります。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 风、QQ 宇宙最酷、QQ 蠹、QQ 林无穷、WeChat kumoito、WeChat HENRY に特別な感謝を</sub></span></li>
+        <li><strong>周期レポートが最新スコアに対応</strong>: 周期レポート内のスコア情報が、ユーザーの現在の最新スコアに対応しました。現在のスコアと推移をより正確に把握できます。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 宇宙最酷、NGA 智障的最高境界、小黑盒 Art0r1as に特別な感謝を</sub></span></li>
+        <li><strong>「SF6 Scouter をもっと賢くする」機能の内容を追加</strong>: 「SF6 Scouter をもっと賢くする」スイッチをオンにすると、今後の機能開発のためにプレイヤーのプレイデータがアップロードされます。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">修正</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>ウィンドウを閉じてもアプリが完全に終了しない問題を修正</strong>: ウィンドウを閉じた後もアプリがバックグラウンドで動作し続ける問題を修正し、ユーザーがウィンドウを閉じた後にアプリが完全に終了してシステムリソースを解放できるようにしました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 宇宙最酷、GitHub Yuck1125 に特別な感謝を</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">削除</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>Mini ウィンドウと Pro ウィンドウの設定入口を削除</strong>: 画面設計をシンプルにするため、Mini ウィンドウと Pro ウィンドウ内の設定入口を削除しました。現在の設定入口はホームウィンドウ左下にあります。</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
         <span class="version">v0.3.11</span>
         <span class="date">2026.05.22</span>
       </div>
       <h4 class="changelog-subtitle" data-lang="zh">新增</h4>
       <ul class="changelog-list" data-lang="zh">
-        <li><strong>对战详情界面添加分段胜率</strong>：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。 <span class="thanks"><sub>🙌 特别感谢 QQ 看不腻的唐, QQ 宇宙最强, QQ绯木 的建议</sub></span></li>
+        <li><strong>对战详情界面添加分段胜率</strong>：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。 <span class="thanks"><sub>🙌 特别感谢 QQ Kano 的</sub></span></li>
         <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif" alt="v0_3_11_Rate" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
         <li><strong>游玩数据界面添加胜率信息</strong>：在游玩数据界面添加了胜率和场次信息，用户可以更直观地了解对方的游戏表现。</li>
         <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png" alt="v0_3_11_Play_Data_Rate" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
@@ -824,11 +906,11 @@ footer {
       </ul>
       <h4 class="changelog-subtitle" data-lang="zh">删除</h4>
       <ul class="changelog-list" data-lang="zh">
-        <li><strong>删除周期报表中的对战矩阵分数变动信息</strong>：根据用户反馈，对战矩阵中的分数变动信息并没有实际意义，已将其删除。 <span class="thanks"><sub>🙌 特别感谢 QQ绯木, QQ @宇宙最酷 提供的反馈</sub></span></li>
+        <li><strong>删除周期报表中的对战矩阵分数变动信息</strong>：根据用户反馈，对战矩阵中的分数变动信息并没有实际意义，已将其删除。 <span class="thanks"><sub>🙌 特别感谢 QQ 绯木, QQ 宇宙最酷 提供的反馈</sub></span></li>
       </ul>
       <h4 class="changelog-subtitle" data-lang="en">Added</h4>
       <ul class="changelog-list" data-lang="en">
-        <li><strong>Win rate by rank segment in battle details</strong>: Added win rates against opponents of different LP gaps and different rank segments in the Weekly Report → Battle Details screen. Users can now intuitively understand their performance against opponents of varying LP differences and rank tiers. A week-over-week win rate comparison is also shown to help users track their trend. A summary with actionable insights is provided to help users better understand the data. <span class="thanks"><sub>🙌 Special thanks to QQ 看不腻的唐, QQ 宇宙最强, and QQ绯木 for their suggestions</sub></span></li>
+        <li><strong>Win rate by rank segment in battle details</strong>: Added win rates against opponents of different LP gaps and different rank segments in the Weekly Report → Battle Details screen. Users can now intuitively understand their performance against opponents of varying LP differences and rank tiers. A week-over-week win rate comparison is also shown to help users track their trend. A summary with actionable insights is provided to help users better understand the data. <span class="thanks"><sub>🙌 Special thanks to QQ 看不腻的唐, QQ 宇宙最强, and QQ 绯木 for their suggestions</sub></span></li>
         <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif" alt="v0_3_11_Rate" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
         <li><strong>Win rate info in Play Data screen</strong>: Added win rate and match count information to the Play Data screen, giving users a clearer picture of their opponents' game performance.</li>
         <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png" alt="v0_3_11_Play_Data_Rate" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
