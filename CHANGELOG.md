@@ -24,8 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 优化
 
 - **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
-  ![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
   <sub>🙌 特别感谢 QQ aaa 乐提供的反馈</sub>
+![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
 
 - **优化代理下载**: 优化了官网和应用代理下载功能，提升下载速度和稳定性，确保用户能够更快速地下载应用。
   <sub>🙌 特别感谢 QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, 微信 kumoito, 微信 HENRY 提供的反馈</sub>
