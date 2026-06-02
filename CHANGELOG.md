@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [0.4.0] - 2026-06-02
+## [0.4.0] - 2026-06-03
 [zh]
 ### 添加
 
@@ -41,6 +41,78 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 删除
 - **删除Mini窗口和Pro窗口中的设置入口**：为了简化界面设计，已将Mini窗口和Pro窗口中的设置入口删除, 目前设置入口为主页窗口左下角。
+
+[en]
+### Added
+
+- **Anti-tilt assistant**: When users lose several matches in a short period, the app shows a reminder window suggesting a short break to avoid tilt-driven rank loss.
+  <sub>🙌 Special thanks to QQ 看不腻的唐, QQ 第一百零五天, QQ 踢, and QQ 绯木 for their suggestions</sub>
+
+- **Auto-show view on game launch**: When the game is detected as running, the app can automatically open the Mini or Pro view, reducing manual steps. Users can disable this behavior from Settings > System > App Behavior.
+  <sub>🙌 Special thanks to QQ Kano for the inspiration</sub>
+    ![v0_4_0_Auto_Start](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif)
+    ![v0_4_0_Auto_End](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif)
+
+- **System tray support**: After launch, the app can minimize to the system tray. Users can right-click the tray icon to quickly open the main window, Mini panel, Pro panel, or exit the app.
+
+- **Launch on startup**: Users can enable launch-on-startup from Settings > System. Once enabled, the app will run automatically when the system starts, with no manual launch required.
+
+### Improved
+
+- **Improved window interaction flow**: Introduced a home window that consolidates and optimizes the previous window behavior, improving the overall user experience. The home window is now the main entry point after users open the app, providing clearer access to features. Window switching logic has also been refined so moving between modules feels smoother and more natural.
+  <sub>🙌 Special thanks to QQ aaa 乐 for the feedback</sub>
+![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
+
+- **Optimized proxy downloads**: Improved proxy download behavior on the official website and in the app, increasing download speed and stability so users can download the app faster and more reliably.
+  <sub>🙌 Special thanks to QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, WeChat kumoito, and WeChat HENRY for their feedback</sub>
+
+- **Periodic reports now support latest scores**: Score information in periodic reports now supports the user's latest current score, making it easier to understand current score status and trends accurately.
+  <sub>🙌 Special thanks to QQ 宇宙最酷, NGA 智障的最高境界, and 小黑盒 Art0r1as for their feedback</sub>
+
+- **Expanded "Make SF6 Scouter Smarter" content**: When the "Make SF6 Scouter Smarter" toggle is enabled, player play data will be uploaded for future feature development.
+
+### Fixed
+- **App not fully exiting after closing the window**: Fixed an issue where the app could continue running in the background after the window was closed, ensuring resources are released when users close the app.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 and GitHub Yuck1125 for their feedback</sub>
+
+### Removed
+- **Removed settings entry points from Mini and Pro windows**: To simplify the interface, the settings entry points in the Mini and Pro windows have been removed. The settings entry is now located in the lower-left corner of the home window.
+
+[ja]
+### 追加
+
+- **上振れ・連敗防止アシスタントを追加**: 短時間で連続して複数試合に敗北した場合、休憩を促す通知ウィンドウを表示し、熱くなって連続でポイントを失うことを防ぎます。
+  <sub>🙌 ご提案くださった QQ 看不腻的唐、QQ 第一百零五天、QQ 踢、QQ 绯木 に特別な感謝を</sub>
+
+- **ゲーム起動時のビュー自動表示を追加**: ゲームの起動を検出すると、Mini または Pro ビューを自動で表示できるようになり、ユーザーの操作手順を減らします。この機能は、設定 > システム > アプリ動作 から無効化できます。
+  <sub>🙌 インスピレーションをくださった QQ Kano に特別な感謝を</sub>
+    ![v0_4_0_Auto_Start](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif)
+    ![v0_4_0_Auto_End](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif)
+
+- **システムトレイ機能を追加**: アプリ起動後、システムトレイに最小化できるようになりました。トレイアイコンの右クリックメニューから、メイン画面、Mini パネル、Pro パネルを素早く開いたり、アプリを終了したりできます。
+
+- **スタートアップ起動機能を追加**: 設定 > システム からスタートアップ起動を有効化できます。有効にすると、システム起動時にアプリが自動的に実行され、手動で起動する必要がなくなります。
+
+### 改善
+
+- **ウィンドウ操作ロジックを改善**: ホームウィンドウを導入し、従来のウィンドウ機能を統合・最適化することで、ユーザー体験を向上しました。ホームウィンドウはアプリ起動後の主要な操作入口となり、各機能へより分かりやすくアクセスできます。また、ウィンドウ間の切り替えロジックも改善し、各機能モジュール間をより自然かつスムーズに移動できるようになりました。
+  <sub>🙌 フィードバックをくださった QQ aaa 乐 に特別な感謝を</sub>
+![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
+
+- **プロキシダウンロードを最適化**: 公式サイトおよびアプリ内のプロキシダウンロード機能を最適化し、ダウンロード速度と安定性を向上しました。ユーザーがより速く安定してアプリをダウンロードできるようになります。
+  <sub>🙌 フィードバックをくださった QQ 风、QQ 宇宙最酷、QQ 蠹、QQ 林无穷、WeChat kumoito、WeChat HENRY に特別な感謝を</sub>
+
+- **周期レポートが最新スコアに対応**: 周期レポート内のスコア情報が、ユーザーの現在の最新スコアに対応しました。現在のスコアと推移をより正確に把握できます。
+  <sub>🙌 フィードバックをくださった QQ 宇宙最酷、NGA 智障的最高境界、小黑盒 Art0r1as に特別な感謝を</sub>
+
+- **「SF6 Scouter をもっと賢くする」機能の内容を追加**: 「SF6 Scouter をもっと賢くする」スイッチをオンにすると、今後の機能開発のためにプレイヤーのプレイデータがアップロードされます。
+
+### 修正
+- **ウィンドウを閉じてもアプリが完全に終了しない問題を修正**: ウィンドウを閉じた後もアプリがバックグラウンドで動作し続ける問題を修正し、ユーザーがウィンドウを閉じた後にアプリが完全に終了してシステムリソースを解放できるようにしました。
+  <sub>🙌 フィードバックをくださった QQ 宇宙最酷、GitHub Yuck1125 に特別な感謝を</sub>
+
+### 削除
+- **Mini ウィンドウと Pro ウィンドウの設定入口を削除**: 画面設計をシンプルにするため、Mini ウィンドウと Pro ウィンドウ内の設定入口を削除しました。現在の設定入口はホームウィンドウ左下にあります。
 
 ## [0.3.11] - 2026-05-22
 [zh]
