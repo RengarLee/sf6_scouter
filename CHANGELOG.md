@@ -6,23 +6,36 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [0.4.0] - 2026-06-01
+## [0.4.0] - 2026-06-02
 [zh]
-
 ### 添加
+
+- **添加防上头助手**：当用户在短时间内连续输掉多场比赛时，系统会弹出一个提示窗口，建议用户休息一下，避免因为上头连续掉分。
+  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 第一百零五天, QQ 踢, QQ 绯木 提供的建议</sub>
+
+- **添加自动唤起视图功能**：当检测到游戏启动后，启动唤起Mini或Pro视图功能，减少用户操作步骤。用户可以在设置-系统-应用行为中关闭自动唤起功能。
+  <sub>🙌 特别感谢 QQ Kano 提供的灵感启发</sub>
+
 - **添加托盘功能**：应用启动后将最小化到系统托盘，用户可以通过托盘图标右键菜单快速打开主界面、Mini面板、Pro面板，或退出应用程序。
 
 - **添加开机自启功能**：用户可以在设置-系统中开启开机自启功能，开启后应用程序将在系统启动时自动运行，无需手动启动。
 
 ### 优化
-- **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的导航和功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
-  <sub>🙌 特别感谢 QQ aaa 乐 提供的反馈</sub>
 
-- **"让SF6Scouter更聪明"功能增加内容** "让SF6Scouter更聪明"开关开启后，会上传玩家游玩数据，用于后续功能开发。
+- **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
+  <sub>🙌 特别感谢 QQ aaa 乐提供的反馈</sub>
+
+- **优化代理下载**: 优化了官网和应用代理下载功能，提升下载速度和稳定性，确保用户能够更快速地下载应用。
+  <sub>🙌 特别感谢 QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, 微信 kumoito, 微信 HENRY 提供的反馈</sub>
+
+- **周期报表支持最新分数**: 周期报表中的分数信息支持当前用户最新的分数，用户可以更准确地了解自己的当前分数和趋势。
+  <sub>🙌 特别感谢 QQ 宇宙最酷，NGA 智障的最高境界，小黑盒 Art0r1as 提供的反馈</sub>
+
+- **"让SF6Scouter更聪明"功能增加内容**："让SF6Scouter更聪明"开关开启后，会上传玩家游玩数据，用于后续功能开发。
 
 ### 修复
-- **关闭窗口后应用程序未完全退出的问题**：修复了在某关闭窗口后应用程序仍在后台运行的问题，确保用户关闭窗口后应用程序能够完全退出，释放系统资源。
-  <sub>🙌 特别感谢 QQ 宇宙最酷， Github Yuck1125 提供的反馈</sub>
+- **关闭窗口后应用程序未完全退出的问题**：修复了关闭窗口后应用程序仍在后台运行的问题，确保用户关闭窗口后应用程序能够完全退出，释放系统资源。
+  <sub>🙌 特别感谢 QQ 宇宙最酷，GitHub Yuck1125 提供的反馈</sub>
 
 ### 删除
 - **删除Mini窗口和Pro窗口中的设置入口**：为了简化界面设计，已将Mini窗口和Pro窗口中的设置入口删除, 目前设置入口为主页窗口左下角。
@@ -33,7 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **对战详情界面添加分段胜率**：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。
   ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
-  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 宇宙最强, QQ 绯木 的建议</sub>
+  <sub>🙌 特别感谢 QQ Kano 的</sub>
 
 - **游玩数据界面添加胜率信息**：在游玩数据界面添加了胜率和场次信息，用户可以更直观地了解对方的游戏表现。
   ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
@@ -56,7 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Win rate by rank segment in battle details**: Added win rates against opponents of different LP gaps and different rank segments in the Weekly Report → Battle Details screen. Users can now intuitively understand their performance against opponents of varying LP differences and rank tiers. A week-over-week win rate comparison is also shown to help users track their trend. A summary with actionable insights is provided to help users better understand the data.
   ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
-  <sub>🙌 Special thanks to QQ 看不腻的唐, QQ 宇宙最强, and QQ绯木 for their suggestions</sub>
+  <sub>🙌 Special thanks to QQ 看不腻的唐, QQ 宇宙最强, and QQ 绯木 for their suggestions</sub>
 
 - **Win rate info in Play Data screen**: Added win rate and match count information to the Play Data screen, giving users a clearer picture of their opponents' game performance.
   ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
