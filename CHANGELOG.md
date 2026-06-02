@@ -15,7 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **添加自动唤起视图功能**：当检测到游戏启动后，启动唤起Mini或Pro视图功能，减少用户操作步骤。用户可以在设置-系统-应用行为中关闭自动唤起功能。
   <sub>🙌 特别感谢 QQ Kano 提供的灵感启发</sub>
-
+    ![v0_4_0_Auto_Start](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif)
+    ![v0_4_0_Auto_End](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif)
 - **添加托盘功能**：应用启动后将最小化到系统托盘，用户可以通过托盘图标右键菜单快速打开主界面、Mini面板、Pro面板，或退出应用程序。
 
 - **添加开机自启功能**：用户可以在设置-系统中开启开机自启功能，开启后应用程序将在系统启动时自动运行，无需手动启动。
@@ -23,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 优化
 
 - **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
+  ![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
   <sub>🙌 特别感谢 QQ aaa 乐提供的反馈</sub>
 
 - **优化代理下载**: 优化了官网和应用代理下载功能，提升下载速度和稳定性，确保用户能够更快速地下载应用。
