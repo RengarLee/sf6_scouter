@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.4.1] - 2026-06-10
+[zh]
+### 添加
+- **Home页面支持放大缩小**：用户可以使用Ctrl + 滚轮来放大或缩小页面, 提升用户交互体验。
+  <sub>🙌 特别感谢 QQ 此路<-不通 提供的建议</sub>
 ## [0.4.0] - 2026-06-03
 [zh]
 ### 添加
