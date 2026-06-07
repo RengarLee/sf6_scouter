@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [zh]
 ### 添加
 
+- **游玩数据添加对战不同角色胜率**: 在Home-游玩数据中点击相应角色即可改角色对战不同角色的胜率。
+  !动图
+
 - **添加网络测试**: 在设置-账号中添加网络测试功能，用户可以测试当前网络环境与官网的连接质量，帮助诊断问题。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
 
