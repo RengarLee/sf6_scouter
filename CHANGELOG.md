@@ -6,6 +6,106 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.4.1] - 2026-06-10
+[zh]
+### 添加
+
+- **游玩数据支持查看对战胜率**: 在“Home-游玩数据”中点击特定角色，即可查看该角色对战其他各角色的胜率。
+  ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
+
+- **新增网络连接测试**: 在“设置-账号”中添加网络测试功能，可检测当前环境与官网的连接质量，协助诊断网络问题。
+  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
+
+- **Home 页面支持缩放**：用户可以使用 `Ctrl + 滚轮` 来放大或缩小页面，提升交互体验。
+  <sub>🙌 特别感谢 QQ 此路<-不通 提供的建议</sub>
+  ![v0_4_1_Zoom](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Zoom.gif)
+
+- **新增随机角色推荐**：在“Home-其他”页面中点击“随机角色”按钮即可获得推荐。该功能各角色出现概率均等。
+  <sub>🙌 特别感谢 QQ 王小川 提供的建议</sub>
+  ![v0_4_1_Random](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Random.gif)
+
+### 优化
+
+- **周期报表支持自定义时间查询**：支持自定义时间范围查找，满足不同场景下的查询需求（单次查询跨度最大为 30 天）。
+  <sub>🙌 特别感谢 NGA 智障的最高境界, QQ 浅海 提供的反馈</sub>
+  ![v0_4_1_Time](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Time.gif)
+
+- **DPI 适配优化**：优化了应用在高 DPI 屏幕上的显示效果，确保界面元素清晰且布局合理。
+  <sub>🙌 特别感谢 QQ Kano 提供的反馈</sub>
+
+- **Home 页面支持记忆上次选项**：自动记录侧边栏的上次选择，避免重复操作，提升使用体验。
+  <sub>🙌 特别感谢 QQ 浅海, QQ❄ 提供的建议</sub>
+
+### 修复
+- **修复跟踪起点角色列表为空的问题**：解决了特定情况下跟踪起点角色列表显示为空的故障。
+  <sub>🙌 特别感谢 QQ w158 提供的反馈</sub>
+
+[en]
+### Added
+
+- **Match win rate in Play Data**: In "Home-Play Data", click on a specific character to view their win rate against other characters.
+  ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
+
+- **New network connection test**: Added a network test feature in "Settings-Account" to check connection quality to the official website and help diagnose network issues.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
+
+- **Home page zoom support**: Users can now use `Ctrl + Scroll wheel` to zoom the page in or out, enhancing the interaction experience.
+  <sub>🙌 Special thanks to QQ 此路<-不通 for the suggestion</sub>
+  ![v0_4_1_Zoom](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Zoom.gif)
+
+- **New random character recommendation**: Click the "Random Character" button in "Home-Others" to get a recommendation. Each character has an equal probability, unlike the official website's logic which prioritizes characters with fewer matches.
+  <sub>🙌 Special thanks to QQ 王小川 for the suggestion</sub>
+  ![v0_4_1_Random](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Random.gif)
+
+### Improved
+
+- **Custom time range for periodic reports**: Supports custom time range searches to meet various query needs (maximum 30 days per query).
+  <sub>🙌 Special thanks to NGA 智障的最高境界 and QQ 浅海 for the feedback</sub>
+  ![v0_4_1_Time](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Time.gif)
+
+- **DPI adaptation optimization**: Improved display on high DPI screens to ensure UI elements are clear and layouts are proper.
+  <sub>🙌 Special thanks to QQ Kano for the feedback</sub>
+
+- **Home page choice memory**: The sidebar now remembers the last selected option to avoid repetitive selections and improve user experience.
+  <sub>🙌 Special thanks to QQ 浅海 and QQ❄ for the suggestion</sub>
+
+### Fixed
+- **Fixed empty character list in tracking starting point**: Resolved an issue where the tracking starting point character list could be empty under certain conditions.
+  <sub>🙌 Special thanks to QQ w158 for the feedback</sub>
+
+[ja]
+### 追加
+
+- **プレイデータに対戦勝率を追加**: 「ホーム-プレイデータ」で特定のキャラクターをクリックすると、そのキャラクターの他キャラクターに対する勝率を確認できるようになりました。
+  ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
+
+- **ネットワーク接続テストを追加**: 「設定-アカウント」にネットワークテスト機能を追加しました。公式サイトとの接続品質を確認でき、ネットワーク問題の診断に役立ちます。
+  <sub>🙌 ご提案くださった QQ 宇宙最酷 に特別な感謝を</sub>
+
+- **ホーム画面のズームに対応**: `Ctrl + スクロール` で画面の拡大・縮小が可能になり、操作性が向上しました。
+  <sub>🙌 ご提案くださった QQ 此路<-不通 に特別な感謝を</sub>
+  ![v0_4_1_Zoom](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Zoom.gif)
+
+- **ランダムキャラクター推薦を追加**: 「ホーム-その他」の「ランダムキャラクター」ボタンでキャラクターの推薦を受けられます。公式サイトの「対戦数が少ないキャラ優先」とは異なり、全キャラ等確率で抽選されます。
+  <sub>🙌 ご提案くださった QQ 王小川 に特別な感謝を</sub>
+  ![v0_4_1_Random](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Random.gif)
+
+### 改善
+
+- **周期レポートのカスタム期間検索に対応**: 周期レポートで任意の期間を指定して検索できるようになりました（1回の検索範囲は最大30日間）。
+  <sub>🙌 フィードバックをくださった NGA 智障的最高境界、QQ 浅海 に特別な感謝を</sub>
+  ![v0_4_1_Time](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Time.gif)
+
+- **DPI への適応を最適化**: 高 DPI モニターでの表示を最適化し、UI 要素の鮮明さとレイアウトの整合性を向上させました。
+  <sub>🙌 フィードバックをくださった QQ Kano に特別な感謝を</sub>
+
+- **ホーム画面の選択状態を記憶**: サイドバーの最後に選択した項目を記憶するようになり、再選択の手間を省いて利便性を向上させました。
+  <sub>🙌 ご提案くださった QQ 浅海、QQ❄ に特別な感謝を</sub>
+
+### 修正
+- **追跡開始地点のキャラクターリストが空になる問題を修正**: 特定の条件下で追跡開始地点のキャラクターリストが空で表示される不具合を修正しました。
+  <sub>🙌 フィードバックをくださった QQ w158 に特別な感謝を</sub>
+  
 ## [0.4.0] - 2026-06-03
 [zh]
 ### 添加
