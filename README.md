@@ -1,8 +1,8 @@
 # <img src="./images/logo.png" alt="SF6 Scouter Logo" width="40" valign="middle"> SF6 Scouter
 
-**SF6 Scouter** is a runnable app for Street Fighter 6 players and streamers, focused on **live match tracking**, **score changes**, **Pro overlay display**, and **data analysis**.
+**SF6 Scouter** is an **all-around data analysis and smart companion** for Street Fighter 6 players and streamers. Beyond seamless **live match tracking** and **Pro overlays**, it features built-in **deep data analysis**, **OCR opponent profiling**, and an **anti-tilt assistant** to help you rank up scientifically.
 
-> **Hover to track, win while you're hot, quit while you're cold.**
+> **Hover to track scores, leverage data to read opponents; win while you're hot, stop smart when tilted.**
 
 [English] | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
 
@@ -18,13 +18,12 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 
 - **Unlimited match history**: The official site only keeps your last 100 matches. SF6 Scouter accumulates every match you play — your history is never lost.
 - **Real-time match tracking**: Track wins, losses, win rate, and score changes during the current session.
+- **Deep data & periodic reports**: View win rate matrices, candlestick trends, matchup win rates, and weekly performance reviews.
+- **VS screen OCR & opponent profiles**: Automatically identify opponents during the VS loading screen and get habit hints to support your decision-making.
+- **Anti-tilt assistant**: Get smart pop-up reminders during loss streaks to protect your precious rank points.
 - **LP / MR dual support**: Follow both League Points and Master Rate with clear delta display.
 - **CFN account tracking**: After logging in once, track your own account or switch to other CFN IDs.
-- **Mini overlay**: Keep a compact panel visible while playing.
-- **Pro panel**: Get a denser layout with charts and a richer information view.
-- **Data analysis pages**: Review score trends, match data, character data, and other deeper insights.
-- **Opponent habit hints**: Surface useful opponent tendencies directly in the app.
-- **VS screen OCR recognition**: Automatically identify the opponent during the VS loading screen and display their profile.
+- **Mini & Pro overlays**: Choose between a compact panel or a denser layout with charts and richer information views.
 - **OBS-friendly transparency**: Make it easy to use as a stream overlay.
 - **Layout memory**: Restore window position, size, transparency, and related display settings automatically.
 - **Built-in updater**: Receive new versions directly inside the app.
