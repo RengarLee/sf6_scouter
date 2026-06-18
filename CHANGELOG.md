@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **新增排位 BO3 快速复盘功能**: 当完成一次排位 BO3 且结果为负时，系统将自动弹出标签窗口，方便用户进行快速、简单的赛后复盘。收集的复盘标签数据将在周期报表中汇总展示，助您更好地总结对战经验。该功能可在“设置 - 数据 - 对战复盘提示”中关闭。
   <sub>🙌 特别感谢 QQ 宇宙最酷，QQ 林无穷，QQ 觿子 提供的灵感启发</sub>
   ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
-
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
 - **新增跟踪目标历史记录功能**: 应用会自动记忆最近输入过的跟踪目标（最多 5 个），后续在输入时可直接点击选择，无需重复手动输入 CFN ID。
   <sub>🙌 特别感谢 QQ 游历群星，QQ 焕冥 提供的反馈</sub>
 
@@ -36,7 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Ranked BO3 Quick Review**: When you lose a complete Ranked BO3 match, a tag window will automatically pop up for a quick and simple post-match review. The collected review tags will be summarized in periodic reports to help you analyze your matches. This feature can be disabled in "Settings - Data - Match Review Prompt".
   <sub>🙌 Special thanks to QQ 宇宙最酷, QQ 林无穷, and QQ 觿子 for the inspiration</sub>
   ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
-
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
 - **Tracking Target History**: The app will now automatically remember your recently entered tracking targets (up to 5). You can directly click to select them for future inputs, eliminating the need to repeatedly enter CFN IDs.
   <sub>🙌 Special thanks to QQ 游历群星 and QQ 焕冥 for the feedback</sub>
 
@@ -61,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **ランクマッチBO3クイック振り返り機能**: ランクマッチのBO3が完了し、結果が負けだった場合、自動的にタグウィンドウがポップアップし、簡単かつ迅速に試合の振り返りができます。収集された振り返りタグデータは定期レポートに集計され、対戦経験の分析に役立ちます。この機能は「設定 - データ - 対戦振り返りプロンプト」でオフにできます。
   <sub>🙌 アイデアを提供していただいた QQ 宇宙最酷、QQ 林无穷、QQ 觿子 に感謝します</sub>
   ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
-
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
 - **トラッキング対象の履歴機能**: アプリは最近入力されたトラッキング対象を自動的に記憶します（最大5つ）。次回以降は入力時にクリックするだけで選択でき、CFN IDを何度も手動で入力する必要がなくなります。
   <sub>🙌 フィードバックを提供していただいた QQ 游历群星、QQ 焕冥 に感謝します</sub>
 
@@ -87,7 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **游玩数据支持查看对战胜率**: 在“Home-游玩数据”中点击特定角色，即可查看该角色对战其他各角色的胜率。
   ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
-
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
 - **新增网络连接测试**: 在“设置-账号”中添加网络测试功能，可检测当前环境与官网的连接质量，协助诊断网络问题。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
 
