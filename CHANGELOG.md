@@ -5,6 +5,81 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.2] - 2026-06-11
+[zh]
+### 添加
+- **新增排位 BO3 快速复盘功能**: 当完成一次排位 BO3 且结果为负时，系统将自动弹出标签窗口，方便用户进行快速、简单的赛后复盘。收集的复盘标签数据将在周期报表中汇总展示，助您更好地总结对战经验。该功能可在“设置 - 数据 - 对战复盘提示”中关闭。
+  <sub>🙌 特别感谢 QQ 宇宙最酷，QQ 林无穷，QQ 觿子 提供的灵感启发</sub>
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
+
+- **新增跟踪目标历史记录功能**: 应用会自动记忆最近输入过的跟踪目标（最多 5 个），后续在输入时可直接点击选择，无需重复手动输入 CFN ID。
+  <sub>🙌 特别感谢 QQ 游历群星，QQ 焕冥 提供的反馈</sub>
+
+- **新增“防上头提醒”开关**：在“设置 - 数据”页面中加入了防上头提醒开关，用户可根据自身需求自由开启或关闭该功能。
+  <sub>🙌 特别感谢 小黑盒 糖泥呵 提供的建议</sub>
+
+### 优化
+- **限制应用单实例运行**：新增了应用单开限制，避免因误操作同时打开多个应用实例，从而影响系统性能和使用体验。 
+  <sub>🙌 特别感谢 QQ ……, QQ 浅海 提供的反馈</sub>
+
+- **内存占用深度优化**：优化了应用的内存管理，修复了特定场景下内存占用异常增加的问题。 
+  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
+
+- **数据共享网络优化**：精简了数据上传逻辑，有效减少了请求次数和网络资源占用。
+
+### 修复
+- **修复备份文件加载失败**：解决了部分情况下备份文件无法正常加载的问题。
+  <sub>🙌 特别感谢 QQ 浅海 提供的反馈</sub>
+
+[en]
+### Added
+- **Ranked BO3 Quick Review**: When you lose a complete Ranked BO3 match, a tag window will automatically pop up for a quick and simple post-match review. The collected review tags will be summarized in periodic reports to help you analyze your matches. This feature can be disabled in "Settings - Data - Match Review Prompt".
+  <sub>🙌 Special thanks to QQ 宇宙最酷, QQ 林无穷, and QQ 觿子 for the inspiration</sub>
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
+
+- **Tracking Target History**: The app will now automatically remember your recently entered tracking targets (up to 5). You can directly click to select them for future inputs, eliminating the need to repeatedly enter CFN IDs.
+  <sub>🙌 Special thanks to QQ 游历群星 and QQ 焕冥 for the feedback</sub>
+
+- **Tilt-Prevention Reminder Toggle**: Added a toggle for the tilt-prevention reminder in "Settings - Data", allowing users to freely enable or disable this feature as needed.
+  <sub>🙌 Special thanks to 小黑盒 糖泥呵 for the suggestion</sub>
+
+### Improved
+- **Single App Instance Limit**: Restricted the application to run only a single instance, preventing performance issues and poor user experience caused by accidentally opening multiple instances.
+  <sub>🙌 Special thanks to QQ …… and QQ 浅海 for the feedback</sub>
+
+- **Memory Usage Optimization**: Deeply optimized memory management to prevent abnormal memory usage increases in certain scenarios.
+  <sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub>
+
+- **Data Sharing Optimization**: Streamlined data upload logic to effectively reduce network requests and resource consumption.
+
+### Fixed
+- **Fixed Backup File Loading**: Resolved an issue where backup files could fail to load under certain conditions.
+  <sub>🙌 Special thanks to QQ 浅海 for the feedback</sub>
+
+[ja]
+### 追加
+- **ランクマッチBO3クイック振り返り機能**: ランクマッチのBO3が完了し、結果が負けだった場合、自動的にタグウィンドウがポップアップし、簡単かつ迅速に試合の振り返りができます。収集された振り返りタグデータは定期レポートに集計され、対戦経験の分析に役立ちます。この機能は「設定 - データ - 対戦振り返りプロンプト」でオフにできます。
+  <sub>🙌 アイデアを提供していただいた QQ 宇宙最酷、QQ 林无穷、QQ 觿子 に感謝します</sub>
+  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
+
+- **トラッキング対象の履歴機能**: アプリは最近入力されたトラッキング対象を自動的に記憶します（最大5つ）。次回以降は入力時にクリックするだけで選択でき、CFN IDを何度も手動で入力する必要がなくなります。
+  <sub>🙌 フィードバックを提供していただいた QQ 游历群星、QQ 焕冥 に感謝します</sub>
+
+- **「ティルト防止リマインダー」スイッチ**: 「設定 - データ」ページにティルト（連続プレイ）防止リマインダーのスイッチを追加しました。ユーザーのニーズに合わせて自由にオン/オフを切り替えることができます。
+  <sub>🙌 提案していただいた QQ 糖泥呵 に感謝します</sub>
+
+### 改善
+- **アプリの多重起動制限**: アプリが単一インスタンスでのみ実行されるように制限しました。誤って複数のアプリを開いてしまい、システムのパフォーマンスや使用体験に悪影響を与えるのを防ぎます。
+  <sub>🙌 フィードバックを提供していただいた QQ ……、QQ 浅海 に感謝します</sub>
+
+- **メモリ使用量の最適化**: アプリのメモリ管理を深層から最適化し、特定の状況下でメモリ使用量が異常に増加する問題を修正しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
+
+- **データ共有機能の最適化**: データのアップロードロジックを簡素化し、リクエスト回数とネットワークリソースの消費を効果的に削減しました。
+
+### 修正
+- **バックアップファイル読み込みの修正**: 特定の状況下でバックアップファイルが正常に読み込めない問題を解決しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 浅海 に感謝します</sub>
 
 ## [0.4.1] - 2026-06-10
 [zh]
