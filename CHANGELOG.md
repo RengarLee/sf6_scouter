@@ -87,7 +87,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **游玩数据支持查看对战胜率**: 在“Home-游玩数据”中点击特定角色，即可查看该角色对战其他各角色的胜率。
   ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
-  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
 - **新增网络连接测试**: 在“设置-账号”中添加网络测试功能，可检测当前环境与官网的连接质量，协助诊断网络问题。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
 
