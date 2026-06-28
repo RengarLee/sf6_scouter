@@ -5,6 +5,97 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.3] - 2026-06-28
+[zh]
+### 添加
+- **胜率报表面板**：新增胜率报表页，可查看不同模式的对战数据，查看对战 KPI 数据（胜率、场次、连胜 / 连败记录等）。
+  <sub>🙌 特别感谢 QQ 焕冥 提供的反馈</sub>
+  ![v0_4_3_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Rate.gif)
+
+- **对战记录筛选条件**：添加多种筛选条件，方便用户快速查找目标对战记录。
+  ![v0_4_3_Records](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Records.gif)
+
+- **对战记录复盘标签**：在对战记录表格中右键单击任意对局，可直接为其添加复盘标签。
+  <sub>🙌 特别感谢 QQ 宇宙最酷，QQ 林无穷，QQ 觿子 提供的灵感启发</sub>
+  ![v0_4_3_Tag](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag.gif)
+
+- **对局抽屉标签快速入口**：在对局详情抽屉中展示前 5 个高频复盘标签，点击可一键联动筛选对应对局。
+  ![v0_4_3_Tag_Filter](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag_Filter.gif)
+
+- **历史对战记录主动同步**：在对战记录表格右上角新增主动同步入口，可查看历史同步状态。
+  <sub>🙌 特别感谢 QQ 浅海 提供的反馈</sub>
+  ![v0_4_3_Load](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Load.gif)
+
+### 优化
+- **复盘标签新增**：新增「一直被投」和「迸发没反应」两个复盘标签。
+  <sub>🙌 特别感谢 NGA 智障的最高境界, NGA langxiankui, QQ K丶越 提供的反馈</sub>
+
+### 修复
+- **修复 Windows 10 减少动效时抽屉始终展开**：解决在系统开启「减少特效」时侧边抽屉始终处于展开状态的异常行为。
+  <sub>🙌 特别感谢 QQ 泠㳕 提供的反馈</sub>
+- **修复复盘提示始终展开**：复盘提示现可按配置正确关闭展示。
+  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
+
+[en]
+### Added
+- **Win Rate Report Panel**: Added a new win rate report page to view battle data across different modes and key KPIs (win rate, match count, win/loss streak records, and more).
+  <sub>🙌 Special thanks to QQ 焕冥 for the feedback</sub>
+  ![v0_4_3_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Rate.gif)
+
+- **Battle Record Filters**: Added multiple filter options to help users quickly find specific battle records.
+  ![v0_4_3_Records](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Records.gif)
+
+- **Battle Record Review Tags**: Right-click any match in the battle record table to directly add a review tag.
+  <sub>🙌 Special thanks to QQ 宇宙最酷, QQ 林无穷, and QQ 觿子 for the inspiration</sub>
+  ![v0_4_3_Tag](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag.gif)
+
+- **Quick Tag Access in Match Detail Drawer**: The match detail drawer now shows the top 5 most-used review tags. Click one to instantly filter matches with that tag.
+  ![v0_4_3_Tag_Filter](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag_Filter.gif)
+
+- **Manual Sync for Battle History**: Added a manual sync entry in the top-right corner of the battle record table to sync historical battle records and view sync status.
+  <sub>🙌 Special thanks to QQ 浅海 for the feedback</sub>
+  ![v0_4_3_Load](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Load.gif)
+
+### Improved
+- **New Review Tags**: Added two new review tags: "Always Grabbed" and "No Reaction to Drive Impact".
+  <sub>🙌 Special thanks to NGA 智障的最高境界, NGA langxiankui, and QQ K丶越 for the feedback</sub>
+
+### Fixed
+- **Fixed Drawer Always Expanded When Reduce Motion is Enabled on Windows 10**: Resolved an issue where the side drawer remained expanded when the system's "Reduce Motion Effects" option was enabled.
+  <sub>🙌 Special thanks to QQ 泠㳕 for the feedback</sub>
+- **Fixed Review Prompt Always Expanded**: The review prompt can now be correctly dismissed based on configuration.
+  <sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub>
+
+[ja]
+### 追加
+- **勝率レポートパネル**: 各モードの対戦データと主要KPI（勝率・対戦数・連勝／連敗記録など）を確認できる勝率レポートページを新たに追加しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 焕冥 に感謝します</sub>
+  ![v0_4_3_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Rate.gif)
+
+- **対戦記録フィルター**: 対象の対戦記録をすばやく見つけるための複数のフィルター条件を追加しました。
+  ![v0_4_3_Records](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Records.gif)
+
+- **対戦記録レビュータグ**: 対戦記録テーブル内の任意の対局を右クリックすることで、直接レビュータグを追加できるようになりました。
+  <sub>🙌 アイデアを提供していただいた QQ 宇宙最酷、QQ 林无穷、QQ 觿子 に感謝します</sub>
+  ![v0_4_3_Tag](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag.gif)
+
+- **対局ドロワーのタグクイックアクセス**: 対局詳細ドロワーに使用頻度上位5件のレビュータグが表示されるようになりました。クリックすると、そのタグに対応する対局をワンクリックで絞り込めます。
+  ![v0_4_3_Tag_Filter](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag_Filter.gif)
+
+- **対戦履歴の手動同期**: 対戦記録テーブルの右上に手動同期の入口を追加しました。過去の対戦記録を同期し、同期状況を確認できます。
+  <sub>🙌 フィードバックを提供していただいた QQ 浅海 に感謝します</sub>
+  ![v0_4_3_Load](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Load.gif)
+
+### 改善
+- **新しいレビュータグを追加**: 「ずっと投げられる」と「ドライブインパクトに無反応」の2つの新しいレビュータグを追加しました。
+  <sub>🙌 フィードバックを提供していただいた NGA 智障的最高境界、NGA langxiankui、QQ K丶越 に感謝します</sub>
+
+### 修正
+- **Windows 10でモーション軽減有効時にドロワーが常に展開される問題を修正**: システムの「モーション効果を減らす」が有効な場合、サイドドロワーが常に展開状態になる異常な動作を解決しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 泠㳕 に感謝します</sub>
+- **レビュープロンプトが常に展開される問題を修正**: レビュープロンプトが設定に基づいて正しく非表示になるようになりました。
+  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
+
 ## [0.4.2] - 2026-06-11
 [zh]
 ### 添加
