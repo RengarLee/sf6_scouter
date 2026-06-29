@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.4] - 2026-06-29
+[zh]
+### 修复
+- **修复对战记录和胜率报表中模式选项展示的错误**：修复对战记录的模式信息展示错误和胜率报表中模型下拉选项的错误
+  <sub>🙌 特别感谢 NGA langxiankui 提供的反馈</sub>
+
+[en]
+### Fixed
+- **Fixed mode option display errors in battle records and win rate report**: Fixed incorrect mode info display in battle records and incorrect mode dropdown options in the win rate report.
+  <sub>🙌 Special thanks to NGA langxiankui for the feedback</sub>
+
+[ja]
+### 修正
+- **対戦記録と勝率レポートのモードオプション表示エラーを修正**: 対戦記録のモード情報表示エラーと、勝率レポートのモードドロップダウンオプションのエラーを修正しました。
+  <sub>🙌 フィードバックを提供していただいた NGA langxiankui に感謝します</sub>
+
 ## [0.4.3] - 2026-06-28
 [zh]
 ### 添加
