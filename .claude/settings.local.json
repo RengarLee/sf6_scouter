@@ -6,7 +6,12 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(gh pr create --title 'feat: smart download node racing on click' --body ' *)",
-      "Bash(gh pr create --title 'docs\\(readme\\): add VS screen OCR recognition feature' --body ' *)"
+      "Bash(gh pr create --title 'docs\\(readme\\): add VS screen OCR recognition feature' --body ' *)",
+      "Bash(gh pr create --title 'docs: add en/ja translations for v0.4.4 changelog' --body ' *)",
+      "Bash(gh pr *)",
+      "Bash(git fetch *)",
+      "Bash(git rebase *)",
+      "Bash(git stash *)"
     ]
   }
 }
