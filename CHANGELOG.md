@@ -1,10 +1,18 @@
 # Changelog
 
-## [0.4.5] - 2026-06-08
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.4.5] - 2026-07-09
 [zh]
 ### 优化
 - **趋势图支持显示段位文本**：LP 趋势图的 Y 轴现已显示对应段位文本，查看分数走势时也能更直观地了解当前所处分段。
   <sub>🙌 特别感谢 QQ Kano、QQ 宇宙最酷、QQ 啊？ 提供的反馈</sub>
+
+- **趋势图仅统计排位数据**：趋势图现仅统计排位数据，避免非排位对局对趋势图的影响。
+  <sub>🙌 特别感谢 NGA 贫穷的吸血鬼 提供的反馈</sub>
 
 - **防上头提醒改为独立窗口提示**：防上头提醒现以独立窗口形式展示，提示更醒目、不易错过；如不需要，也可在“设置 - 数据”中关闭。
   <sub>🙌 特别感谢 QQ 键、QQ 游历群星 提供的反馈</sub>
@@ -15,10 +23,16 @@
 - **降低应用闲置时的内存占用**：进一步优化内存管理，让应用在闲置状态下的内存占用更稳定，也更合理。
   <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
 
+- **复盘标签新增**：新增「瞎按」复盘标签。
+  <sub>🙌 特别感谢 QQ 啊？ 提供的反馈</sub>
+
 [en]
 ### Improved
 - **Rank Text Added to Trend Charts**: LP trend charts now show the corresponding rank text on the Y-axis, making it easier to understand your current rank bracket while reading score trends.
   <sub>🙌 Special thanks to QQ Kano, QQ 宇宙最酷, and QQ 啊？ for the feedback</sub>
+
+- **Trend Charts Now Count Ranked Matches Only**: Trend charts now only include ranked-match data, avoiding noise from non-ranked matches.
+  <sub>🙌 Special thanks to NGA 贫穷的吸血鬼 for the feedback</sub>
 
 - **Tilt Reminder Now Uses a Dedicated Window**: The tilt-prevention reminder is now shown in a separate window, making it more noticeable and harder to miss. It can still be disabled in "Settings - Data" if you do not need it.
   <sub>🙌 Special thanks to QQ 键 and QQ 游历群星 for the feedback</sub>
@@ -29,10 +43,16 @@
 - **Lower Memory Usage While Idle**: Further optimized memory management so the app keeps a steadier and more reasonable memory footprint when idle.
   <sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub>
 
+- **New Review Tag**: Added the "Button Mashing" review tag.
+  <sub>🙌 Special thanks to QQ 啊？ for the feedback</sub>
+
 [ja]
 ### 改善
 - **トレンドグラフに段位テキストを表示**: LP トレンドグラフの Y 軸に対応する段位テキストを表示するようになり、スコア推移を見ながら現在の帯域をより直感的に把握できるようになりました。
   <sub>🙌 フィードバックを提供していただいた QQ Kano、QQ 宇宙最酷、QQ 啊？ に感謝します</sub>
+
+- **トレンドグラフはランクマッチのみを集計**: トレンドグラフはランクマッチのデータのみを集計するようになり、カジュアルマッチなどの非ランク戦が推移に影響しないようになりました。
+  <sub>🙌 フィードバックを提供していただいた NGA 贫穷的吸血鬼 に感謝します</sub>
 
 - **ティルト防止リマインダーを独立ウィンドウ表示に変更**: ティルト防止リマインダーを独立したウィンドウで表示するようにし、より目立って見逃しにくくなりました。不要な場合は「設定 - データ」からオフにできます。
   <sub>🙌 フィードバックを提供していただいた QQ 键、QQ 游历群星 に感謝します</sub>
@@ -42,10 +62,9 @@
 
 - **待機時のメモリ使用量を削減**: メモリ管理をさらに最適化し、アプリ待機時のメモリ使用量がより安定して適切な範囲に収まるようにしました。
   <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
-All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+- **新しいレビュータグを追加**: 「ボタン連打」のレビュータグを追加しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 啊？ に感謝します</sub>
 
 ## [0.4.4] - 2026-06-29
 [zh]
