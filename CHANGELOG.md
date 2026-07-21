@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.6] - 2026-07-21
+[zh]
+### 修复
+- **修复弹窗抢夺游戏焦点的问题**：解决了弹窗意外抢占游戏窗口焦点、导致操作被打断的问题。
+  <sub>🙌 特别感谢 QQ 木慕水 协助的测试</sub>
+  <sub>🙌 特别感谢 QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝，微信 且胆行 提供的反馈</sub>
+
+[en]
+### Fixed
+- **Fixed Popups Stealing Game Focus**: Resolved an issue where popup windows could unexpectedly steal focus from the game, interrupting gameplay.
+  <sub>🙌 Special thanks to QQ 木慕水 for helping with testing</sub>
+  <sub>🙌 Special thanks to QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝, and WeChat 且胆行 for the feedback</sub>
+
+[ja]
+### 修正
+- **ポップアップがゲームのフォーカスを奪う問題を修正**: ポップアップウィンドウが意図せずゲームのフォーカスを奪い、操作が中断される問題を解決しました。
+  <sub>🙌 テストにご協力いただいた QQ 木慕水 に感謝します</sub>
+  <sub>🙌 フィードバックを提供していただいた QQ 太简单、QQ tainanle、QQ Raising、QQ 水蓝蓝、WeChat 且胆行 に感謝します</sub>
+
 ## [0.4.5] - 2026-07-09
 [zh]
 ### 优化
