@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.7] - 2026-07-23
+[zh]
+### 修复
+- **修复Pro面板和Mini面板无法关闭的问题**：解决了修复Pro面板和Mini面板无法关闭，关闭后有透明边框的问题。
+  <sub>🙌 特别感谢 QQ 马肯博, QQ 啊？提供的反馈</sub>
+
+[en]
+### Fixed
+- **Fixed Pro and Mini Panels Not Closing**: Resolved an issue where the Pro and Mini panels could not be closed, and closing them left a transparent border.
+  <sub>🙌 Special thanks to QQ 马肯博 and QQ 啊？ for the feedback</sub>
+
+[ja]
+### 修正
+- **ProパネルとMiniパネルが閉じられない問題を修正**: ProパネルとMiniパネルを閉じられない問題、および閉じた後に透明な枠が残る問題を修正しました。
+  <sub>🙌 フィードバックを提供していただいた QQ 马肯博、QQ 啊？ に感謝します</sub>
+
 ## [0.4.6] - 2026-07-21
 [zh]
 ### 修复
