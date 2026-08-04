@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.8] - 2026-08-04
+[zh]
+### 添加
+- **支持收藏对战记录与添加复盘标记**：新增对战记录收藏功能。用户可以在复盘标签弹窗中直接收藏对战记录，也可以在对战记录列表中右键收藏；收藏的对战记录可在 Home 页面的“收藏对战”页面查看。
+  <sub>🙌 特别感谢 QQ 焕冥 提供的建议</sub>
+- **支持新角色 Yasmine**：新增 Yasmine 的数据和图片显示支持。
+
+### 修复
+- **修复 OCR 设置首次启动时不生效的问题**：解决 OCR 设置在应用首次启动时未正确生效的问题。
+  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
+
 ## [0.4.7] - 2026-07-23
 [zh]
 ### 修复
