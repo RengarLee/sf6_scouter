@@ -16,6 +16,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **修复 OCR 设置首次启动时不生效的问题**：解决 OCR 设置在应用首次启动时未正确生效的问题。
   <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
 
+[en]
+### Added
+- **Favorite Battle Records and Review Markers**: Added support for favoriting battle records. You can favorite a battle record directly from the review-tag popup or by right-clicking it in the battle record list. Favorited records are available on the “Favorite Matches” page under Home.
+  <sub>🙌 Special thanks to QQ 焕冥 for the suggestion</sub>
+- **Yasmine Support**: Added support for displaying Yasmine’s data and image.
+
+### Fixed
+- **OCR Settings Not Applied on First Launch**: Fixed an issue where OCR settings were not applied correctly when the app was launched for the first time.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub>
+
+[ja]
+### 追加
+- **対戦記録のお気に入り登録とリプレイタグの追加**：対戦記録をお気に入り登録できるようになりました。リプレイタグのポップアップから直接お気に入り登録できるほか、対戦記録一覧で右クリックして登録することもできます。お気に入り登録した対戦記録は、Home ページの「お気に入り対戦」ページで確認できます。
+  <sub>🙌 提案をくださった QQ 焕冥 さんに感謝します</sub>
+- **新キャラクター Yasmine に対応**：Yasmine のデータと画像を表示できるようになりました。
+
+### 修正
+- **初回起動時に OCR 設定が反映されない問題を修正**：アプリの初回起動時に OCR 設定が正しく反映されない問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ 宇宙最酷 さんに感謝します</sub>
+
 ## [0.4.7] - 2026-07-23
 [zh]
 ### 修复
