@@ -5,6 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.8] - 2026-08-04
+[zh]
+### 添加
+- **支持收藏对战记录与添加复盘标记**：新增对战记录收藏功能。用户可以在复盘标签弹窗中直接收藏对战记录，也可以在对战记录列表中右键收藏；收藏的对战记录可在 Home 页面的“收藏对战”页面查看。
+  <sub>🙌 特别感谢 QQ 焕冥 提供的建议</sub>
+- **支持新角色 Yasmine**：新增 Yasmine 的数据和图片显示支持。
+
+### 修复
+- **修复 OCR 设置首次启动时不生效的问题**：解决 OCR 设置在应用首次启动时未正确生效的问题。
+  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
+
+[en]
+### Added
+- **Favorite Battle Records and Review Markers**: Added support for favoriting battle records. You can favorite a battle record directly from the review-tag popup or by right-clicking it in the battle record list. Favorited records are available on the “Favorite Matches” page under Home.
+  <sub>🙌 Special thanks to QQ 焕冥 for the suggestion</sub>
+- **Yasmine Support**: Added support for displaying Yasmine’s data and image.
+
+### Fixed
+- **OCR Settings Not Applied on First Launch**: Fixed an issue where OCR settings were not applied correctly when the app was launched for the first time.
+  <sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub>
+
+[ja]
+### 追加
+- **対戦記録のお気に入り登録とリプレイタグの追加**：対戦記録をお気に入り登録できるようになりました。リプレイタグのポップアップから直接お気に入り登録できるほか、対戦記録一覧で右クリックして登録することもできます。お気に入り登録した対戦記録は、Home ページの「お気に入り対戦」ページで確認できます。
+  <sub>🙌 提案をくださった QQ 焕冥 さんに感謝します</sub>
+- **新キャラクター Yasmine に対応**：Yasmine のデータと画像を表示できるようになりました。
+
+### 修正
+- **初回起動時に OCR 設定が反映されない問題を修正**：アプリの初回起動時に OCR 設定が正しく反映されない問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ 宇宙最酷 さんに感謝します</sub>
+
 ## [0.4.7] - 2026-07-23
 [zh]
 ### 修复
