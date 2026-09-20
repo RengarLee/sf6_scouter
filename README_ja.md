@@ -6,6 +6,8 @@
 
 [English](./README.md) | [简体中文](./README_zh.md) | [日本語]
 
+[愛発電（Afdian）で支援する](https://afdian.com/a/sf6scouter)
+
 ## リポジトリについて
 
 このリポジトリは、**実行可能な SF6 Scouter アプリの配布用リポジトリ**です。Web ページ、プレビュー画像、リリース情報、ダウンロード導線を提供します。
@@ -80,6 +82,10 @@
 | Discord | QQ グループ |
 | :---: | :---: |
 | ![Discord](./images/discord.png) | ![QQ](./images/qq.jpg) |
+
+## プロジェクトへの支援
+
+SF6 Scouter が対戦や配信に役立っていると感じたら、[愛発電（Afdian）](https://afdian.com/a/sf6scouter) を通じて継続的な開発・メンテナンスをご支援いただけます。温かいご支援に感謝します！
 
 ## 安全性
 
