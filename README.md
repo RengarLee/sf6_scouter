@@ -6,6 +6,8 @@
 
 [English] | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
 
+[Support on Afdian](https://afdian.com/a/sf6scouter)
+
 ## Repository Scope
 
 This repository is the **distribution repository for the runnable SF6 Scouter application**, including its website, previews, release notes, and download entry points.
@@ -80,6 +82,10 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 | Discord | QQ Group |
 | :---: | :---: |
 | ![Discord](./images/discord.png) | ![QQ](./images/qq.jpg) |
+
+## Support the Project
+
+If SF6 Scouter helps you enjoy your matches or streams, you can support its continued development and maintenance on [Afdian](https://afdian.com/a/sf6scouter). Thank you for your support!
 
 ## Safety
 

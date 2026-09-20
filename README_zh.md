@@ -6,6 +6,8 @@
 
 [English](./README.md) | [简体中文] | [日本語](./README_ja.md)
 
+[在爱发电支持项目](https://afdian.com/a/sf6scouter)
+
 ## 仓库说明
 
 本仓库是 **SF6 Scouter 可运行应用的分发仓库**，用于提供网站、预览图、发布说明和下载入口。
@@ -80,6 +82,10 @@
 | Discord | QQ 群 |
 | :---: | :---: |
 | ![Discord](./images/discord.png) | ![QQ](./images/qq.jpg) |
+
+## 支持项目
+
+如果 SF6 Scouter 对你的对战或直播有所帮助，欢迎通过 [爱发电](https://afdian.com/a/sf6scouter) 支持项目的持续开发与维护。感谢每一份支持！
 
 ## 安全性
 
