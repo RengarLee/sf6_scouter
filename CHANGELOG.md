@@ -5,6 +5,52 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.9] - 2026-09-22
+[zh]
+### 新增
+- **登录状态自动校验与错误提示**：自动校验登录状态，并在校验异常时显示错误提示，方便了解当前登录状态及异常情况。
+
+### 优化
+- **优化重置跟踪分数的提示文案**：调整重置跟踪分数相关话术，让操作含义更清晰。
+
+### 修复
+- **修复长时间对战后抢夺游戏焦点的问题**：解决 SF6Scouter 在对战约一小时后抢占游戏窗口焦点、打断操作的问题。
+  <sub>🙌 特别感谢 QQ 此路<-不通提供的反馈</sub>
+- **修复复盘标签遮挡窗口内点击的问题**：解决复盘标签遮挡窗口内其他区域、导致点击操作受阻的问题。
+  <sub>🙌 特别感谢 QQ 焕冥 提供的反馈</sub>
+- **修复窗口无法正常关闭的问题**：解决窗口无法正常关闭的问题。
+  <sub>🙌 特别感谢 QQ 啊？提供的反馈</sub>
+
+[en]
+### Added
+- **Automatic Login Status Checks and Error Messages**: The app now checks login status automatically and displays an error message if the check encounters a problem, making login issues easier to identify.
+
+### Improved
+- **Clearer Wording for Resetting Tracked Scores**: Revised the messages related to resetting tracked scores to clarify what the action does.
+
+### Fixed
+- **Game Focus After Extended Play**: Fixed an issue where SF6Scouter could take focus away from the game after about an hour of play, interrupting gameplay.
+  <sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub>
+- **Review Tags Blocking Clicks**: Fixed an issue where review tags could cover other parts of the window and block clicks in those areas.
+  <sub>🙌 Special thanks to QQ 焕冥 for the feedback</sub>
+- **Window Closing Issue**: Fixed an issue where a window would not close properly.
+  <sub>🙌 Special thanks to QQ 啊？ for the feedback</sub>
+
+[ja]
+### 追加
+- **ログイン状態の自動チェックとエラー表示**: ログイン状態を自動で確認し、確認時に問題が発生した場合はエラーメッセージを表示するようにしました。現在のログイン状態やエラーの内容を把握しやすくなります。
+
+### 改善
+- **追跡スコアのリセットに関する案内文を改善**: 追跡スコアのリセットに関するメッセージを見直し、操作の意味が伝わりやすい表現にしました。
+
+### 修正
+- **長時間の対戦後にゲームのフォーカスを奪う問題を修正**: 約1時間プレイした後に SF6Scouter がゲームウィンドウのフォーカスを奪い、ゲーム操作が中断される問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ 此路<-不通 さんに感謝します</sub>
+- **レビュータグがクリック操作を妨げる問題を修正**: レビュータグがウィンドウ内のほかの領域に重なり、その領域をクリックできなくなる問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ 焕冥 さんに感謝します</sub>
+- **ウィンドウを閉じられない問題を修正**: ウィンドウが正常に閉じない問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ 啊？ さんに感謝します</sub>
+
 ## [0.4.8] - 2026-08-04
 [zh]
 ### 添加
