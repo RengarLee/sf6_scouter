@@ -58,6 +58,12 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 | :---: | :---: | :---: |
 | ![Data Analysis K Line](./images/v0_3_3_K_Line.gif) | ![Play Data Analysis](./images/v0_3_5_PlayData.gif) | ![Weekly Report](./images/v0_3_7_Report.png) |
 
+### Replay Analysis
+
+Review a match by replay ID, with a match overview and linked round timelines, damage-taken events, and combo records.
+
+![Replay Analysis Demo](./images/v0_5_0_Replayer.gif)
+
 ## How to Use
 
 1. Download and launch `SF6 Scouter`.
