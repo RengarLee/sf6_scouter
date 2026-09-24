@@ -1152,6 +1152,173 @@
     <div id="changelog-entries">
     <div class="changelog-item">
       <div class="changelog-header">
+        <span class="version">v0.5.0</span>
+        <span class="date">2026.09.24</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">添加</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>云端回放分析</strong>：在 Home 页面的“回放分析”中输入回放 ID，即可查询已有分析或提交新的分析任务；也可以在“对战记录”和“收藏对战”中右键选择“回放分析”，快速打开对应对局。</li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif" alt="v0_5_0_Replayer" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>整场复盘概览</strong>：集中查看各回合胜负、受伤事件和连段伤害分布，按事件的出现次数与累计伤害标注相对影响等级，帮助确定复盘重点。支持按问题筛选观看清单，点击具体记录即可跳转到对应回合。</li>
+        <li><strong>回合时间轴与数据联动</strong>：同屏查看双方血量、斗气和场上位置的变化，以及受伤事件、连段伤害与命中数。点击图表或记录即可定位相关时点，并查看附近事件；支持切换关注 1P 或 2P，结合对空率、拆投、版边时间等统计逐回合复盘。</li>
+        <li><strong>分析进度与额度提示</strong>：在“状态”中查看任务进度，分析完成后自动展示结果，失败时可重试。每台设备每小时可主动提交最多 10 次分析，每到整点恢复额度；查询和查看已有结果不消耗次数。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">特别感谢</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li>🙌 特别感谢 QQ 悠哈、QQ 太简单、QQ 冥、QQ 无道，以及 QQ 群“SF Scouter 战绩面板内测群”的各位老哥，感谢大家的细心解答与思路启发。</li>
+        <li>🙌 感谢 <a href="https://github.com/Wael3rd/SF6_Tools">SF6_Tools</a>（<a href="https://www.nexusmods.com/streetfighter6/mods/3173">Nexus Mods</a>）、<a href="https://github.com/lucasteles/sf6_re_scripts">sf6_re_scripts</a> 和 <a href="https://github.com/WistfulHopes/SF6Mods">SF6Mods</a> 项目带来的思路启发。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Added</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Cloud Replay Analysis</strong>: Enter a replay ID in “Replay Analysis” under Home to load an existing analysis or request a new one. You can also right-click a match in Battle Records or Favorite Matches and select “Replay Analysis” to open it directly.</li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif" alt="v0_5_0_Replayer" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>Match Review Overview</strong>: Review round results, damage-taken events, and combo damage distributions in one place. Relative impact ratings based on event frequency and accumulated damage help you prioritize your review. Filter the watchlist by issue and click a record to jump to its round.</li>
+        <li><strong>Interactive Round Timeline</strong>: View both players’ health, Drive Gauge, and stage position alongside damage-taken events, combo damage, and hit counts. Click a chart or record to locate a moment and inspect nearby events. Focus on 1P or 2P and review each round with statistics such as anti-air rate, throw escapes, and time in the corner.</li>
+        <li><strong>Analysis Progress and Quota</strong>: Check task progress under “Status”; results appear automatically when ready, and failed tasks can be retried. Each device allows up to 10 manual analysis submissions per hour, with the quota resetting at the start of each hour. Querying and viewing existing results do not use this quota.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Special Thanks</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li>🙌 Special thanks to QQ 悠哈, QQ 太简单, QQ 冥, QQ 无道, and everyone in the “SF Scouter 战绩面板内测群” QQ beta-testing group for their patient answers and inspiring ideas.</li>
+        <li>🙌 Thanks to the <a href="https://github.com/Wael3rd/SF6_Tools">SF6_Tools</a> (<a href="https://www.nexusmods.com/streetfighter6/mods/3173">Nexus Mods</a>), <a href="https://github.com/lucasteles/sf6_re_scripts">sf6_re_scripts</a>, and <a href="https://github.com/WistfulHopes/SF6Mods">SF6Mods</a> projects for the inspiration.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">追加</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>クラウドリプレイ分析</strong>：Home の「リプレイ分析」でリプレイ ID を入力し、既存の分析結果の表示や新規分析の依頼ができるようになりました。「対戦記録」や「お気に入り対戦」で対戦を右クリックし、「リプレイ分析」を選んで開くこともできます。</li>
+        <div style="text-align:center; width:100%;"><img src="https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif" alt="v0_5_0_Replayer" style="display:block; max-width:100%; max-height:500px; object-fit:contain; border-radius:12px; margin:20px auto; border:1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4);"></div>
+        <li><strong>試合全体の振り返り</strong>：各ラウンドの勝敗、被ダメージイベント、コンボダメージの分布をまとめて確認できます。イベントの発生回数と累計ダメージに基づく相対的な影響度を表示し、優先して見直すポイントを探しやすくしました。問題の種類で確認リストを絞り込み、記録をクリックすると該当ラウンドへ移動できます。</li>
+        <li><strong>ラウンドタイムラインと記録の連動</strong>：両プレイヤーの体力、ドライブゲージ、画面内の位置の変化を、被ダメージイベントやコンボのダメージ・ヒット数と同じ画面で確認できます。グラフや記録をクリックすると該当時点と付近のイベントを表示。1P・2P の注目対象を切り替えながら、対空率、投げ抜け、画面端にいた時間などの統計とあわせて振り返れます。</li>
+        <li><strong>分析の進捗と利用回数の表示</strong>：「状態」でタスクの進捗を確認でき、完了すると結果を自動表示します。失敗した場合は再試行できます。手動での分析依頼は各端末で 1 時間あたり最大 10 回までで、毎時 0 分に回復します。既存の結果の検索・閲覧では回数を消費しません。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">謝辞</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li>🙌 QQ 悠哈さん、QQ 太简单さん、QQ 冥さん、QQ 无道さん、そして QQ グループ「SF Scouter 战绩面板内测群」の皆さんに、丁寧なご回答と開発のヒントをいただいたことを心より感謝します。</li>
+        <li>🙌 <a href="https://github.com/Wael3rd/SF6_Tools">SF6_Tools</a>（<a href="https://www.nexusmods.com/streetfighter6/mods/3173">Nexus Mods</a>）、<a href="https://github.com/lucasteles/sf6_re_scripts">sf6_re_scripts</a>、<a href="https://github.com/WistfulHopes/SF6Mods">SF6Mods</a> の各プロジェクトから着想をいただきました。ありがとうございます。</li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.4.9</span>
+        <span class="date">2026.09.22</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">新增</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>登录状态自动校验与错误提示</strong>：自动校验登录状态，并在校验异常时显示错误提示，方便了解当前登录状态及异常情况。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">优化</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>优化重置跟踪分数的提示文案</strong>：调整重置跟踪分数相关话术，让操作含义更清晰。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">修复</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>修复长时间对战后抢夺游戏焦点的问题</strong>：解决 SF6Scouter 在对战约一小时后抢占游戏窗口焦点、打断操作的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 此路<-不通提供的反馈</sub></span></li>
+        <li><strong>修复复盘标签遮挡窗口内点击的问题</strong>：解决复盘标签遮挡窗口内其他区域、导致点击操作受阻的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 焕冥 提供的反馈</sub></span></li>
+        <li><strong>修复窗口无法正常关闭的问题</strong>：解决窗口无法正常关闭的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 啊？提供的反馈</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Added</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Automatic Login Status Checks and Error Messages</strong>: The app now checks login status automatically and displays an error message if the check encounters a problem, making login issues easier to identify.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Improved</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Clearer Wording for Resetting Tracked Scores</strong>: Revised the messages related to resetting tracked scores to clarify what the action does.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Fixed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Game Focus After Extended Play</strong>: Fixed an issue where SF6Scouter could take focus away from the game after about an hour of play, interrupting gameplay. <span class="thanks"><sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub></span></li>
+        <li><strong>Review Tags Blocking Clicks</strong>: Fixed an issue where review tags could cover other parts of the window and block clicks in those areas. <span class="thanks"><sub>🙌 Special thanks to QQ 焕冥 for the feedback</sub></span></li>
+        <li><strong>Window Closing Issue</strong>: Fixed an issue where a window would not close properly. <span class="thanks"><sub>🙌 Special thanks to QQ 啊？ for the feedback</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">追加</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>ログイン状態の自動チェックとエラー表示</strong>: ログイン状態を自動で確認し、確認時に問題が発生した場合はエラーメッセージを表示するようにしました。現在のログイン状態やエラーの内容を把握しやすくなります。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">改善</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>追跡スコアのリセットに関する案内文を改善</strong>: 追跡スコアのリセットに関するメッセージを見直し、操作の意味が伝わりやすい表現にしました。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">修正</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>長時間の対戦後にゲームのフォーカスを奪う問題を修正</strong>: 約1時間プレイした後に SF6Scouter がゲームウィンドウのフォーカスを奪い、ゲーム操作が中断される問題を修正しました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 此路<-不通 さんに感謝します</sub></span></li>
+        <li><strong>レビュータグがクリック操作を妨げる問題を修正</strong>: レビュータグがウィンドウ内のほかの領域に重なり、その領域をクリックできなくなる問題を修正しました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 焕冥 さんに感謝します</sub></span></li>
+        <li><strong>ウィンドウを閉じられない問題を修正</strong>: ウィンドウが正常に閉じない問題を修正しました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 啊？ さんに感謝します</sub></span></li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.4.8</span>
+        <span class="date">2026.08.04</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">添加</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>支持收藏对战记录与添加复盘标记</strong>：新增对战记录收藏功能。用户可以在复盘标签弹窗中直接收藏对战记录，也可以在对战记录列表中右键收藏；收藏的对战记录可在 Home 页面的“收藏对战”页面查看。 <span class="thanks"><sub>🙌 特别感谢 QQ 焕冥 提供的建议</sub></span></li>
+        <li><strong>支持新角色 Yasmine</strong>：新增 Yasmine 的数据和图片显示支持。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="zh">修复</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>修复 OCR 设置首次启动时不生效的问题</strong>：解决 OCR 设置在应用首次启动时未正确生效的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Added</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Favorite Battle Records and Review Markers</strong>: Added support for favoriting battle records. You can favorite a battle record directly from the review-tag popup or by right-clicking it in the battle record list. Favorited records are available on the “Favorite Matches” page under Home. <span class="thanks"><sub>🙌 Special thanks to QQ 焕冥 for the suggestion</sub></span></li>
+        <li><strong>Yasmine Support</strong>: Added support for displaying Yasmine’s data and image.</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Fixed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>OCR Settings Not Applied on First Launch</strong>: Fixed an issue where OCR settings were not applied correctly when the app was launched for the first time. <span class="thanks"><sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">追加</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>対戦記録のお気に入り登録とリプレイタグの追加</strong>：対戦記録をお気に入り登録できるようになりました。リプレイタグのポップアップから直接お気に入り登録できるほか、対戦記録一覧で右クリックして登録することもできます。お気に入り登録した対戦記録は、Home ページの「お気に入り対戦」ページで確認できます。 <span class="thanks"><sub>🙌 提案をくださった QQ 焕冥 さんに感謝します</sub></span></li>
+        <li><strong>新キャラクター Yasmine に対応</strong>：Yasmine のデータと画像を表示できるようになりました。</li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">修正</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>初回起動時に OCR 設定が反映されない問題を修正</strong>：アプリの初回起動時に OCR 設定が正しく反映されない問題を修正しました。 <span class="thanks"><sub>🙌 フィードバックをくださった QQ 宇宙最酷 さんに感謝します</sub></span></li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.4.7</span>
+        <span class="date">2026.07.23</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">修复</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>修复Pro面板和Mini面板无法关闭的问题</strong>：解决了修复Pro面板和Mini面板无法关闭，关闭后有透明边框的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 马肯博, QQ 啊？提供的反馈</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Fixed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Fixed Pro and Mini Panels Not Closing</strong>: Resolved an issue where the Pro and Mini panels could not be closed, and closing them left a transparent border. <span class="thanks"><sub>🙌 Special thanks to QQ 马肯博 and QQ 啊？ for the feedback</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">修正</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>ProパネルとMiniパネルが閉じられない問題を修正</strong>: ProパネルとMiniパネルを閉じられない問題、および閉じた後に透明な枠が残る問題を修正しました。 <span class="thanks"><sub>🙌 フィードバックを提供していただいた QQ 马肯博、QQ 啊？ に感謝します</sub></span></li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
+        <span class="version">v0.4.6</span>
+        <span class="date">2026.07.21</span>
+      </div>
+      <h4 class="changelog-subtitle" data-lang="zh">修复</h4>
+      <ul class="changelog-list" data-lang="zh">
+        <li><strong>修复弹窗抢夺游戏焦点的问题</strong>：解决了弹窗意外抢占游戏窗口焦点、导致操作被打断的问题。 <span class="thanks"><sub>🙌 特别感谢 QQ 木慕水 协助的测试</sub></span> <span class="thanks"><sub>🙌 特别感谢 QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝，微信 且胆行 提供的反馈</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="en">Fixed</h4>
+      <ul class="changelog-list" data-lang="en">
+        <li><strong>Fixed Popups Stealing Game Focus</strong>: Resolved an issue where popup windows could unexpectedly steal focus from the game, interrupting gameplay. <span class="thanks"><sub>🙌 Special thanks to QQ 木慕水 for helping with testing</sub></span> <span class="thanks"><sub>🙌 Special thanks to QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝, and WeChat 且胆行 for the feedback</sub></span></li>
+      </ul>
+      <h4 class="changelog-subtitle" data-lang="ja">修正</h4>
+      <ul class="changelog-list" data-lang="ja">
+        <li><strong>ポップアップがゲームのフォーカスを奪う問題を修正</strong>: ポップアップウィンドウが意図せずゲームのフォーカスを奪い、操作が中断される問題を解決しました。 <span class="thanks"><sub>🙌 テストにご協力いただいた QQ 木慕水 に感謝します</sub></span> <span class="thanks"><sub>🙌 フィードバックを提供していただいた QQ 太简单、QQ tainanle、QQ Raising、QQ 水蓝蓝、WeChat 且胆行 に感謝します</sub></span></li>
+      </ul>
+    </div>
+
+    <div class="changelog-item">
+      <div class="changelog-header">
         <span class="version">v0.4.5</span>
         <span class="date">2026.07.09</span>
       </div>
