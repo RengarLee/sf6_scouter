@@ -5,6 +5,52 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-09-24
+[zh]
+### 添加
+- **云端回放分析**：在 Home 页面的“回放分析”中输入回放 ID，即可查询已有分析或提交新的分析任务；也可以在“对战记录”和“收藏对战”中右键选择“回放分析”，快速打开对应对局。
+  ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
+
+- **整场复盘概览**：集中查看各回合胜负、受伤事件和连段伤害分布，按事件的出现次数与累计伤害标注相对影响等级，帮助确定复盘重点。支持按问题筛选观看清单，点击具体记录即可跳转到对应回合。
+
+- **回合时间轴与数据联动**：同屏查看双方血量、斗气和场上位置的变化，以及受伤事件、连段伤害与命中数。点击图表或记录即可定位相关时点，并查看附近事件；支持切换关注 1P 或 2P，结合对空率、拆投、版边时间等统计逐回合复盘。
+
+- **分析进度与额度提示**：在“状态”中查看任务进度，分析完成后自动展示结果，失败时可重试。每台设备每小时可主动提交最多 10 次分析，每到整点恢复额度；查询和查看已有结果不消耗次数。
+
+### 特别感谢
+- 🙌 特别感谢 QQ 悠哈、QQ 太简单、QQ 冥、QQ 无道，以及 QQ 群“SF Scouter 战绩面板内测群”的各位老哥，感谢大家的细心解答与思路启发。
+- 🙌 感谢 [SF6_Tools](https://github.com/Wael3rd/SF6_Tools)（[Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)）、[sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts) 和 [SF6Mods](https://github.com/WistfulHopes/SF6Mods) 项目带来的思路启发。
+
+[en]
+### Added
+- **Cloud Replay Analysis**: Enter a replay ID in “Replay Analysis” under Home to load an existing analysis or request a new one. You can also right-click a match in Battle Records or Favorite Matches and select “Replay Analysis” to open it directly.
+  ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
+
+- **Match Review Overview**: Review round results, damage-taken events, and combo damage distributions in one place. Relative impact ratings based on event frequency and accumulated damage help you prioritize your review. Filter the watchlist by issue and click a record to jump to its round.
+
+- **Interactive Round Timeline**: View both players’ health, Drive Gauge, and stage position alongside damage-taken events, combo damage, and hit counts. Click a chart or record to locate a moment and inspect nearby events. Focus on 1P or 2P and review each round with statistics such as anti-air rate, throw escapes, and time in the corner.
+
+- **Analysis Progress and Quota**: Check task progress under “Status”; results appear automatically when ready, and failed tasks can be retried. Each device allows up to 10 manual analysis submissions per hour, with the quota resetting at the start of each hour. Querying and viewing existing results do not use this quota.
+
+### Special Thanks
+- 🙌 Special thanks to QQ 悠哈, QQ 太简单, QQ 冥, QQ 无道, and everyone in the “SF Scouter 战绩面板内测群” QQ beta-testing group for their patient answers and inspiring ideas.
+- 🙌 Thanks to the [SF6_Tools](https://github.com/Wael3rd/SF6_Tools) ([Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)), [sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts), and [SF6Mods](https://github.com/WistfulHopes/SF6Mods) projects for the inspiration.
+
+[ja]
+### 追加
+- **クラウドリプレイ分析**：Home の「リプレイ分析」でリプレイ ID を入力し、既存の分析結果の表示や新規分析の依頼ができるようになりました。「対戦記録」や「お気に入り対戦」で対戦を右クリックし、「リプレイ分析」を選んで開くこともできます。
+  ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
+
+- **試合全体の振り返り**：各ラウンドの勝敗、被ダメージイベント、コンボダメージの分布をまとめて確認できます。イベントの発生回数と累計ダメージに基づく相対的な影響度を表示し、優先して見直すポイントを探しやすくしました。問題の種類で確認リストを絞り込み、記録をクリックすると該当ラウンドへ移動できます。
+
+- **ラウンドタイムラインと記録の連動**：両プレイヤーの体力、ドライブゲージ、画面内の位置の変化を、被ダメージイベントやコンボのダメージ・ヒット数と同じ画面で確認できます。グラフや記録をクリックすると該当時点と付近のイベントを表示。1P・2P の注目対象を切り替えながら、対空率、投げ抜け、画面端にいた時間などの統計とあわせて振り返れます。
+
+- **分析の進捗と利用回数の表示**：「状態」でタスクの進捗を確認でき、完了すると結果を自動表示します。失敗した場合は再試行できます。手動での分析依頼は各端末で 1 時間あたり最大 10 回までで、毎時 0 分に回復します。既存の結果の検索・閲覧では回数を消費しません。
+
+### 謝辞
+- 🙌 QQ 悠哈さん、QQ 太简单さん、QQ 冥さん、QQ 无道さん、そして QQ グループ「SF Scouter 战绩面板内测群」の皆さんに、丁寧なご回答と開発のヒントをいただいたことを心より感謝します。
+- 🙌 [SF6_Tools](https://github.com/Wael3rd/SF6_Tools)（[Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)）、[sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts)、[SF6Mods](https://github.com/WistfulHopes/SF6Mods) の各プロジェクトから着想をいただきました。ありがとうございます。
+
 ## [0.4.9] - 2026-09-22
 [zh]
 ### 新增

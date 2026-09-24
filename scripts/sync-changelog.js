@@ -1,7 +1,7 @@
 /**
  * Automated Changelog Sync Script
  * Converts CHANGELOG.md (Markdown) to public-docs/web/index.html (HTML)
- * Supports: Multi-lang ([zh], [en], [ja]), Images, Thanks (🙌), Bold (**)
+ * Supports: Multi-lang ([zh], [en], [ja]), Images, HTTP(S) links, Thanks (🙌), Bold (**)
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -79,7 +79,8 @@ try {
       if (line.startsWith('- ')) {
         let itemText = line.substring(2)
           .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-          .replace(/!\[(.*?)\]\((.*?)\)/g, `<img src="$2" alt="$1" style="${imageStyle}">`);
+          .replace(/!\[(.*?)\]\((.*?)\)/g, `<img src="$2" alt="$1" style="${imageStyle}">`)
+          .replace(/(?<!!)\[([^\]\n]+)\]\((https?:\/\/[^\s"<>)]*)\)/g, '<a href="$2">$1</a>');
         const section = ensureSection(currentLang, currentSectionByLang[currentLang]);
         section.items.push('        <li>' + itemText + '</li>');
       } 
