@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 2026-09-25
+[zh]
+### 修复
+- **修复后台窗口抢夺游戏焦点的问题**：解决后台获取数据、同步段位信息或检测网络连接时，窗口可能抢占游戏焦点、打断操作的问题。
+  <sub>🙌 特别感谢 QQ www.TH.zz提供的反馈</sub>
+
+[en]
+### Fixed
+- **Background Windows Taking Game Focus**: Fixed an issue where background data fetching, rank information syncing, or connectivity checks could take focus away from the game and interrupt gameplay.
+  <sub>🙌 Special thanks to QQ www.TH.zz for the feedback</sub>
+
+[ja]
+### 修正
+- **バックグラウンドウィンドウがゲームのフォーカスを奪う問題を修正**: バックグラウンドでのデータ取得、ランク情報の同期、接続チェック時に、ゲームのフォーカスが奪われて操作が中断されることがある問題を修正しました。
+  <sub>🙌 フィードバックをくださった QQ www.TH.zz さんに感謝します</sub>
+
 ## [0.5.0] - 2026-09-24
 [zh]
 ### 添加
