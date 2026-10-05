@@ -5,6 +5,82 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2] - 2026-10-05
+[zh]
+### 添加
+- **回放分析升级为历史列表与侧边详情**：集中查看本机提交过、以及成功查看过的回放分析，支持按玩家名、CFN 或回放 ID 搜索，按角色和状态筛选。未完成任务的进度在后台同步；点击记录即可在侧边抽屉查看详情。
+   <sub>🙌 特别感谢 焕冥 提供的建议</sub>
+  ![回放分析历史列表](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-history.png)
+- **添加回放分析入口**： 可通过对战记录，收藏回放右键直接开始进入回放分析页面
+ <sub>🙌 特别感谢 QQ 焕冥, QQ 痛饮三杯 提供的建议</sub>
+- **回放分析导出回放分析数据**：打开回放分析详情，在“状态”中选择“导出回放分析数据”，即可保存包含对局数据和复盘提示词的 Markdown 文件，交给你常用的 AI 继续分析。
+  <sub>🙌 特别感谢 QQ 痛饮三杯 提供的建议</sub>
+  ![AI 复盘材料导出入口](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/ai-export.png)
+
+- **按伤害优先级给出改进建议**：整场总览新增“改进建议”，从对空、被确反、应对迸发、抢招被打康和被差合等已记录问题中，优先展示关联伤害较高的复盘重点，帮助决定先练什么。
+
+- **新增赞助入口**：可在系统设置中找到赞助链接，支持 SF6Scouter 的持续开发。
+### 优化
+
+- **更细的起手与伤害分析**：新增对手起手招式统计；“附近事件”新增整段受伤结束后的剩余血量。
+  ![整场复盘与改进建议](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-review.png)
+  <sub>🙌 特别感谢 QQ 悠哈, QQ 太简单, QQ 无道, QQ 此路<-不通 提供的建议</sub>
+- **从分数趋势直接查看逐局表现**：MR／LP 趋势图保留整体曲线，放大到足够细的范围后显示对手角色头像，以绿框／红框区分胜负，下方对战记录随可见范围联动。新增放大、缩小、总览按钮，支持横向拖选放大、Ctrl + 拖动或滚轮平移；逐局视图使用更细的数值刻度，方便观察小幅变化。
+  <sub>🙌 特别感谢 QQ balance 提供的建议</sub>
+  ![趋势图逐局头像与对战记录联动](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/trend-matches.png)
+
+- **对战信息更易读**：统一对战记录、收藏对战和回放分析列表的双行玩家信息与胜负标识；对战记录和收藏对战的筛选栏、表头保持可见，记录在表格内滚动。
+
+[en]
+### Added
+- **Replay History and a Detail Drawer**: Browse analyses submitted or successfully viewed on this device. Search by player name, CFN, or replay ID, and filter by character or status. Unfinished tasks update in the background; click a record to open its details in a side drawer.
+  <sub>🙌 Special thanks to 焕冥 for the suggestion</sub>
+  ![Replay analysis history](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-history.png)
+- **Replay Analysis Shortcuts**: Right-click a match in Battle Records or Favorite Matches to open its replay analysis directly.
+  <sub>🙌 Special thanks to QQ 焕冥 and QQ 痛饮三杯 for the suggestions</sub>
+- **Export Replay Analysis Data**: Open the analysis details, choose “Export replay analysis data” under “Status”, and save a Markdown file containing match data and a review prompt for your preferred AI.
+  <sub>🙌 Special thanks to QQ 痛饮三杯 for the suggestion</sub>
+  ![Replay analysis data export](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/ai-export.png)
+
+- **Damage-Prioritized Improvement Suggestions**: The match overview now highlights review priorities based on recorded issues such as missed anti-airs, unsafe attacks being punished, Drive Impact interactions, counter-hit challenges, and whiff punishes. Suggestions prioritize associated damage to help you choose what to practice first.
+
+- **Sponsorship Links**: Find links in System settings to support continued development of SF6Scouter.
+### Improved
+
+- **More Detailed Opener and Damage Analysis**: Added statistics for opponents’ opening moves. Nearby events now show the victim’s remaining health after the damage sequence ends.
+  ![Match review and improvement suggestions](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-review.png)
+  <sub>🙌 Special thanks to QQ 悠哈, QQ 太简单, QQ 无道, and QQ 此路<-不通 for the suggestions</sub>
+- **Explore Individual Matches from the Rating Trend**: MR/LP charts retain their overview curve and show opponent portraits when zoomed in far enough, with green/red borders for wins/losses. The match list below follows the visible range. Zoom in, zoom out, return to the overview, drag to select a range, or hold Ctrl while dragging or scrolling to pan. Finer numeric scales in the individual-match view make small changes easier to see.
+  <sub>🙌 Special thanks to QQ balance for the suggestion</sub>
+  ![Individual matches linked to the rating trend](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/trend-matches.png)
+
+- **Clearer Match Records**: Battle Records, Favorite Matches, and replay history now share two-line player information and consistent result indicators. Filters and headers remain visible while Battle Records and Favorite Matches scroll within their tables.
+
+[ja]
+### 追加
+- **リプレイ分析の履歴一覧と詳細ドロワー**：この端末で分析を依頼したリプレイや、分析結果を正常に表示したリプレイを一覧で確認できます。プレイヤー名・CFN・リプレイ ID による検索、キャラクター・状態による絞り込みに対応。未完了タスクの進捗はバックグラウンドで更新し、記録をクリックするとサイドドロワーで詳細を表示します。
+  <sub>🙌 ご提案をくださった 焕冥 さんに感謝します</sub>
+  ![リプレイ分析の履歴](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-history.png)
+- **リプレイ分析へのショートカット**：「対戦記録」や「お気に入り対戦」で対戦を右クリックすると、そのリプレイの分析を直接開けるようになりました。
+  <sub>🙌 ご提案をくださった QQ 焕冥さん、QQ 痛饮三杯さんに感謝します</sub>
+- **リプレイ分析データのエクスポート**：分析詳細の「ステータス」で「リプレイ分析データをエクスポート」を選ぶと、対戦データと振り返り用プロンプトを含む Markdown ファイルを保存し、普段使っている AI に渡せます。
+  <sub>🙌 ご提案をくださった QQ 痛饮三杯 さんに感謝します</sub>
+  ![リプレイ分析データのエクスポート](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/ai-export.png)
+
+- **ダメージを考慮した改善提案**：試合全体の振り返りに、優先して見直すポイントを追加しました。対空、確定反撃を受けた場面、ドライブインパクトへの対応、暴れへのカウンター、差し返しなど、記録された問題に関連するダメージをもとに、練習の優先順位を考えやすくしました。
+
+- **開発支援へのリンク**：システム設定に、SF6Scouter の継続的な開発を支援できるリンクを追加しました。
+### 改善
+
+- **始動技とダメージを詳しく確認**：相手の始動技の統計を追加しました。付近のイベントには、一連の被ダメージが終了した時点の残り体力を表示します。
+  ![試合全体の振り返りと改善提案](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-review.png)
+  <sub>🙌 ご提案をくださった QQ 悠哈さん、QQ 太简单さん、QQ 无道さん、QQ 此路<-不通さんに感謝します</sub>
+- **レート推移から各対戦を確認**：MR／LP の推移グラフは全体の曲線を保ち、十分に拡大すると対戦相手のキャラクター画像を表示します。緑枠／赤枠で勝敗を区別し、下の対戦一覧も表示範囲に連動します。拡大・縮小・全体表示ボタン、横ドラッグでの範囲拡大、Ctrl を押しながらのドラッグ・スクロールによる移動に対応。各対戦を確認する表示では数値目盛りを細かくし、小さな変化も見やすくしました。
+  <sub>🙌 ご提案をくださった QQ balance さんに感謝します</sub>
+  ![各対戦の画像と連動する対戦一覧](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/trend-matches.png)
+
+- **対戦情報を見やすく改善**：「対戦記録」「お気に入り対戦」「リプレイ分析」で、プレイヤー情報の2段表示と勝敗の表現を統一しました。「対戦記録」「お気に入り対戦」では絞り込みと表の見出しを表示したまま、表内をスクロールできます。
+
 ## [0.5.1] - 2026-09-25
 [zh]
 ### 修复
