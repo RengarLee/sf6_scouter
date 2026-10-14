@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.3] - 2026-10-14
+[zh]
+### 添加
+- **新增角色阿俊（Arjun）**：添加角色头像、立绘和专属配色，并加入随机角色池。
+
+[en]
+### Added
+- **New Character: Arjun**: Added character portraits, a full-body illustration, and a dedicated color theme. Arjun is now included in the random character pool.
+
+[ja]
+### 追加
+- **新キャラクター Arjun**：キャラクター画像、立ち絵、専用テーマカラーを追加し、ランダムキャラクター選択の対象に含めました。
+
 ## [0.5.2] - 2026-10-05
 [zh]
 ### 添加
