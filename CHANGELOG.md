@@ -795,6 +795,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **调整数据反馈采样比例**：调整数据反馈比例
 
+[en]
+### Improved
+
+- **Adjusted Data Feedback Sampling**: Adjusted the data feedback sampling rate.
+
+[ja]
+### 改善
+
+- **データフィードバックのサンプリング比率を調整**：データフィードバックの比率を調整しました。
+
 ## [0.3.9] - 2026-05-17
 
 [zh]

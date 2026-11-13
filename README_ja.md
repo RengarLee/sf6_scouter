@@ -15,7 +15,7 @@
 - ここで配布しているのは、実行可能なアプリ本体と関連する公開アセットです。
 - ここには **アプリのソースコードは含まれていません**。
 - SF6 Scouter を利用したい場合は、ビルド可能なソースを探すのではなく、リリース情報とダウンロード内容を確認してください。
-- リリースノート：[English](./CHANGELOG.md)、[简体中文](./CHANGELOG_zh.md)、[日本語](./CHANGELOG_ja.md)。
+- リリースノート：[CHANGELOG.md](./CHANGELOG.md)。各バージョンは一つの節で、節内に中国語、英語、日本語を書きます。
 - ダウンロード：[GitHub Releases](https://github.com/RengarLee/sf6_scouter/releases)。
 
 ## 主な機能

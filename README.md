@@ -15,7 +15,7 @@ This repository is the **distribution repository for the runnable SF6 Scouter ap
 - It provides the app package and related public assets.
 - It does **not** contain the application source code.
 - If you are here to use SF6 Scouter, check the release and download content rather than looking for a buildable source project.
-- Release notes: [English](./CHANGELOG.md), [简体中文](./CHANGELOG_zh.md), [日本語](./CHANGELOG_ja.md).
+- Release notes: [CHANGELOG.md](./CHANGELOG.md). Each version is one section, with Chinese, English, and Japanese inside it.
 - Downloads: [GitHub Releases](https://github.com/RengarLee/sf6_scouter/releases).
 
 ## Core Features

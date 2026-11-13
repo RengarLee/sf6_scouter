@@ -14,7 +14,7 @@
 
 - 这里提供的是可直接使用的应用及相关公开资源。
 - 这里 **不包含应用源码**。
-- 发布说明：[English](./CHANGELOG.md)、[简体中文](./CHANGELOG_zh.md)、[日本語](./CHANGELOG_ja.md)。
+- 发布说明：[CHANGELOG.md](./CHANGELOG.md)。每个版本一节，节内是中文、英文和日文。
 - 下载：[GitHub Releases](https://github.com/RengarLee/sf6_scouter/releases)。
 
 
