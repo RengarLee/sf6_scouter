@@ -10,11 +10,13 @@
 
 ## Repository Scope
 
-This repository is the **distribution repository for the runnable SF6 Scouter application**, including its website, previews, release notes, and download entry points.
+This repository is the **distribution repository for the runnable SF6 Scouter application**, including previews, release notes, and download entry points.
 
 - It provides the app package and related public assets.
 - It does **not** contain the application source code.
 - If you are here to use SF6 Scouter, check the release and download content rather than looking for a buildable source project.
+- Release notes: [English](./CHANGELOG.md), [简体中文](./CHANGELOG_zh.md), [日本語](./CHANGELOG_ja.md).
+- Downloads: [GitHub Releases](https://github.com/RengarLee/sf6_scouter/releases).
 
 ## Core Features
 

@@ -1,50 +1,19 @@
 # Changelog
 
+[English] | [简体中文](./CHANGELOG_zh.md) | [日本語](./CHANGELOG_ja.md)
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.5.3] - 2026-10-14
-[zh]
-### 添加
-- **新增角色阿俊（Arjun）**：添加角色头像、立绘和专属配色，并加入随机角色池。
 
-[en]
 ### Added
 - **New Character: Arjun**: Added character portraits, a full-body illustration, and a dedicated color theme. Arjun is now included in the random character pool.
 
-[ja]
-### 追加
-- **新キャラクター Arjun**：キャラクター画像、立ち絵、専用テーマカラーを追加し、ランダムキャラクター選択の対象に含めました。
-
 ## [0.5.2] - 2026-10-05
-[zh]
-### 添加
-- **回放分析升级为历史列表与侧边详情**：集中查看本机提交过、以及成功查看过的回放分析，支持按玩家名、CFN 或回放 ID 搜索，按角色和状态筛选。未完成任务的进度在后台同步；点击记录即可在侧边抽屉查看详情。
-   <sub>🙌 特别感谢 焕冥 提供的建议</sub>
-  ![回放分析历史列表](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-history.png)
-- **添加回放分析入口**： 可通过对战记录，收藏回放右键直接开始进入回放分析页面
- <sub>🙌 特别感谢 QQ 焕冥, QQ 痛饮三杯 提供的建议</sub>
-- **回放分析导出回放分析数据**：打开回放分析详情，在“状态”中选择“导出回放分析数据”，即可保存包含对局数据和复盘提示词的 Markdown 文件，交给你常用的 AI 继续分析。
-  <sub>🙌 特别感谢 QQ 痛饮三杯 提供的建议</sub>
-  ![AI 复盘材料导出入口](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/ai-export.png)
 
-- **按伤害优先级给出改进建议**：整场总览新增“改进建议”，从对空、被确反、应对迸发、抢招被打康和被差合等已记录问题中，优先展示关联伤害较高的复盘重点，帮助决定先练什么。
-
-- **新增赞助入口**：可在系统设置中找到赞助链接，支持 SF6Scouter 的持续开发。
-### 优化
-
-- **更细的起手与伤害分析**：新增对手起手招式统计；“附近事件”新增整段受伤结束后的剩余血量。
-  ![整场复盘与改进建议](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-review.png)
-  <sub>🙌 特别感谢 QQ 悠哈, QQ 太简单, QQ 无道, QQ 此路<-不通 提供的建议</sub>
-- **从分数趋势直接查看逐局表现**：MR／LP 趋势图保留整体曲线，放大到足够细的范围后显示对手角色头像，以绿框／红框区分胜负，下方对战记录随可见范围联动。新增放大、缩小、总览按钮，支持横向拖选放大、Ctrl + 拖动或滚轮平移；逐局视图使用更细的数值刻度，方便观察小幅变化。
-  <sub>🙌 特别感谢 QQ balance 提供的建议</sub>
-  ![趋势图逐局头像与对战记录联动](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/trend-matches.png)
-
-- **对战信息更易读**：统一对战记录、收藏对战和回放分析列表的双行玩家信息与胜负标识；对战记录和收藏对战的筛选栏、表头保持可见，记录在表格内滚动。
-
-[en]
 ### Added
 - **Replay History and a Detail Drawer**: Browse analyses submitted or successfully viewed on this device. Search by player name, CFN, or replay ID, and filter by character or status. Unfinished tasks update in the background; click a record to open its details in a side drawer.
   <sub>🙌 Special thanks to 焕冥 for the suggestion</sub>
@@ -69,64 +38,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Clearer Match Records**: Battle Records, Favorite Matches, and replay history now share two-line player information and consistent result indicators. Filters and headers remain visible while Battle Records and Favorite Matches scroll within their tables.
 
-[ja]
-### 追加
-- **リプレイ分析の履歴一覧と詳細ドロワー**：この端末で分析を依頼したリプレイや、分析結果を正常に表示したリプレイを一覧で確認できます。プレイヤー名・CFN・リプレイ ID による検索、キャラクター・状態による絞り込みに対応。未完了タスクの進捗はバックグラウンドで更新し、記録をクリックするとサイドドロワーで詳細を表示します。
-  <sub>🙌 ご提案をくださった 焕冥 さんに感謝します</sub>
-  ![リプレイ分析の履歴](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-history.png)
-- **リプレイ分析へのショートカット**：「対戦記録」や「お気に入り対戦」で対戦を右クリックすると、そのリプレイの分析を直接開けるようになりました。
-  <sub>🙌 ご提案をくださった QQ 焕冥さん、QQ 痛饮三杯さんに感謝します</sub>
-- **リプレイ分析データのエクスポート**：分析詳細の「ステータス」で「リプレイ分析データをエクスポート」を選ぶと、対戦データと振り返り用プロンプトを含む Markdown ファイルを保存し、普段使っている AI に渡せます。
-  <sub>🙌 ご提案をくださった QQ 痛饮三杯 さんに感謝します</sub>
-  ![リプレイ分析データのエクスポート](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/ai-export.png)
-
-- **ダメージを考慮した改善提案**：試合全体の振り返りに、優先して見直すポイントを追加しました。対空、確定反撃を受けた場面、ドライブインパクトへの対応、暴れへのカウンター、差し返しなど、記録された問題に関連するダメージをもとに、練習の優先順位を考えやすくしました。
-
-- **開発支援へのリンク**：システム設定に、SF6Scouter の継続的な開発を支援できるリンクを追加しました。
-### 改善
-
-- **始動技とダメージを詳しく確認**：相手の始動技の統計を追加しました。付近のイベントには、一連の被ダメージが終了した時点の残り体力を表示します。
-  ![試合全体の振り返りと改善提案](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/replay-review.png)
-  <sub>🙌 ご提案をくださった QQ 悠哈さん、QQ 太简单さん、QQ 无道さん、QQ 此路<-不通さんに感謝します</sub>
-- **レート推移から各対戦を確認**：MR／LP の推移グラフは全体の曲線を保ち、十分に拡大すると対戦相手のキャラクター画像を表示します。緑枠／赤枠で勝敗を区別し、下の対戦一覧も表示範囲に連動します。拡大・縮小・全体表示ボタン、横ドラッグでの範囲拡大、Ctrl を押しながらのドラッグ・スクロールによる移動に対応。各対戦を確認する表示では数値目盛りを細かくし、小さな変化も見やすくしました。
-  <sub>🙌 ご提案をくださった QQ balance さんに感謝します</sub>
-  ![各対戦の画像と連動する対戦一覧](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0.5.2/trend-matches.png)
-
-- **対戦情報を見やすく改善**：「対戦記録」「お気に入り対戦」「リプレイ分析」で、プレイヤー情報の2段表示と勝敗の表現を統一しました。「対戦記録」「お気に入り対戦」では絞り込みと表の見出しを表示したまま、表内をスクロールできます。
-
 ## [0.5.1] - 2026-09-25
-[zh]
-### 修复
-- **修复后台窗口抢夺游戏焦点的问题**：解决后台获取数据、同步段位信息或检测网络连接时，窗口可能抢占游戏焦点、打断操作的问题。
-  <sub>🙌 特别感谢 QQ www.TH.zz提供的反馈</sub>
 
-[en]
 ### Fixed
 - **Background Windows Taking Game Focus**: Fixed an issue where background data fetching, rank information syncing, or connectivity checks could take focus away from the game and interrupt gameplay.
   <sub>🙌 Special thanks to QQ www.TH.zz for the feedback</sub>
 
-[ja]
-### 修正
-- **バックグラウンドウィンドウがゲームのフォーカスを奪う問題を修正**: バックグラウンドでのデータ取得、ランク情報の同期、接続チェック時に、ゲームのフォーカスが奪われて操作が中断されることがある問題を修正しました。
-  <sub>🙌 フィードバックをくださった QQ www.TH.zz さんに感謝します</sub>
-
 ## [0.5.0] - 2026-09-24
-[zh]
-### 添加
-- **云端回放分析**：在 Home 页面的“回放分析”中输入回放 ID，即可查询已有分析或提交新的分析任务；也可以在“对战记录”和“收藏对战”中右键选择“回放分析”，快速打开对应对局。
-  ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
 
-- **整场复盘概览**：集中查看各回合胜负、受伤事件和连段伤害分布，按事件的出现次数与累计伤害标注相对影响等级，帮助确定复盘重点。支持按问题筛选观看清单，点击具体记录即可跳转到对应回合。
-
-- **回合时间轴与数据联动**：同屏查看双方血量、斗气和场上位置的变化，以及受伤事件、连段伤害与命中数。点击图表或记录即可定位相关时点，并查看附近事件；支持切换关注 1P 或 2P，结合对空率、拆投、版边时间等统计逐回合复盘。
-
-- **分析进度与额度提示**：在“状态”中查看任务进度，分析完成后自动展示结果，失败时可重试。每台设备每小时可主动提交最多 10 次分析，每到整点恢复额度；查询和查看已有结果不消耗次数。
-
-### 特别感谢
-- 🙌 特别感谢 QQ 悠哈、QQ 太简单、QQ 冥、QQ 无道，以及 QQ 群“SF Scouter 战绩面板内测群”的各位老哥，感谢大家的细心解答与思路启发。
-- 🙌 感谢 [SF6_Tools](https://github.com/Wael3rd/SF6_Tools)（[Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)）、[sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts) 和 [SF6Mods](https://github.com/WistfulHopes/SF6Mods) 项目带来的思路启发。
-
-[en]
 ### Added
 - **Cloud Replay Analysis**: Enter a replay ID in “Replay Analysis” under Home to load an existing analysis or request a new one. You can also right-click a match in Battle Records or Favorite Matches and select “Replay Analysis” to open it directly.
   ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
@@ -141,38 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 🙌 Special thanks to QQ 悠哈, QQ 太简单, QQ 冥, QQ 无道, and everyone in the “SF Scouter 战绩面板内测群” QQ beta-testing group for their patient answers and inspiring ideas.
 - 🙌 Thanks to the [SF6_Tools](https://github.com/Wael3rd/SF6_Tools) ([Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)), [sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts), and [SF6Mods](https://github.com/WistfulHopes/SF6Mods) projects for the inspiration.
 
-[ja]
-### 追加
-- **クラウドリプレイ分析**：Home の「リプレイ分析」でリプレイ ID を入力し、既存の分析結果の表示や新規分析の依頼ができるようになりました。「対戦記録」や「お気に入り対戦」で対戦を右クリックし、「リプレイ分析」を選んで開くこともできます。
-  ![v0_5_0_Replayer](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_5_0_Replayer.gif)
-
-- **試合全体の振り返り**：各ラウンドの勝敗、被ダメージイベント、コンボダメージの分布をまとめて確認できます。イベントの発生回数と累計ダメージに基づく相対的な影響度を表示し、優先して見直すポイントを探しやすくしました。問題の種類で確認リストを絞り込み、記録をクリックすると該当ラウンドへ移動できます。
-
-- **ラウンドタイムラインと記録の連動**：両プレイヤーの体力、ドライブゲージ、画面内の位置の変化を、被ダメージイベントやコンボのダメージ・ヒット数と同じ画面で確認できます。グラフや記録をクリックすると該当時点と付近のイベントを表示。1P・2P の注目対象を切り替えながら、対空率、投げ抜け、画面端にいた時間などの統計とあわせて振り返れます。
-
-- **分析の進捗と利用回数の表示**：「状態」でタスクの進捗を確認でき、完了すると結果を自動表示します。失敗した場合は再試行できます。手動での分析依頼は各端末で 1 時間あたり最大 10 回までで、毎時 0 分に回復します。既存の結果の検索・閲覧では回数を消費しません。
-
-### 謝辞
-- 🙌 QQ 悠哈さん、QQ 太简单さん、QQ 冥さん、QQ 无道さん、そして QQ グループ「SF Scouter 战绩面板内测群」の皆さんに、丁寧なご回答と開発のヒントをいただいたことを心より感謝します。
-- 🙌 [SF6_Tools](https://github.com/Wael3rd/SF6_Tools)（[Nexus Mods](https://www.nexusmods.com/streetfighter6/mods/3173)）、[sf6_re_scripts](https://github.com/lucasteles/sf6_re_scripts)、[SF6Mods](https://github.com/WistfulHopes/SF6Mods) の各プロジェクトから着想をいただきました。ありがとうございます。
-
 ## [0.4.9] - 2026-09-22
-[zh]
-### 新增
-- **登录状态自动校验与错误提示**：自动校验登录状态，并在校验异常时显示错误提示，方便了解当前登录状态及异常情况。
 
-### 优化
-- **优化重置跟踪分数的提示文案**：调整重置跟踪分数相关话术，让操作含义更清晰。
-
-### 修复
-- **修复长时间对战后抢夺游戏焦点的问题**：解决 SF6Scouter 在对战约一小时后抢占游戏窗口焦点、打断操作的问题。
-  <sub>🙌 特别感谢 QQ 此路<-不通提供的反馈</sub>
-- **修复复盘标签遮挡窗口内点击的问题**：解决复盘标签遮挡窗口内其他区域、导致点击操作受阻的问题。
-  <sub>🙌 特别感谢 QQ 焕冥 提供的反馈</sub>
-- **修复窗口无法正常关闭的问题**：解决窗口无法正常关闭的问题。
-  <sub>🙌 特别感谢 QQ 啊？提供的反馈</sub>
-
-[en]
 ### Added
 - **Automatic Login Status Checks and Error Messages**: The app now checks login status automatically and displays an error message if the check encounters a problem, making login issues easier to identify.
 
@@ -187,33 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Window Closing Issue**: Fixed an issue where a window would not close properly.
   <sub>🙌 Special thanks to QQ 啊？ for the feedback</sub>
 
-[ja]
-### 追加
-- **ログイン状態の自動チェックとエラー表示**: ログイン状態を自動で確認し、確認時に問題が発生した場合はエラーメッセージを表示するようにしました。現在のログイン状態やエラーの内容を把握しやすくなります。
-
-### 改善
-- **追跡スコアのリセットに関する案内文を改善**: 追跡スコアのリセットに関するメッセージを見直し、操作の意味が伝わりやすい表現にしました。
-
-### 修正
-- **長時間の対戦後にゲームのフォーカスを奪う問題を修正**: 約1時間プレイした後に SF6Scouter がゲームウィンドウのフォーカスを奪い、ゲーム操作が中断される問題を修正しました。
-  <sub>🙌 フィードバックをくださった QQ 此路<-不通 さんに感謝します</sub>
-- **レビュータグがクリック操作を妨げる問題を修正**: レビュータグがウィンドウ内のほかの領域に重なり、その領域をクリックできなくなる問題を修正しました。
-  <sub>🙌 フィードバックをくださった QQ 焕冥 さんに感謝します</sub>
-- **ウィンドウを閉じられない問題を修正**: ウィンドウが正常に閉じない問題を修正しました。
-  <sub>🙌 フィードバックをくださった QQ 啊？ さんに感謝します</sub>
-
 ## [0.4.8] - 2026-08-04
-[zh]
-### 添加
-- **支持收藏对战记录与添加复盘标记**：新增对战记录收藏功能。用户可以在复盘标签弹窗中直接收藏对战记录，也可以在对战记录列表中右键收藏；收藏的对战记录可在 Home 页面的“收藏对战”页面查看。
-  <sub>🙌 特别感谢 QQ 焕冥 提供的建议</sub>
-- **支持新角色 Yasmine**：新增 Yasmine 的数据和图片显示支持。
 
-### 修复
-- **修复 OCR 设置首次启动时不生效的问题**：解决 OCR 设置在应用首次启动时未正确生效的问题。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
-
-[en]
 ### Added
 - **Favorite Battle Records and Review Markers**: Added support for favoriting battle records. You can favorite a battle record directly from the review-tag popup or by right-clicking it in the battle record list. Favorited records are available on the “Favorite Matches” page under Home.
   <sub>🙌 Special thanks to QQ 焕冥 for the suggestion</sub>
@@ -223,73 +87,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **OCR Settings Not Applied on First Launch**: Fixed an issue where OCR settings were not applied correctly when the app was launched for the first time.
   <sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub>
 
-[ja]
-### 追加
-- **対戦記録のお気に入り登録とリプレイタグの追加**：対戦記録をお気に入り登録できるようになりました。リプレイタグのポップアップから直接お気に入り登録できるほか、対戦記録一覧で右クリックして登録することもできます。お気に入り登録した対戦記録は、Home ページの「お気に入り対戦」ページで確認できます。
-  <sub>🙌 提案をくださった QQ 焕冥 さんに感謝します</sub>
-- **新キャラクター Yasmine に対応**：Yasmine のデータと画像を表示できるようになりました。
-
-### 修正
-- **初回起動時に OCR 設定が反映されない問題を修正**：アプリの初回起動時に OCR 設定が正しく反映されない問題を修正しました。
-  <sub>🙌 フィードバックをくださった QQ 宇宙最酷 さんに感謝します</sub>
-
 ## [0.4.7] - 2026-07-23
-[zh]
-### 修复
-- **修复Pro面板和Mini面板无法关闭的问题**：解决了修复Pro面板和Mini面板无法关闭，关闭后有透明边框的问题。
-  <sub>🙌 特别感谢 QQ 马肯博, QQ 啊？提供的反馈</sub>
 
-[en]
 ### Fixed
 - **Fixed Pro and Mini Panels Not Closing**: Resolved an issue where the Pro and Mini panels could not be closed, and closing them left a transparent border.
   <sub>🙌 Special thanks to QQ 马肯博 and QQ 啊？ for the feedback</sub>
 
-[ja]
-### 修正
-- **ProパネルとMiniパネルが閉じられない問題を修正**: ProパネルとMiniパネルを閉じられない問題、および閉じた後に透明な枠が残る問題を修正しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 马肯博、QQ 啊？ に感謝します</sub>
-
 ## [0.4.6] - 2026-07-21
-[zh]
-### 修复
-- **修复弹窗抢夺游戏焦点的问题**：解决了弹窗意外抢占游戏窗口焦点、导致操作被打断的问题。
-  <sub>🙌 特别感谢 QQ 木慕水 协助的测试</sub>
-  <sub>🙌 特别感谢 QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝，微信 且胆行 提供的反馈</sub>
 
-[en]
 ### Fixed
 - **Fixed Popups Stealing Game Focus**: Resolved an issue where popup windows could unexpectedly steal focus from the game, interrupting gameplay.
   <sub>🙌 Special thanks to QQ 木慕水 for helping with testing</sub>
   <sub>🙌 Special thanks to QQ 太简单, QQ tainanle, QQ Raising, QQ 水蓝蓝, and WeChat 且胆行 for the feedback</sub>
 
-[ja]
-### 修正
-- **ポップアップがゲームのフォーカスを奪う問題を修正**: ポップアップウィンドウが意図せずゲームのフォーカスを奪い、操作が中断される問題を解決しました。
-  <sub>🙌 テストにご協力いただいた QQ 木慕水 に感謝します</sub>
-  <sub>🙌 フィードバックを提供していただいた QQ 太简单、QQ tainanle、QQ Raising、QQ 水蓝蓝、WeChat 且胆行 に感謝します</sub>
-
 ## [0.4.5] - 2026-07-09
-[zh]
-### 优化
-- **趋势图支持显示段位文本**：LP 趋势图的 Y 轴现已显示对应段位文本，查看分数走势时也能更直观地了解当前所处分段。
-  <sub>🙌 特别感谢 QQ Kano、QQ 宇宙最酷、QQ 啊？ 提供的反馈</sub>
 
-- **趋势图仅统计排位数据**：趋势图现仅统计排位数据，避免非排位对局对趋势图的影响。
-  <sub>🙌 特别感谢 NGA 贫穷的吸血鬼 提供的反馈</sub>
-
-- **防上头提醒改为独立窗口提示**：防上头提醒现以独立窗口形式展示，提示更醒目、不易错过；如不需要，也可在“设置 - 数据”中关闭。
-  <sub>🙌 特别感谢 QQ 键、QQ 游历群星 提供的反馈</sub>
-
-- **优化更新提示与交互流程**：改进更新模块的提示文案与交互体验。现在点击更新后会先展示版本更新内容，再由用户决定是否继续，而不是直接进入更新流程。
-  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
-
-- **降低应用闲置时的内存占用**：进一步优化内存管理，让应用在闲置状态下的内存占用更稳定，也更合理。
-  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
-
-- **复盘标签新增**：新增「瞎按」复盘标签。
-  <sub>🙌 特别感谢 QQ 啊？ 提供的反馈</sub>
-
-[en]
 ### Improved
 - **Rank Text Added to Trend Charts**: LP trend charts now show the corresponding rank text on the Y-axis, making it easier to understand your current rank bracket while reading score trends.
   <sub>🙌 Special thanks to QQ Kano, QQ 宇宙最酷, and QQ 啊？ for the feedback</sub>
@@ -309,74 +121,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **New Review Tag**: Added the "Button Mashing" review tag.
   <sub>🙌 Special thanks to QQ 啊？ for the feedback</sub>
 
-[ja]
-### 改善
-- **トレンドグラフに段位テキストを表示**: LP トレンドグラフの Y 軸に対応する段位テキストを表示するようになり、スコア推移を見ながら現在の帯域をより直感的に把握できるようになりました。
-  <sub>🙌 フィードバックを提供していただいた QQ Kano、QQ 宇宙最酷、QQ 啊？ に感謝します</sub>
-
-- **トレンドグラフはランクマッチのみを集計**: トレンドグラフはランクマッチのデータのみを集計するようになり、カジュアルマッチなどの非ランク戦が推移に影響しないようになりました。
-  <sub>🙌 フィードバックを提供していただいた NGA 贫穷的吸血鬼 に感謝します</sub>
-
-- **ティルト防止リマインダーを独立ウィンドウ表示に変更**: ティルト防止リマインダーを独立したウィンドウで表示するようにし、より目立って見逃しにくくなりました。不要な場合は「設定 - データ」からオフにできます。
-  <sub>🙌 フィードバックを提供していただいた QQ 键、QQ 游历群星 に感謝します</sub>
-
-- **更新案内と操作フローを改善**: 更新モジュールの案内文と操作体験を見直しました。更新をクリックすると、直接更新処理に入るのではなく、先に更新内容を確認してから続行を判断できるようになりました。
-  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
-
-- **待機時のメモリ使用量を削減**: メモリ管理をさらに最適化し、アプリ待機時のメモリ使用量がより安定して適切な範囲に収まるようにしました。
-  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
-
-- **新しいレビュータグを追加**: 「ボタン連打」のレビュータグを追加しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 啊？ に感謝します</sub>
-
 ## [0.4.4] - 2026-06-29
-[zh]
-### 修复
-- **修复对战记录和胜率报表中模式选项展示的错误**：修复对战记录的模式信息展示错误和胜率报表中模型下拉选项的错误
-  <sub>🙌 特别感谢 NGA langxiankui 提供的反馈</sub>
 
-[en]
 ### Fixed
 - **Fixed mode option display errors in battle records and win rate report**: Fixed incorrect mode info display in battle records and incorrect mode dropdown options in the win rate report.
   <sub>🙌 Special thanks to NGA langxiankui for the feedback</sub>
 
-[ja]
-### 修正
-- **対戦記録と勝率レポートのモードオプション表示エラーを修正**: 対戦記録のモード情報表示エラーと、勝率レポートのモードドロップダウンオプションのエラーを修正しました。
-  <sub>🙌 フィードバックを提供していただいた NGA langxiankui に感謝します</sub>
-
 ## [0.4.3] - 2026-06-28
-[zh]
-### 添加
-- **胜率报表面板**：新增胜率报表页，可查看不同模式的对战数据，查看对战 KPI 数据（胜率、场次、连胜 / 连败记录等）。
-  <sub>🙌 特别感谢 QQ 焕冥 提供的反馈</sub>
-  ![v0_4_3_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Rate.gif)
 
-- **对战记录筛选条件**：添加多种筛选条件，方便用户快速查找目标对战记录。
-  ![v0_4_3_Records](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Records.gif)
-
-- **对战记录复盘标签**：在对战记录表格中右键单击任意对局，可直接为其添加复盘标签。
-  <sub>🙌 特别感谢 QQ 宇宙最酷，QQ 林无穷，QQ 觿子 提供的灵感启发</sub>
-  ![v0_4_3_Tag](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag.gif)
-
-- **对局抽屉标签快速入口**：在对局详情抽屉中展示前 5 个高频复盘标签，点击可一键联动筛选对应对局。
-  ![v0_4_3_Tag_Filter](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag_Filter.gif)
-
-- **历史对战记录主动同步**：在对战记录表格右上角新增主动同步入口，可查看历史同步状态。
-  <sub>🙌 特别感谢 QQ 浅海 提供的反馈</sub>
-  ![v0_4_3_Load](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Load.gif)
-
-### 优化
-- **复盘标签新增**：新增「一直被投」和「迸发没反应」两个复盘标签。
-  <sub>🙌 特别感谢 NGA 智障的最高境界, NGA langxiankui, QQ K丶越 提供的反馈</sub>
-
-### 修复
-- **修复 Windows 10 减少动效时抽屉始终展开**：解决在系统开启「减少特效」时侧边抽屉始终处于展开状态的异常行为。
-  <sub>🙌 特别感谢 QQ 泠㳕 提供的反馈</sub>
-- **修复复盘提示始终展开**：复盘提示现可按配置正确关闭展示。
-  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
-
-[en]
 ### Added
 - **Win Rate Report Panel**: Added a new win rate report page to view battle data across different modes and key KPIs (win rate, match count, win/loss streak records, and more).
   <sub>🙌 Special thanks to QQ 焕冥 for the feedback</sub>
@@ -406,63 +158,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed Review Prompt Always Expanded**: The review prompt can now be correctly dismissed based on configuration.
   <sub>🙌 Special thanks to QQ 此路<-不通 for the feedback</sub>
 
-[ja]
-### 追加
-- **勝率レポートパネル**: 各モードの対戦データと主要KPI（勝率・対戦数・連勝／連敗記録など）を確認できる勝率レポートページを新たに追加しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 焕冥 に感謝します</sub>
-  ![v0_4_3_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Rate.gif)
-
-- **対戦記録フィルター**: 対象の対戦記録をすばやく見つけるための複数のフィルター条件を追加しました。
-  ![v0_4_3_Records](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Records.gif)
-
-- **対戦記録レビュータグ**: 対戦記録テーブル内の任意の対局を右クリックすることで、直接レビュータグを追加できるようになりました。
-  <sub>🙌 アイデアを提供していただいた QQ 宇宙最酷、QQ 林无穷、QQ 觿子 に感謝します</sub>
-  ![v0_4_3_Tag](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag.gif)
-
-- **対局ドロワーのタグクイックアクセス**: 対局詳細ドロワーに使用頻度上位5件のレビュータグが表示されるようになりました。クリックすると、そのタグに対応する対局をワンクリックで絞り込めます。
-  ![v0_4_3_Tag_Filter](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Tag_Filter.gif)
-
-- **対戦履歴の手動同期**: 対戦記録テーブルの右上に手動同期の入口を追加しました。過去の対戦記録を同期し、同期状況を確認できます。
-  <sub>🙌 フィードバックを提供していただいた QQ 浅海 に感謝します</sub>
-  ![v0_4_3_Load](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_3_Load.gif)
-
-### 改善
-- **新しいレビュータグを追加**: 「ずっと投げられる」と「ドライブインパクトに無反応」の2つの新しいレビュータグを追加しました。
-  <sub>🙌 フィードバックを提供していただいた NGA 智障的最高境界、NGA langxiankui、QQ K丶越 に感謝します</sub>
-
-### 修正
-- **Windows 10でモーション軽減有効時にドロワーが常に展開される問題を修正**: システムの「モーション効果を減らす」が有効な場合、サイドドロワーが常に展開状態になる異常な動作を解決しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 泠㳕 に感謝します</sub>
-- **レビュープロンプトが常に展開される問題を修正**: レビュープロンプトが設定に基づいて正しく非表示になるようになりました。
-  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
-
 ## [0.4.2] - 2026-06-11
-[zh]
-### 添加
-- **新增排位 BO3 快速复盘功能**: 当完成一次排位 BO3 且结果为负时，系统将自动弹出标签窗口，方便用户进行快速、简单的赛后复盘。收集的复盘标签数据将在周期报表中汇总展示，助您更好地总结对战经验。该功能可在“设置 - 数据 - 对战复盘提示”中关闭。
-  <sub>🙌 特别感谢 QQ 宇宙最酷，QQ 林无穷，QQ 觿子 提供的灵感启发</sub>
-  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
-  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
-- **新增跟踪目标历史记录功能**: 应用会自动记忆最近输入过的跟踪目标（最多 5 个），后续在输入时可直接点击选择，无需重复手动输入 CFN ID。
-  <sub>🙌 特别感谢 QQ 游历群星，QQ 焕冥 提供的反馈</sub>
 
-- **新增“防上头提醒”开关**：在“设置 - 数据”页面中加入了防上头提醒开关，用户可根据自身需求自由开启或关闭该功能。
-  <sub>🙌 特别感谢 小黑盒 糖泥呵 提供的建议</sub>
-
-### 优化
-- **限制应用单实例运行**：新增了应用单开限制，避免因误操作同时打开多个应用实例，从而影响系统性能和使用体验。 
-  <sub>🙌 特别感谢 QQ ……, QQ 浅海 提供的反馈</sub>
-
-- **内存占用深度优化**：优化了应用的内存管理，修复了特定场景下内存占用异常增加的问题。 
-  <sub>🙌 特别感谢 QQ 此路<-不通 提供的反馈</sub>
-
-- **数据共享网络优化**：精简了数据上传逻辑，有效减少了请求次数和网络资源占用。
-
-### 修复
-- **修复备份文件加载失败**：解决了部分情况下备份文件无法正常加载的问题。
-  <sub>🙌 特别感谢 QQ 浅海 提供的反馈</sub>
-
-[en]
 ### Added
 - **Ranked BO3 Quick Review**: When you lose a complete Ranked BO3 match, a tag window will automatically pop up for a quick and simple post-match review. The collected review tags will be summarized in periodic reports to help you analyze your matches. This feature can be disabled in "Settings - Data - Match Review Prompt".
   <sub>🙌 Special thanks to QQ 宇宙最酷, QQ 林无穷, and QQ 觿子 for the inspiration</sub>
@@ -487,65 +184,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed Backup File Loading**: Resolved an issue where backup files could fail to load under certain conditions.
   <sub>🙌 Special thanks to QQ 浅海 for the feedback</sub>
 
-[ja]
-### 追加
-- **ランクマッチBO3クイック振り返り機能**: ランクマッチのBO3が完了し、結果が負けだった場合、自動的にタグウィンドウがポップアップし、簡単かつ迅速に試合の振り返りができます。収集された振り返りタグデータは定期レポートに集計され、対戦経験の分析に役立ちます。この機能は「設定 - データ - 対戦振り返りプロンプト」でオフにできます。
-  <sub>🙌 アイデアを提供していただいた QQ 宇宙最酷、QQ 林无穷、QQ 觿子 に感謝します</sub>
-  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags.png)
-  ![v0_4_1_Tags](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_2_Tags_Show.png)
-- **トラッキング対象の履歴機能**: アプリは最近入力されたトラッキング対象を自動的に記憶します（最大5つ）。次回以降は入力時にクリックするだけで選択でき、CFN IDを何度も手動で入力する必要がなくなります。
-  <sub>🙌 フィードバックを提供していただいた QQ 游历群星、QQ 焕冥 に感謝します</sub>
-
-- **「ティルト防止リマインダー」スイッチ**: 「設定 - データ」ページにティルト（連続プレイ）防止リマインダーのスイッチを追加しました。ユーザーのニーズに合わせて自由にオン/オフを切り替えることができます。
-  <sub>🙌 提案していただいた QQ 糖泥呵 に感謝します</sub>
-
-### 改善
-- **アプリの多重起動制限**: アプリが単一インスタンスでのみ実行されるように制限しました。誤って複数のアプリを開いてしまい、システムのパフォーマンスや使用体験に悪影響を与えるのを防ぎます。
-  <sub>🙌 フィードバックを提供していただいた QQ ……、QQ 浅海 に感謝します</sub>
-
-- **メモリ使用量の最適化**: アプリのメモリ管理を深層から最適化し、特定の状況下でメモリ使用量が異常に増加する問題を修正しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 此路<-不通 に感謝します</sub>
-
-- **データ共有機能の最適化**: データのアップロードロジックを簡素化し、リクエスト回数とネットワークリソースの消費を効果的に削減しました。
-
-### 修正
-- **バックアップファイル読み込みの修正**: 特定の状況下でバックアップファイルが正常に読み込めない問題を解決しました。
-  <sub>🙌 フィードバックを提供していただいた QQ 浅海 に感謝します</sub>
-
 ## [0.4.1] - 2026-06-10
-[zh]
-### 添加
 
-- **游玩数据支持查看对战胜率**: 在“Home-游玩数据”中点击特定角色，即可查看该角色对战其他各角色的胜率。
-  ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
-- **新增网络连接测试**: 在“设置-账号”中添加网络测试功能，可检测当前环境与官网的连接质量，协助诊断网络问题。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
-
-- **Home 页面支持缩放**：用户可以使用 `Ctrl + 滚轮` 来放大或缩小页面，提升交互体验。
-  <sub>🙌 特别感谢 QQ 此路<-不通 提供的建议</sub>
-  ![v0_4_1_Zoom](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Zoom.gif)
-
-- **新增随机角色推荐**：在“Home-其他”页面中点击“随机角色”按钮即可获得推荐。该功能各角色出现概率均等。
-  <sub>🙌 特别感谢 QQ 王小川 提供的建议</sub>
-  ![v0_4_1_Random](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Random.gif)
-
-### 优化
-
-- **周期报表支持自定义时间查询**：支持自定义时间范围查找，满足不同场景下的查询需求（单次查询跨度最大为 30 天）。
-  <sub>🙌 特别感谢 NGA 智障的最高境界, QQ 浅海 提供的反馈</sub>
-  ![v0_4_1_Time](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Time.gif)
-
-- **DPI 适配优化**：优化了应用在高 DPI 屏幕上的显示效果，确保界面元素清晰且布局合理。
-  <sub>🙌 特别感谢 QQ Kano 提供的反馈</sub>
-
-- **Home 页面支持记忆上次选项**：自动记录侧边栏的上次选择，避免重复操作，提升使用体验。
-  <sub>🙌 特别感谢 QQ 浅海, QQ❄ 提供的建议</sub>
-
-### 修复
-- **修复跟踪起点角色列表为空的问题**：解决了特定情况下跟踪起点角色列表显示为空的故障。
-  <sub>🙌 特别感谢 QQ w158 提供的反馈</sub>
-
-[en]
 ### Added
 
 - **Match win rate in Play Data**: In "Home-Play Data", click on a specific character to view their win rate against other characters.
@@ -578,76 +218,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed empty character list in tracking starting point**: Resolved an issue where the tracking starting point character list could be empty under certain conditions.
   <sub>🙌 Special thanks to QQ w158 for the feedback</sub>
 
-[ja]
-### 追加
-
-- **プレイデータに対戦勝率を追加**: 「ホーム-プレイデータ」で特定のキャラクターをクリックすると、そのキャラクターの他キャラクターに対する勝率を確認できるようになりました。
-  ![v0_4_1_WinRate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_WinRate.gif)
-
-- **ネットワーク接続テストを追加**: 「設定-アカウント」にネットワークテスト機能を追加しました。公式サイトとの接続品質を確認でき、ネットワーク問題の診断に役立ちます。
-  <sub>🙌 ご提案くださった QQ 宇宙最酷 に特別な感謝を</sub>
-
-- **ホーム画面のズームに対応**: `Ctrl + スクロール` で画面の拡大・縮小が可能になり、操作性が向上しました。
-  <sub>🙌 ご提案くださった QQ 此路<-不通 に特別な感謝を</sub>
-  ![v0_4_1_Zoom](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Zoom.gif)
-
-- **ランダムキャラクター推薦を追加**: 「ホーム-その他」の「ランダムキャラクター」ボタンでキャラクターの推薦を受けられます。公式サイトの「対戦数が少ないキャラ優先」とは異なり、全キャラ等確率で抽選されます。
-  <sub>🙌 ご提案くださった QQ 王小川 に特別な感謝を</sub>
-  ![v0_4_1_Random](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Random.gif)
-
-### 改善
-
-- **周期レポートのカスタム期間検索に対応**: 周期レポートで任意の期間を指定して検索できるようになりました（1回の検索範囲は最大30日間）。
-  <sub>🙌 フィードバックをくださった NGA 智障的最高境界、QQ 浅海 に特別な感謝を</sub>
-  ![v0_4_1_Time](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_1_Time.gif)
-
-- **DPI への適応を最適化**: 高 DPI モニターでの表示を最適化し、UI 要素の鮮明さとレイアウトの整合性を向上させました。
-  <sub>🙌 フィードバックをくださった QQ Kano に特別な感謝を</sub>
-
-- **ホーム画面の選択状態を記憶**: サイドバーの最後に選択した項目を記憶するようになり、再選択の手間を省いて利便性を向上させました。
-  <sub>🙌 ご提案くださった QQ 浅海、QQ❄ に特別な感謝を</sub>
-
-### 修正
-- **追跡開始地点のキャラクターリストが空になる問題を修正**: 特定の条件下で追跡開始地点のキャラクターリストが空で表示される不具合を修正しました。
-  <sub>🙌 フィードバックをくださった QQ w158 に特別な感謝を</sub>
-  
 ## [0.4.0] - 2026-06-03
-[zh]
-### 添加
 
-- **添加防上头助手**：当用户在短时间内连续输掉多场比赛时，系统会弹出一个提示窗口，建议用户休息一下，避免因为上头连续掉分。
-  <sub>🙌 特别感谢 QQ 看不腻的唐, QQ 第一百零五天, QQ 踢, QQ 绯木 提供的建议</sub>
-
-- **添加自动唤起视图功能**：当检测到游戏启动后，启动唤起Mini或Pro视图功能，减少用户操作步骤。用户可以在设置-系统-应用行为中关闭自动唤起功能。
-  <sub>🙌 特别感谢 QQ Kano 提供的灵感启发</sub>
-    ![v0_4_0_Auto_Start](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif)
-    ![v0_4_0_Auto_End](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif)
-- **添加托盘功能**：应用启动后将最小化到系统托盘，用户可以通过托盘图标右键菜单快速打开主界面、Mini面板、Pro面板，或退出应用程序。
-
-- **添加开机自启功能**：用户可以在设置-系统中开启开机自启功能，开启后应用程序将在系统启动时自动运行，无需手动启动。
-
-### 优化
-
-- **优化窗口交互逻辑**：引入主页窗口，将原有的窗口功能进行整合和优化，提升用户体验。主页窗口将作为用户进入应用后的主要交互界面，提供更清晰的功能入口。同时优化了窗口之间的切换逻辑，使得用户在不同功能模块之间切换更加流畅自然。
-  <sub>🙌 特别感谢 QQ aaa 乐提供的反馈</sub>
-![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
-
-- **优化代理下载**: 优化了官网和应用代理下载功能，提升下载速度和稳定性，确保用户能够更快速地下载应用。
-  <sub>🙌 特别感谢 QQ 风, QQ 宇宙最酷, QQ 蠹, QQ 林无穷, 微信 kumoito, 微信 HENRY 提供的反馈</sub>
-
-- **周期报表支持最新分数**: 周期报表中的分数信息支持当前用户最新的分数，用户可以更准确地了解自己的当前分数和趋势。
-  <sub>🙌 特别感谢 QQ 宇宙最酷，NGA 智障的最高境界，小黑盒 Art0r1as 提供的反馈</sub>
-
-- **"让SF6Scouter更聪明"功能增加内容**："让SF6Scouter更聪明"开关开启后，会上传玩家游玩数据，用于后续功能开发。
-
-### 修复
-- **关闭窗口后应用程序未完全退出的问题**：修复了关闭窗口后应用程序仍在后台运行的问题，确保用户关闭窗口后应用程序能够完全退出，释放系统资源。
-  <sub>🙌 特别感谢 QQ 宇宙最酷，GitHub Yuck1125 提供的反馈</sub>
-
-### 删除
-- **删除Mini窗口和Pro窗口中的设置入口**：为了简化界面设计，已将Mini窗口和Pro窗口中的设置入口删除, 目前设置入口为主页窗口左下角。
-
-[en]
 ### Added
 
 - **Anti-tilt assistant**: When users lose several matches in a short period, the app shows a reminder window suggesting a short break to avoid tilt-driven rank loss.
@@ -683,67 +255,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **Removed settings entry points from Mini and Pro windows**: To simplify the interface, the settings entry points in the Mini and Pro windows have been removed. The settings entry is now located in the lower-left corner of the home window.
 
-[ja]
-### 追加
-
-- **上振れ・連敗防止アシスタントを追加**: 短時間で連続して複数試合に敗北した場合、休憩を促す通知ウィンドウを表示し、熱くなって連続でポイントを失うことを防ぎます。
-  <sub>🙌 ご提案くださった QQ 看不腻的唐、QQ 第一百零五天、QQ 踢、QQ 绯木 に特別な感謝を</sub>
-
-- **ゲーム起動時のビュー自動表示を追加**: ゲームの起動を検出すると、Mini または Pro ビューを自動で表示できるようになり、ユーザーの操作手順を減らします。この機能は、設定 > システム > アプリ動作 から無効化できます。
-  <sub>🙌 インスピレーションをくださった QQ Kano に特別な感謝を</sub>
-    ![v0_4_0_Auto_Start](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_Start.gif)
-    ![v0_4_0_Auto_End](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Auto_End.gif)
-
-- **システムトレイ機能を追加**: アプリ起動後、システムトレイに最小化できるようになりました。トレイアイコンの右クリックメニューから、メイン画面、Mini パネル、Pro パネルを素早く開いたり、アプリを終了したりできます。
-
-- **スタートアップ起動機能を追加**: 設定 > システム からスタートアップ起動を有効化できます。有効にすると、システム起動時にアプリが自動的に実行され、手動で起動する必要がなくなります。
-
-### 改善
-
-- **ウィンドウ操作ロジックを改善**: ホームウィンドウを導入し、従来のウィンドウ機能を統合・最適化することで、ユーザー体験を向上しました。ホームウィンドウはアプリ起動後の主要な操作入口となり、各機能へより分かりやすくアクセスできます。また、ウィンドウ間の切り替えロジックも改善し、各機能モジュール間をより自然かつスムーズに移動できるようになりました。
-  <sub>🙌 フィードバックをくださった QQ aaa 乐 に特別な感謝を</sub>
-![v0_4_0_Home](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_4_0_Home.gif)
-
-- **プロキシダウンロードを最適化**: 公式サイトおよびアプリ内のプロキシダウンロード機能を最適化し、ダウンロード速度と安定性を向上しました。ユーザーがより速く安定してアプリをダウンロードできるようになります。
-  <sub>🙌 フィードバックをくださった QQ 风、QQ 宇宙最酷、QQ 蠹、QQ 林无穷、WeChat kumoito、WeChat HENRY に特別な感謝を</sub>
-
-- **周期レポートが最新スコアに対応**: 周期レポート内のスコア情報が、ユーザーの現在の最新スコアに対応しました。現在のスコアと推移をより正確に把握できます。
-  <sub>🙌 フィードバックをくださった QQ 宇宙最酷、NGA 智障的最高境界、小黑盒 Art0r1as に特別な感謝を</sub>
-
-- **「SF6 Scouter をもっと賢くする」機能の内容を追加**: 「SF6 Scouter をもっと賢くする」スイッチをオンにすると、今後の機能開発のためにプレイヤーのプレイデータがアップロードされます。
-
-### 修正
-- **ウィンドウを閉じてもアプリが完全に終了しない問題を修正**: ウィンドウを閉じた後もアプリがバックグラウンドで動作し続ける問題を修正し、ユーザーがウィンドウを閉じた後にアプリが完全に終了してシステムリソースを解放できるようにしました。
-  <sub>🙌 フィードバックをくださった QQ 宇宙最酷、GitHub Yuck1125 に特別な感謝を</sub>
-
-### 削除
-- **Mini ウィンドウと Pro ウィンドウの設定入口を削除**: 画面設計をシンプルにするため、Mini ウィンドウと Pro ウィンドウ内の設定入口を削除しました。現在の設定入口はホームウィンドウ左下にあります。
-
 ## [0.3.11] - 2026-05-22
-[zh]
-### 新增
 
-- **对战详情界面添加分段胜率**：在周期报告-对战详情界面添加了用户对战不同分差对手的胜率和对战不同分段的对手的胜率，用户可以更直观地了解自己面对不同分差对手和不同分段对手的表现。并展示对比上周同期的胜率，帮助用户了解胜率的变化趋势。最后提供相关总结性的建议，帮助用户更好地理解数据。
-  ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
-  <sub>🙌 特别感谢 QQ Kano 的</sub>
-
-- **游玩数据界面添加胜率信息**：在游玩数据界面添加了胜率和场次信息，用户可以更直观地了解对方的游戏表现。
-  ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
-
-- **添加K线图颜色切换开关**：用户可以在K线图页面切换K线图上升和下降颜色，可以选择绿涨红跌，或红涨绿跌两种方案。
-  <sub>🙌 特别感谢 QQ 觿子 的建议</sub>
-
-- **添加无边框透明模式**：用户可以在设置-外观中开启无边框透明模式，开启后面板将变为无边框和透明，提供更无感的使用体验。
-  <sub>🙌 特别感谢 微信 Zn4n, 微信 Naoto 的建议</sub>
-    ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
-
-- **"让SF6Scouter更聪明"功能增加内容** "让SF6Scouter更聪明"开关开启后，会上传本次对战记录，用于OCR模型的训练，提升模型的准确性和适应性, 和后续功能开发做准备。
-
-### 删除
-- **删除周期报表中的对战矩阵分数变动信息**：根据用户反馈，对战矩阵中的分数变动信息并没有实际意义，已将其删除。
-  <sub>🙌 特别感谢 QQ 绯木, QQ 宇宙最酷 提供的反馈</sub>
-
-[en]
 ### Added
 
 - **Win rate by rank segment in battle details**: Added win rates against opponents of different LP gaps and different rank segments in the Weekly Report → Battle Details screen. Users can now intuitively understand their performance against opponents of varying LP differences and rank tiers. A week-over-week win rate comparison is also shown to help users track their trend. A summary with actionable insights is provided to help users better understand the data.
@@ -766,50 +279,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Removed score change info from the battle matrix in periodic reports**: Based on user feedback, the score change information in the battle matrix was not meaningful and has been removed.
   <sub>🙌 Special thanks to QQ绯木 and QQ @宇宙最酷 for their feedback</sub>
 
-[ja]
-### 追加
-
-- **対戦詳細画面にランク別勝率を追加**: 週次レポート→対戦詳細画面に、LP差別・ランク帯別の対戦相手に対する勝率を追加しました。ユーザーは異なるLP差・ランク帯の相手に対する自分のパフォーマンスをより直感的に把握できます。また前週同期比の勝率も表示し、勝率の変化トレンドを確認できます。データをより深く理解するための総合的なアドバイスも提供します。
-  ![v0_3_11_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Rate.gif)
-  <sub>🙌 ご提案くださった QQ 看不腻的唐、QQ 宇宙最强、QQ绯木 に特別な感謝を</sub>
-
-- **プレイデータ画面に勝率情報を追加**: プレイデータ画面に勝率と対戦数の情報を追加しました。相手のゲームパフォーマンスをより直感的に把握できます。
-  ![v0_3_11_Play_Data_Rate](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Play_Data_Rate.png)
-
-- **K線図のカラー切替スイッチを追加**: K線図ページで上昇・下降のカラーを切り替えられるようになりました。緑上昇・赤下降、または赤上昇・緑下降の2パターンから選択できます。
-  <sub>🙌 ご提案くださった QQ 觿子 に特別な感謝を</sub>
-
-- **ボーダーレス透過モードを追加**: 設定→外観からボーダーレス透過モードを有効にできます。有効にするとパネルがボーダーレス・透過になり、より没入感のある使用体験を提供します。
-  <sub>🙌 ご提案くださった WeChat Zn4n、WeChat Naoto に特別な感謝を</sub>
-  ![v0_3_11_Fully_Transparent](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_11_Fully_Transparent.png)
-
-- **「SF6 Scouter をもっと賢くする」機能を強化**: 「SF6 Scouter をもっと賢くする」スイッチをオンにすると、今回の対戦記録がOCRモデルのトレーニングにも使用されるようになりました。モデルの精度と適応性を向上させ、今後の機能開発に備えます。
-
-### 削除
-- **周次レポートの対戦マトリクスからスコア変動情報を削除**: ユーザーのフィードバックにより、対戦マトリクス内のスコア変動情報は実際には意味がないと判断され、削除しました。
-  <sub>🙌 フィードバックをくださった QQ绯木、QQ @宇宙最酷 に特別な感謝を</sub>
-
 ## [0.3.10] - 2026-05-17
-[zh]
-### 优化
 
-- **调整数据反馈采样比例**：调整数据反馈比例
+### Improved
+
+- **Adjusted Data Feedback Sampling**: Adjusted the data feedback sampling rate.
 
 ## [0.3.9] - 2026-05-17
 
-[zh]
-### 新增
-- **新增VS画面时获得对手画像**：引入OCR技术，在VS加载画面时就自动识别对手并尝试展示对手画像，帮助用户更快速地了解对手习惯和特点。该功能默认开启，开关位置在设置-数据-对手画像-OCR识别中开启。对手画像展示的快慢取决于官网请求速率，网络较慢时可能会有较长的等待时间。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 的灵感启发</sub>
-    ![v0_3_9_OCR_Vs_Name](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_9_OCR_Vs_Name.gif)
-
-- **新增数据反馈功能**：新增数据反馈功能。开关位置在 设置-系统-让SF6 Scouter变得更聪明，用户可以选择将使用数据匿名反馈给开发者，用于优化产品体验。该功能默认开启，用户可以根据自己的意愿选择开启。目前数据为VS画面识别的相关数据，用于训练模型，提供更高的准确性，后续会根据用户反馈和需求增加更多的数据。
-
-
-### 优化
-- **优化对手画像逻辑**：优化对手画像的逻辑，提高识别准确性。
-
-[en]
 ### Added
 - **Opponent profile display on VS screen**: Introduced OCR technology to automatically identify the opponent during the VS loading screen and attempt to display their profile, helping users quickly understand their opponent's habits and tendencies. This feature is enabled by default; the toggle is located at Settings → Data → Opponent Profile → OCR Recognition. The speed of profile display depends on the official website's request rate — slower networks may result in longer wait times.
   <sub>🙌 Special thanks to QQ @宇宙最酷 for the inspiration</sub>
@@ -820,60 +297,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Improved
 - **Optimized opponent profile logic**: Refined the logic for opponent profile retrieval to improve recognition accuracy.
 
-[ja]
-### 追加
-- **VS画面での対戦相手プロフィール表示**: OCR技術を導入し、VSローディング画面で対戦相手を自動認識してプロフィールを表示できるようになりました。対戦相手の傾向や特徴をより素早く把握するのに役立ちます。この機能はデフォルトで有効です。設定→データ→対戦相手プロフィール→OCR認識からオン／オフを切り替えられます。プロフィールの表示速度は公式サイトへのリクエスト速度に依存するため、回線が遅い場合は待機時間が長くなることがあります。
-  <sub>🙌 インスピレーションをくださった QQ @宇宙最酷 さんに特別な感謝を</sub>
-  ![v0_3_9_OCR_Vs_Name](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_9_OCR_Vs_Name.gif)
-
-- **データフィードバック機能**: データフィードバック機能を追加しました。設定→システム→SF6 Scouter をもっと賢くする からオン／オフを切り替えられます。ユーザーは使用データを匿名で開発者に送信し、製品改善に役立てることを選択できます。この機能はデフォルトで有効ですが、ユーザーの意向に応じて変更可能です。現在のデータはVS画面認識に関するもので、モデルの学習・精度向上に使用されます。今後はユーザーのフィードバックや要望に応じてデータの種類を拡充していく予定です。
-
-### 改善
-- **対戦相手プロフィールロジックの最適化**: 対戦相手プロフィール取得のロジックを改善し、認識精度を向上させました。
-
 ## [0.3.8] - 2026-05-07
-[zh]
-### 优化
-- **优化未定分角色的段位展示**：将未定分的角色段位展示为挑战者，提升用户体验。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
 
-[en]
 ### Improved
 - **Unranked Character Rank Display**: Characters without a placement rank are now shown as Challenger, improving the user experience.
   <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
 
-[ja]
-### 改善
-- **未確定段位キャラクターのランク表示の改善**: 段位が未確定のキャラクターを「チャレンジャー」として表示するようにしました。ユーザー体験の向上を図っています。
-  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-
 ## [0.3.7] - 2026-05-06
-[zh]
-### 新增
-- **新增周期报告功能**：用户现在可以在设置 > 数据分析 > 周期报告中查看每周的战绩总结与分析，更直观地了解自己的表现和趋势。周期报告基于本工具采集的数据生成，因此如果长时间未使用工具抓取数据，报告内容可能不完整。
-  <sub>🙌 特别感谢 QQ 第一百零五天 提供的建议</sub>
-  ![v0_3_7_Report](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_7_Report.png)
 
-- **新增数据分析窗口快捷入口**：在 Mini 面板和 Pro 面板右上角新增了数据分析窗口快捷入口，方便快速进入数据分析页面。
-
-- **新增段位模块自定义功能**：用户现在可以在设置 > Pro布局中自定义段位模块的展示样式，以满足个性化需求。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-
-### 优化
-- **追踪功能仅记录排位数据**：优化了数据追踪逻辑，现在面板仅处理排位数据，提供更专注的上分追踪体验。
-  <sub>🙌 特别感谢 小黑盒 李某某 提供的建议</sub>
-
-- **优化分数模块展示效果**：优化了分数模块的展示效果，确保在不同分辨率下都能正常显示，避免数字被遮挡。
-  <sub>🙌 特别感谢 QQ @星离雨散 提供的建议</sub>
-
-### 修复
-- **修复游玩数据页面排名问题**：修复了游玩数据页面中非大师用户排名显示不正确的问题，确保用户能够准确查看排名信息。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的反馈</sub>
-
-- **修复面板窗口变动后坐标数据异常**：修复了面板窗口位置或宽高变动后坐标数据异常的问题，确保用户拖动窗口时位置记录正确。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的反馈</sub>
-
-[en]
 ### Added
 - **Weekly Report Feature**: Users can now view a weekly match summary and analysis from Settings > Data Analysis > Weekly Report to better understand their performance and trends. The report is generated from data collected by this tool, so it may be incomplete if the tool has not been used to capture data for a long time.
   <sub>🙌 Special thanks to QQ 第一百零五天 for the suggestion</sub>
@@ -898,46 +329,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Panel Window Coordinate Errors After Layout Changes**: Fixed an issue where coordinate data could become incorrect after changing a panel window's position or size, ensuring dragged window positions are recorded correctly.
   <sub>🙌 Special thanks to QQ @宇宙最酷 for the feedback</sub>
 
-[ja]
-### 追加
-- **周期レポート機能の追加**: 設定 > データ分析 > 周期レポート から、毎週の戦績サマリーと分析を確認できるようになりました。自分の成績や傾向をより直感的に把握できます。なお、このレポートは本ツールが収集したデータをもとに生成されるため、長期間データ取得を行っていない場合は内容が不完全になることがあります。
-  <sub>🙌 ご提案いただいたQQ 第一百零五天 さんに感謝いたします</sub>
-  ![v0_3_7_Report](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_7_Report.png)
-
-- **データ分析ウィンドウへのショートカットを追加**: MiniパネルとProパネルの右上に、データ分析ウィンドウへ素早く移動できるショートカットを追加しました。
-
-- **段位モジュールのカスタマイズ機能を追加**: 設定 > Proレイアウト から、段位モジュールの表示スタイルをカスタマイズできるようになりました。
-  <sub>🙌 ご提案いただいたQQ @宇宙最酷 さんに感謝いたします</sub>
-
-### 改善
-- **追跡機能をランクマッチデータのみに最適化**: データ追跡ロジックを改善し、ランクマッチのデータのみを記録するようにしました。より集中したランク上げの追跡体験を提供します。
-  <sub>🙌 ご提案いただいた小黑盒 李某某 さんに感謝いたします</sub>
-
-- **スコアモジュールの表示を改善**: スコアモジュールの表示を改善し、異なる解像度でも数値が隠れず正しく表示されるようにしました。
-  <sub>🙌 ご提案いただいたQQ @星离雨散 さんに感謝いたします</sub>
-
-### 修正
-- **プレイデータページの順位表示問題を修正**: プレイデータページで、マスター未満のユーザーの順位が正しく表示されない問題を修正し、順位情報を正確に確認できるようにしました。
-  <sub>🙌 フィードバックをいただいたQQ @宇宙最酷 さんに感謝いたします</sub>
-
-- **パネルウィンドウ変更後の座標データ異常を修正**: パネルウィンドウの位置やサイズを変更した後に座標データが不正になる問題を修正し、ウィンドウをドラッグした位置が正しく記録されるようにしました。
-  <sub>🙌 フィードバックをいただいたQQ @宇宙最酷 さんに感謝いたします</sub>
-
 ## [0.3.6] - 2026-04-26
-[zh]
-### 新增
-- **新增Pro布局功能**：用户现在可以在设置-Pro布局高度自定义Pro视图中不同模块的显示，并保存，后续可以一键还原。
-  <sub>🙌 特别感谢 QQ memory, QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
 
-- **新增设置用户画像提示时长功能**：用户现在可以在设置-数据设置中调整对手画像提示的显示时长。
- <sub>🙌 特别感谢 QQ Hinako 提供的建议</sub>
-
-### 优化
-- **Pro视图弹窗位置优化**：优化了Pro视图中弹窗的位置，使其显示更加合理，避免遮挡主要内容。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
-
-[en]
 ### Added
 - **New Pro Layout Feature**: Users can now fully customize the display of each module in the Pro view from Settings > Pro Layout, save their layout, and restore it with one click.
   <sub>🙌 Special thanks to QQ memory, QQ 宇宙最酷 for the suggestion</sub>
@@ -950,54 +343,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Pro View Popup Positioning**: Improved the popup positioning in the Pro view for more reasonable display and to avoid covering main content.
   <sub>🙌 Special thanks to QQ 宇宙最酷 for the suggestion</sub>
 
-[ja]
-### 追加
-- **Proレイアウト機能の追加**: 設定 > ProレイアウトからProビューの各モジュール表示を自由にカスタマイズし、保存・ワンクリックで復元できるようになりました。
-  <sub>🙌 ご提案いただいたQQ memory さん、QQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.6 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_6_Pro_Layout.gif)
-
-- **対戦相手プロファイルの表示時間設定を追加**: 設定 > データ設定 から、対戦相手プロファイルのヒント表示時間を調整できるようになりました。
- <sub>🙌 ご提案いただいたQQ Hinako さんに感謝いたします</sub>
-
-### 改善
-- **Proビューのポップアップ位置最適化**: Proビュー内のポップアップ表示位置を最適化し、主要コンテンツの邪魔にならないよう改善しました。
-  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-
 ## [0.3.5] - 2026-04-23
-[zh]
-### 新增
-- **添加Logo**：在应用程序和官网中添加了一个新的Logo，以提升用户识别度。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 无偿提供的Logo</sub>
-  ![v0.3.5 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_sf6scouter_logo.png)
 
-- **Pro面板添加段位视图**：用户可以在设置-外观-布局中选择段位视图，即可在Pro视图中显示段位和排名，提升用户体验。
-  <sub>🙌 特别感谢 QQ Jesusleo, QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.5 Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Rank.jpg)
-
-- **数据分析面板添加游玩数据页**：用户可以在设置-数据-数据分析-游玩数据查询用户的游玩数据,包含角色段位，游戏时长，格斗成就等数据。
-  <sub>🙌 特别感谢 NGA AinJianke, QQ 宇宙最酷, 小黑盒 ghetto 提供的建议</sub>
-  ![v0.3.5 PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_PlayData.gif)
-
-- **Pro面板的数据点支持查看对手数据**：用户可以点击Pro视图中的数据点，快速查看对手数据，并且可以直接跳转到游玩数据页面。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.5 Pro_PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro_PlayData.gif)
-
-- **预览功能-对战结束后提供对手行为画像**：在首次和对手对战结束后，将提示对手的行为画像，帮助用户更好地了解对手习惯，用户可以在设置-数据-对手画像选项关闭该功能。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.5 User Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_user_image.jpg)
-
-### 优化
-- **Pro视图Y轴段位显示优化**：放大Y轴段位图片，停止负数展示，提升可读性。
-  <sub>🙌 特别感谢 微信 HENRY, QQ 宇宙最酷 提供的建议</sub>
-
-- **添加段位视图作为Pro视图默认布局**：添加段位视图到Pro视图默认布局，提升用户体验。
-  ![v0.3.5 Pro](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro.jpg)
-
-### 修复
-- **部分场景下抢夺窗口焦点**：修复了在某些特定场景下，强制抢夺窗口焦点的问题。
-  <sub>🙌 特别感谢 QQ 宇宙最酷 提供的反馈</sub>
-
-[en]
 ### Added
 - **New Logo**: Added a new logo to the app and official website to improve user recognition.
   <sub>🙌 Special thanks to QQ 宇宙最酷 for providing the logo free of charge</sub>
@@ -1030,58 +377,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Window Focus Stealing in Certain Scenarios**: Fixed an issue where the app forcibly grabbed window focus in specific scenarios.
   <sub>🙌 Special thanks to QQ 宇宙最酷 for the feedback</sub>
 
-[ja]
-### 追加
-- **新しいロゴの追加**: アプリと公式サイトに新しいロゴを追加し、ユーザー認知度を向上させました。
-  <sub>🙌 ロゴを無償提供いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.5 logo](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_sf6scouter_logo.png)
-
-- **ProパネルにランクビューViewを追加**: 設定 > 外観 > レイアウトで「ランクビュー」を選択すると、Proビューにランクと順位が表示されます。
-  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.5 Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Rank.jpg)
-
-- **データ分析パネルにプレイデータページを追加**: 設定 > データ > データ分析 > プレイデータから、キャラクターランク・プレイ時間・格闘実績などのプレイデータを確認できます。
-  <sub>🙌 ご提案いただいたNGA AinJianke さん、QQ 宇宙最酷 さん、小黑盒 ghetto さんに感謝いたします</sub>
-  ![v0.3.5 PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_PlayData.gif)
-
-- **Proパネルのデータポイントから対戦相手データを確認**: Proビューのデータポイントをクリックすることで、対戦相手のデータをすばやく確認し、プレイデータページに直接移動できます。
-  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.5 Pro_PlayData](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro_PlayData.gif)
-
-- **プレビュー機能 — 対戦終了後に対戦相手の行動プロファイルを表示**: 初めて対戦した相手との試合終了後、その相手の行動プロファイルが表示され、相手の傾向をより深く把握できます。この機能は設定 > データ > 対戦相手プロファイルから無効にできます。
-  <sub>🙌 ご提案いただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.5 User Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_user_image.jpg)
-
-### 改善
-- **ProビューY軸のランク表示の最適化**: Y軸のランクアイコンを拡大し、マイナス値の表示を廃止することで可読性を向上しました。
-  <sub>🙌 ご提案いただいたWeChat HENRY さん、QQ 宇宙最酷 さんに感謝いたします</sub>
-
-- **ランクビューをProビューのデフォルトレイアウトに追加**: ランクビューをProビューのデフォルトレイアウトとして追加し、初期使用体験を向上させました。
-  ![v0.3.5 Pro](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_5_Pro.jpg)
-
-### 修正
-- **特定シナリオでのウィンドウフォーカス奪取**: 特定の状況下でアプリが強制的にウィンドウフォーカスを奪う問題を修正しました。
-  <sub>🙌 フィードバックをいただいたQQ 宇宙最酷 さんに感謝いたします</sub>
-
 ## [0.3.4] - 2026-04-18
-[zh]
-### 新增
-- **Pro面板添加展示连胜连败视图**：用户可以在设置-外观-布局中选择战绩视图，即可在Pro视图中显示连胜/连败，最大连胜，最大连败，提升用户体验。
-  <sub>🙌 特别感谢 QQ Jesusleo, QQ 宇宙最酷 提供的建议</sub>
-  ![v0.3.4 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_BattleStats.jpg)
 
-- **Pro面板折线图Y轴展示段位**：用户可以在设置-外观-布局中选择战绩视图，即可在Pro视图中显示连胜/连败，最大连胜，最大连败，提升用户体验。
-  <sub>🙌 特别感谢 QQ Jesusleo, QQ 墨昀uuuun 提供的建议</sub>
-  ![v0.3.4 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_Pro_Y_Rank.jpg)
-
-### 优化
-- **提供额外下载路线**：用户使用官网或软件更新时，自动选择下载路线，提升下载体验。
-
-### 修复
-- **部分场景下计算胜负异常**：修复了在某些特定场景下，胜负计算异常的问题。更新后历史数据将自动修正。
-  <sub>🙌 特别感谢 NGA 狗仔至 提供的反馈</sub>
-
-[en]
 ### Added
 - **Win/Loss Streak View in Pro Panel**: Select "Battle Stats" view in Settings > Appearance > Layout to display win streaks, loss streaks, max win streak, and max loss streak in the Pro view.
   <sub>🙌 Special thanks to QQ Jesusleo, QQ 宇宙最酷 for the suggestion</sub>
@@ -1098,46 +395,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Incorrect Win/Loss Calculation in Certain Scenarios**: Fixed win/loss calculation errors in specific scenarios. Historical data will be automatically corrected after updating.
   <sub>🙌 Special thanks to NGA 狗仔至 for the feedback</sub>
 
-[ja]
-### 追加
-- **ProパネルにW/L連勝・連敗ビューを追加**: 設定 > 外観 > レイアウトで「戦績ビュー」を選択すると、Proビューに連勝・連敗・最大連勝・最大連敗が表示されます。
-  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.4 BattleStats](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_BattleStats.jpg)
-
-- **Proパネル折れ線グラフのY軸にランクを表示**: 設定 > 外観 > レイアウトで「戦績ビュー」を選択すると、Proパネルの折れ線グラフのY軸にランクが表示されます。
-  <sub>🙌 ご提案いただいたQQ Jesusleo さん、QQ 墨昀uuuun さんに感謝いたします</sub>
-  ![v0.3.4 Pro Y Rank](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_4_Pro_Y_Rank.jpg)
-
-### 改善
-- **追加ダウンロードルートの提供**: 公式サイトまたはアプリ内アップデート時に、ダウンロードルートが自動選択され、ダウンロード体験が向上します。
-
-### 修正
-- **特定シナリオでの勝敗計算の異常**: 特定の状況下で勝敗の計算が正しく行われない問題を修正しました。アップデート後、過去のデータは自動的に修正されます。
-  <sub>🙌 フィードバックをいただいたNGA 狗仔至 さんに感謝いたします</sub>
-
 ## [0.3.3] - 2026-04-16
-[zh]
-### 新增
-- **Pro面板显示对手头像**：用户可以在设置-外观-图表开启展示对手头像功能，在Pro视图中显示对手的头像，提升用户体验。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-  ![v0.3.3 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_ProHeadImage.gif)
 
-- **数据分析面板**: 用户可以在设置-数据-数据分析打开数据分析面板，查看简易的分数趋势，胜率，K线图等
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
-  ![v0.3.3 Data Analysis](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_K_Line.gif)
-
-- **正式支持持久化**：目前自动爬取用户最近100场对战数据并持久化存储，重启应用后数据不会丢失，并且在设置-系统配置备份文件夹位置，通过借助U盘，云盘等方式可实现数据备份。官网因版本更新导致的对战数据不展示，用户可以通过该持久化功能将数据保留在本地。并且使用加密措施，保证用户数据安全。
-  <sub>🙌 特别感谢 QQ @宇宙最酷, QQ @墨昀uuuun, QQ @Jesusleo 提供的建议</sub>
-
-### 优化
-- **优化登录逻辑**：优化登录流程，提升登录体验和稳定性。
-
-- **优化恢复会话**：将预览版数据持久化功能的恢复会话功能优化并支持当前正式持久化功能。
-
-### 删除
-- **删除预览版本数据持久化功能**：由于正式持久化功能的引入，原有的预览版本数据功能已不再必要，因此被移除。
-
-[en]
 ### Added
 - **Opponent Avatar in Pro Panel**: Enable opponent avatar display from Settings > Appearance > Chart. Shows the opponent's avatar in Pro view for an enhanced experience.
   <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
@@ -1157,37 +416,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - **Removed Preview Persistence Feature**: With the introduction of official persistence, the previous preview-version data feature is no longer necessary and has been removed.
 
-[ja]
-### 追加
-- **Proパネルに対戦相手のアバターを表示**: 設定 > 外観 > グラフから有効化できます。Proビューで対戦相手のアバターが表示され、ユーザー体験が向上します。
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.3 Pro Head Image](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_ProHeadImage.gif)
-
-- **データ分析パネル**: 設定 > データ > データ分析から開き、スコア傾向・勝率・ローソク足チャートなどを確認できます。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-  ![v0.3.3 Data Analysis](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_3_K_Line.gif)
-
-- **永続化の正式サポート**: 直近100件の対戦データを自動取得してローカルに永続保存します。再起動後もデータは失われません。設定 > システムでバックアップフォルダを設定することで、USBやクラウドを使ったバックアップも可能です。データは暗号化されており、安全に保護されます。
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さん、QQの @墨昀uuuun さん、QQの @Jesusleo さんに感謝いたします</sub>
-
-### 改善
-- **ログインフローの最適化**: ログインプロセスを最適化し、よりスムーズで安定したログイン体験を実現しました。
-- **セッション復元の改善**: プレビュー版の復元機能を改善し、正式な永続化機能に対応しました。
-
-### 削除
-- **プレビュー版永続化機能の削除**: 正式な永続化機能の導入に伴い、従来のプレビュー版データ機能は不要となったため削除されました。
-
-
 ## [0.3.2] - 2026-04-11
-[zh]
-### 修复
-- **网络不稳定时图表绘制异常**：修复了弱网场景下数据跟踪计算错误，导致图表显示异常的问题。
-  <sub>🙌 特别感谢 QQ @宇宙最酷, QQ @Jesusleo 提供的反馈</sub>
 
-### 优化
-- **官网请求增加多次重试机制**：提升网络不稳定时的数据获取成功率。
-
-[en]
 ### Fixed
 - **Chart Rendering Issues on Unstable Networks**: Fixed an issue where incorrect tracking calculations under poor network conditions caused chart rendering anomalies.
   <sub>🙌 Special thanks to QQ @宇宙最酷 and QQ @Jesusleo for the feedback</sub>
@@ -1195,39 +425,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Improved
 - **Added Multiple Retries for Official API Requests**: Increased data fetch success rate when network connectivity is unstable.
 
-[ja]
-### 修正
-- **不安定なネットワーク環境でのグラフ描画不具合**: 通信状態が不安定な場合に追跡計算が誤り、グラフ表示が異常になる問題を修正しました。
-  <sub>🙌 フィードバックをいただいたQQの @宇宙最酷 さん、QQの @Jesusleo さんに感謝いたします</sub>
-
-### 改善
-- **公式APIリクエストの再試行回数を強化**: ネットワークが不安定な環境でのデータ取得成功率を向上させました。
-
-
 ## [0.3.1] - 2026-04-10
-[zh]
-### 新增
-- **Mini/Pro视图支持分享**：用户可以当前视图（Mini或Pro）右键选择分享，生成可分享的图片到剪切板，方便在社交媒体上展示战绩。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_Share.gif)
 
-- **Pro支持自定义布局**：用户现在可以在设置-外观页面自定义Pro视图的布局，以更好地满足个人需求。
-  <sub>🙌 特别感谢 NGA @就会玩治疗 提供的建议</sub>
-  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_ProLayout.gif)
-
-- **视图支持大/中/小快速设置**：用户现在可以在设置-外观页面快速选择视图大小（大/中/小），实现开箱即用。
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
-  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_WindowSize.gif)
-
-
-### 优化
-- **新版本提醒页面排版优化**：优化新版本提醒页面的排版和样式，使其更清晰易读。
-
-### 修复
-- **启动后界面显示异常**：修复了在某些系统配置下，应用启动后界面无法正常显示的问题。
-  <sub>🙌 特别感谢 QQ @墨昀uuuun 提供的反馈</sub>
-
-[en]
 ### Added
 - **Share from Mini/Pro View**: Right-click in either Mini or Pro view to share your match results as an image copied to the clipboard — perfect for posting on social media.
   <sub>🙌 Special thanks to QQ @宇宙最酷 for the suggestion</sub>
@@ -1248,55 +447,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **UI Not Showing After Launch**: Fixed an issue where the app window failed to display correctly on certain system configurations.
   <sub>🙌 Special thanks to QQ @墨昀uuuun for the feedback</sub>
 
-[ja]
-### 追加
-- **Mini/Proビューからシェア**: MiniまたはProビューで右クリックすることで、対戦成績を画像としてクリップボードにコピーし、SNSに共有できるようになりました。
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
-  ![v0.3.1 Share](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_Share.gif)
-
-- **Proビューのカスタムレイアウト**: 設定 > 外観画面でProビューのレイアウトをカスタマイズできるようになり、個人の好みに合わせた表示が可能になりました。
-  <sub>🙌 ご提案いただいたNGAの @就会玩治疗 さんに感謝いたします</sub>
-  ![v0.3.1 Pro Layout](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_ProLayout.gif)
-
-- **ウィンドウサイズのクイック設定（大／中／小）**: 設定 > 外観画面でビューサイズをワンクリックで選択できるプリセットを追加し、すぐに使い始められるようになりました。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-  ![v0.3.1 Window Size](https://raw.githubusercontent.com/RengarLee/sf6_scouter/main/images/v0_3_1_WindowSize.gif)
-
-### 改善
-- **バージョン通知ページの改善**: 新バージョン通知ページのレイアウトとスタイルを改善し、より見やすくなりました。
-
-### 修正
-- **起動後に画面が表示されない問題**: 一部のシステム環境でアプリ起動後に画面が正常に表示されない問題を修正しました。
-  <sub>🙌 フィードバックいただいたQQの @墨昀uuuun さんに感謝いたします</sub>
-
 ## [0.3.0] - 2026-04-08
-[zh]
-### 新增
-- **设置功能独立窗口**：设置功能现在在独立窗口中打开，提供更专注的配置体验。
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
 
-- **提供查看各个角色数据功能**：用户现在可以在设置-数据页面查看当前角色跟踪角色和各个角色的数据
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
-
-- **添加Mini和Pro快速切换按钮**：在视图右上角添加了一个切换按钮，允许用户在 Mini 模式和 Pro 模式之间快速切换，无需进入设置。
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
-
-- **提供设置数据间隔配置**：用户现在可以设置-用户页面自定义数据刷新间隔，以优化性能和体验。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-
-- **对战记录持久化**：用户现在可以在设置-数据页面启用对战记录持久化，应用现在支持将战绩数据持久化存储，重启应用后数据不会丢失。(预览功能：新版本可能会造成持久化数据丢失)
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-
-- **对战记录截取**：用户现在可以在设置-数据页面启用对战记录截取，自主选择从哪一场对战开始跟踪。
-  <sub>🙌 特别感谢 QQ @宇宙最酷 提供的建议</sub>
-
-- **新增新版本提醒功能**：当有新版本发布时，应用进行提醒，点击后可查看更新详情并选择立即更新或稍后提醒。
-
-### 优化
-- **优化角色切换**：优化角色切换逻辑，用户游戏中切换角色后，应用能更快地识别并切换到正确的 LP/MR 数据显示。
-  <sub>🙌 特别感谢 NGA @AinJianke 提供的建议</sub>
-
-[en]
 ### Added
 - **Standalone Settings Window**: Settings now open in a separate window for a more focused configuration experience.
   <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
@@ -1322,89 +474,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Improved Character Switching**: Optimized character-switch detection so LP/MR display updates faster and more accurately when switching characters in-game.
   <sub>🙌 Special thanks to NGA @AinJianke for the suggestion</sub>
 
-[ja]
-### 追加
-- **設定の独立ウィンドウ化**: 設定機能が独立したウィンドウで開くようになり、より集中して設定できるようになりました。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-
-- **キャラクターデータ閲覧機能**: 設定 > データ画面で、現在追跡中のキャラクターおよび各キャラクターのデータを確認できるようになりました。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-
-- **Mini/Pro クイック切替ボタン**: 画面右上にクイック切替ボタンを追加し、設定を開かずに Mini モードと Pro モードを切り替えられるようになりました。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-
-- **データ更新間隔の設定**: データの更新間隔をカスタマイズできるようになり、パフォーマンスと操作感を最適化できます。
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
-
-- **対戦記録の永続化**: 設定 > データ画面で対戦記録の永続化を有効にできるようになり、アプリ再起動後もデータを保持できます。（プレビュー機能: 新バージョンでデータが失われる可能性があります）
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
-
-- **対戦記録の開始位置設定**: 設定 > データ画面で古い記録を整理し、任意の試合から追跡を開始できるようになりました。
-  <sub>🙌 ご提案いただいたQQの @宇宙最酷 さんに感謝いたします</sub>
-
-- **新バージョン通知**: 新しいバージョンが公開されるとアプリが通知し、クリックすると更新内容を確認して「今すぐ更新」または「後で通知」を選択できます。
-
-### 改善
-- **キャラクター切替の最適化**: ゲーム中のキャラクター切替後、LP/MR の表示切替をより速く正確に行えるよう最適化しました。
-  <sub>🙌 ご提案いただいたNGAの @AinJianke さんに感謝いたします</sub>
-
-
 ## [0.2.3] - 2026-04-07
 
-
-[zh]
-### 新增
-- **自动切换LP/MR**：根据玩家的当前角色是否是大师,自动切换 LP 和 MR 数据显示。
-  <sub>🙌 特别感谢 NGA @AinJianke 和 QQ @宇宙最酷 提供的建议</sub>
-  <sub>🙌 特别感谢 QQ 用户 @宇宙最酷 提供的测试</sub>
-
-[en]
 ### Added
 - **Auto Switch LP/MR**: Automatically switch between LP and MR display based on whether the current character is a Master。
   <sub>🙌 Special thanks to NGA @AinJianke and QQ @宇宙最酷 for suggestions</sub>
   <sub>🙌 Special thanks to QQ user @宇宙最酷 for testing</sub>
 
-[ja]
-### 追加
-- **LP/MR自動切替**: 現在のキャラクターがマスターかどうかに応じて、LPとMRの表示を自動的に切り替えます。
-  <sub>🙌 NGAの @AinJianke さん、QQの @宇宙最酷 さん、ご提案に感謝いたします</sub>
-  <sub>🙌 QQユーザーの @宇宙最酷 さん、テストへのご協力に感謝いたします</sub>
-
 ## [0.2.2] - 2026-04-06
 
-
-[zh]
-### 修复
-- **修复**：修复无法跟踪豪鬼、拜森、本田的 LP 和 MR 数据的问题。
-  <sub>🙌 特别感谢 QQ 用户 @balance，@宇宙最酷 提供的反馈和测试</sub>
-
-[en]
 ### Fixed
 - **Fix**: Resolved the issue where LP and MR data tracking failed for characters Akuma, Bison, and Honda.
   <sub>🙌 Special thanks to QQ users @balance and @宇宙最酷 for their feedback and testing</sub>
 
-[ja]
-### 修正
-- **修正**: 豪鬼、バイソン、エドモンド本田の LP と MR データが追跡できない問題を修正しました。
-  <sub>🙌 QQ ユーザーの @balance さん、@宇宙最酷 さん、フィードバックとテストへのご協力に感謝いたします</sub>
-
 ## [0.2.1] - 2026-04-03
 
-[zh]
-
-### 新增
-- **跨 ID 追踪**：登录后支持追踪并切换其他玩家的 ID 战绩。
-  <sub>🙌 特别感谢 NGA @丧心病狂的追忆 提供的建议</sub>
-
-- **Pro 面板**：新增专业战绩面板，以动态折线图形式直观展示分数走势。
-  <sub>🙌 特别感谢 NGA @gjf779, @丧心病狂的追忆, @AinJianke 提供的建议</sub>
-
-- **窗口记忆**：支持自动记忆窗口配置，重新打开时将自动还原至上次关闭时的精确位置和大小。
-  <sub>🙌 特别感谢 NGA @就会玩治疗 提供的建议</sub>
-
-- **视觉增强**：为数字更新添加滚动特效。
-
-[en]
 ### Added
 - **Cross-Tracking**: You can now track other players' IDs after logging in.
   <sub>🙌 Special thanks to NGA user 丧心病狂 of Recall for the suggestions</sub>
@@ -1417,33 +501,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Visual Polish**: Added smooth number scrolling animation effects for data updates.
 
-[ja]
-### 追加
-- **他者ID追跡**: ログイン後、他のプレイヤーのIDを追跡・切り替えられるようになりました。
-  <sub>🙌 NGAの 丧心病狂的追忆 さんによる提案に感謝いたします</sub>
-
-- **Pro パネル**: ランクポイント（LP/MR）の推移を折れ線グラフで視覚化する新しい統計ダッシュボードを追加しました。
-  <sub>🙌 NGAの gjf779, 丧心病狂的追忆, AinJianke さんによる提案に感謝いたします</sub>
-
-- **設定記憶**: ウィンドウ設定を記憶し、再起動時に前回終了時の位置とサイズを正確に復元するようになりました。
-  <sub>🙌 NGAの 就会玩治疗 さんによる提案に感謝いたします</sub>
-
-- **ビジュアル強化**: 数値更新時にスムーズな数字スクロールアニメーションを追加しました。
-
 ## [0.1.35] - 2026-03-29
 
-[zh]
-### 优化
-- **重构追踪代码**：重构代码结构，提高可读性和可维护性。
-
-- **UI 调整**：微调 UI 并修复了一些小 Bug。
-
-[en]
 ### Improved
 - Refactor code structure for improved readability and maintainability.
 - Minor UI adjustments and bug fixes.
-
-[ja]
-### 改善
-- コード構造のリファクタリングにより、可読性とメンテナンス性が向上しました。
-- UIの微調整とバグ修正を行いました。
