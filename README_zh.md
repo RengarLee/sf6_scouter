@@ -10,10 +10,12 @@
 
 ## 仓库说明
 
-本仓库是 **SF6 Scouter 可运行应用的分发仓库**，用于提供网站、预览图、发布说明和下载入口。
+本仓库是 **SF6 Scouter 可运行应用的分发仓库**，用于提供预览图、发布说明和下载入口。
 
 - 这里提供的是可直接使用的应用及相关公开资源。
 - 这里 **不包含应用源码**。
+- 发布说明：[English](./CHANGELOG.md)、[简体中文](./CHANGELOG_zh.md)、[日本語](./CHANGELOG_ja.md)。
+- 下载：[GitHub Releases](https://github.com/RengarLee/sf6_scouter/releases)。
 
 
 ## 核心功能
